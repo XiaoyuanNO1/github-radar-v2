@@ -31,4 +31,4 @@ git commit -m "🤖 每日雷达更新 ${TODAY}：新增 ${NEW_COUNT} 个项目"
 git push origin main
 
 echo "✅ [$(date '+%Y-%m-%d %H:%M:%S')] 推送成功！新增 ${NEW_COUNT} 个项目已上线"
-echo "🌐 预览地址：https://xiaoyuanno1.github.io/github-radar-site/"
+echo "🌐 预览地址：https://xiaoyuanno1.github.io/github-radar-v2/"
