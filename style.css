@@ -214,6 +214,9 @@ main { padding: 56px 0 60px; }
 
 .section { margin-bottom: 56px; }
 
+/* 第一个 section（今日精选）与 stats-bar 之间额外留白 */
+.section:first-child { margin-top: 20px; }
+
 .section-header {
   display: flex;
   align-items: flex-start;
