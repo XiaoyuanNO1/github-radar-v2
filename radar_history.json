@@ -1,0 +1,1566 @@
+[
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-001",
+    "title": "K-Dense-AI / claude-scientific-skills",
+    "url": "https://github.com/K-Dense-AI/claude-scientific-skills",
+    "raw_description": "A set of ready to use Agent Skills for research, science, engineering, analysis, finance and writing.",
+    "description": "为科研、工程、金融、写作等领域提供即用型Agent Skills集合，让Claude直接具备专业领域能力，无需额外训练。解决的痛点是：专业领域的AI能力门槛高、定制成本大。",
+    "metaphor": "它就像给Claude装了一个「专业技能百宝箱」，拆开即用，研究员、金融分析师、工程师各取所需，不用自己从零攒工具。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 2,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "纯提示词工程 + 技能编排，无底层算子，Cursor 一天内可复刻 MVP，极易实现。",
+      "logic_moat": "科学技能的设计与分类体系有一定的业务逻辑深度，但核心是 prompt 堆叠，护城河中等。",
+      "track_fit": "教育赛道强命中，AI 辅助科研/学习场景在小红书高传播，赛道满分。",
+      "growth_potential": "「AI 科研助手」概念在小红书/即刻极易爆，可包装成付费课程或工具订阅。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-002",
+    "title": "alibaba / OpenSandbox",
+    "url": "https://github.com/alibaba/OpenSandbox",
+    "raw_description": "OpenSandbox is a general-purpose sandbox platform for AI applications, offering multi-language SDKs, unified sandbox APIs, and Docker/Kubernetes runtimes for scenarios like Coding Agents, GUI Agents, Agent Evaluation, AI Code Execution, and RL Training.",
+    "description": "阿里出品的AI应用通用沙箱平台，支持多语言SDK、统一沙箱API，适用于Coding Agent、GUI Agent、代码执行、RL训练等场景。解决AI执行真实操作时的安全隔离问题。",
+    "metaphor": "它就像给AI Agent搭了一个安全的「试验田」，让AI可以放心地跑代码、操作系统，出了问题也不会炸到真实环境。",
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 4
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "沙箱隔离涉及容器/虚拟化底层，Vibe 复刻难度大，需要深度系统知识。",
+      "logic_moat": "安全沙箱的隔离策略和执行逻辑有技术壁垒，但商业逻辑护城河一般。",
+      "track_fit": "开发工具赛道，不在宠物/银发/玄学/金融/教育五大赛道内，不得分。",
+      "growth_potential": "面向开发者，传播受众窄，副业变现路径不清晰，潜力有限。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-003",
+    "title": "FujiwaraChoki / MoneyPrinterV2",
+    "url": "https://github.com/FujiwaraChoki/MoneyPrinterV2",
+    "raw_description": "Automate the process of making money online.",
+    "description": "自动化在线赚钱流程，通过AI自动生成短视频内容、脚本、配音并发布，实现内容副业的全自动化。痛点：内容创作耗时耗力，难以规模化。",
+    "metaphor": "它就像一台「全自动印钞机」——你设定好模板和主题，它帮你不停产内容、挂广告、收钱，你只需要睡觉。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "视频生成流水线是纯逻辑编排，API 调用组合，Cursor 极易复刻，满分。",
+      "logic_moat": "功能是 API 的简单串联，缺乏独特算法，竞品多，护城河薄。",
+      "track_fit": "内容创作工具，未命中五大核心赛道，赛道分为 0。",
+      "growth_potential": "「自动赚钱视频」噱头在小红书有爆款潜力，可包装成副业工具变现。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-004",
+    "title": "agentscope-ai / agentscope",
+    "url": "https://github.com/agentscope-ai/agentscope",
+    "raw_description": "Build and run agents you can see, understand and trust.",
+    "description": "阿里开源的多Agent构建框架，强调可视化、可理解、可信赖的Agent工作流编排。解决多Agent系统黑盒难调试的痛点。",
+    "metaphor": "它就像给AI Agent团队配了一个「透明玻璃办公室」，你能看到每个Agent在干什么、为什么这么干，出了问题一眼定位。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "多 Agent 框架有一定复杂度，需理解 Agent 通信协议，复刻中等难度。",
+      "logic_moat": "Agent 调度逻辑和通信机制有一定设计深度，护城河中等。",
+      "track_fit": "通用 AI 框架，未命中核心赛道，赛道分 0。",
+      "growth_potential": "开发者工具，受众有限，传播潜力和变现路径一般。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-005",
+    "title": "unslothai / unsloth",
+    "url": "https://github.com/unslothai/unsloth",
+    "raw_description": "Fine-tuning & Reinforcement Learning for LLMs. 🦥 Train OpenAI gpt-oss, DeepSeek, Qwen, Llama, Gemma, TTS 2x faster with 70% less VRAM.",
+    "description": "LLM微调与强化学习加速工具，支持DeepSeek、Qwen、Llama等主流模型，训练速度提升2倍、显存减少70%。解决个人/小团队显卡资源不足无法微调大模型的痛点。",
+    "metaphor": "它就像给LLM训练装了「涡轮增压发动机」——同样的油（显存），跑得更快更远，穷玩家也能玩得起微调。",
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 4
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "LLM 微调涉及 CUDA 底层优化，Vibe 复刻几乎不可能，难度极高。",
+      "logic_moat": "底层算子优化是真正的技术护城河，但商业逻辑层面护城河中等。",
+      "track_fit": "AI 基础设施，未命中五大核心赛道，不得分。",
+      "growth_potential": "技术圈传播有限，个人副业变现路径不清晰。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-006",
+    "title": "TheCraigHewitt / seomachine",
+    "url": "https://github.com/TheCraigHewitt/seomachine",
+    "raw_description": "A specialized Claude Code workspace for creating long-form, SEO-optimized blog content for any business. This system helps you research, write, analyze, and optimize content that ranks well and serves your target audience.",
+    "description": "基于Claude Code的专业SEO长文生成工作台，帮助企业研究、撰写、分析、优化高排名博客内容。解决内容营销团队SEO写作效率低、质量参差不齐的痛点。",
+    "metaphor": "它就像给内容营销团队配了一个「SEO魔法流水线」——输入你的业务关键词，输出能上Google首页的专业长文，省掉整个SEO外包团队。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "SEO 内容生成是纯逻辑编排，关键词分析 + 内容生成 API 串联，极易复刻。",
+      "logic_moat": "SEO 策略和内容优化逻辑有一定业务深度，可积累数据飞轮，护城河中等偏上。",
+      "track_fit": "营销工具赛道，未命中五大核心赛道，不得分。",
+      "growth_potential": "「AI 帮你做 SEO 躺赚」在小红书极易爆，可包装成付费订阅工具。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-007",
+    "title": "LMCache / LMCache",
+    "url": "https://github.com/LMCache/LMCache",
+    "raw_description": "Supercharge Your LLM with the Fastest KV Cache Layer",
+    "description": "LLM推理加速的最快KV Cache层，大幅降低首Token延迟，提升推理吞吐量。解决LLM生产部署中延迟高、并发差的核心痛点。",
+    "metaphor": "它就像给LLM的「短期记忆」装了SSD——之前每次都要重新计算的注意力权重，现在直接从高速缓存里取，响应快到飞起。",
+    "scores": {
+      "vibecoding_ease": 0,
+      "logic_moat": 3,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 4
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "LLM 推理缓存涉及分布式系统和底层内存管理，Vibe 复刻极难。",
+      "logic_moat": "缓存策略和 KV 管理算法是真正的技术护城河，逻辑护城河满分。",
+      "track_fit": "AI 基础设施，未命中五大核心赛道，不得分。",
+      "growth_potential": "面向企业级 AI 部署，个人副业变现路径极窄。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-008",
+    "title": "Aider-AI / aider",
+    "url": "https://github.com/Aider-AI/aider",
+    "raw_description": "aider is AI pair programming in your terminal",
+    "description": "终端里的AI结对编程工具，支持多模型，能直接理解并修改整个代码仓库，是Vibecoding的核心工具之一。",
+    "metaphor": "它就像把一个顶级程序员「塞进了你的终端」，你说需求，它直接改代码、写测试、提交PR，全程不用动手。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "AI 编程助手逻辑清晰，主要是 LLM API + 文件操作编排，极易复刻。",
+      "logic_moat": "功能成熟，竞品众多（Cursor/Copilot），差异化逻辑护城河较薄。",
+      "track_fit": "开发工具，未命中五大核心赛道，赛道分 0。",
+      "growth_potential": "开发者工具市场饱和，个人变现空间有限。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-009",
+    "title": "NVIDIA-NeMo / Megatron-Bridge",
+    "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge",
+    "raw_description": "Training library for Megatron-based models with bidirectional Hugging Face conversion capability",
+    "description": "NVIDIA出品的Megatron模型训练库，支持与HuggingFace生态的双向格式转换。解决NVIDIA大模型训练框架与开源生态割裂的痛点。",
+    "metaphor": "它就像一座「格式翻译桥」，让NVIDIA的超算训练体系和HuggingFace的开源生态无缝互通，不再是两个孤岛。",
+    "scores": {
+      "vibecoding_ease": 0,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 0,
+      "total": 2
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "大规模分布式训练框架，涉及 GPU 集群通信和底层算子，Vibe 复刻不可能。",
+      "logic_moat": "分布式训练逻辑复杂，有一定护城河，但商业应用层面护城河一般。",
+      "track_fit": "AI 基础设施，未命中核心赛道，不得分。",
+      "growth_potential": "企业级工具，个人副业几乎无变现可能。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-010",
+    "title": "vllm-project / vllm",
+    "url": "https://github.com/vllm-project/vllm",
+    "raw_description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+    "description": "高吞吐、内存高效的LLM推理与服务引擎，业界标杆级开源项目，是部署大模型API服务的首选方案。",
+    "metaphor": "它就像给LLM装了「高速公路收费站管理系统」——同时处理成千上万个请求，互不堵塞，吞吐量拉满。",
+    "scores": {
+      "vibecoding_ease": 0,
+      "logic_moat": 3,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 4
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "高性能推理引擎涉及 CUDA/PagedAttention 底层，Vibe 复刻极难。",
+      "logic_moat": "PagedAttention 等核心算法是真正的技术护城河，满分。",
+      "track_fit": "AI 基础设施，未命中五大核心赛道，不得分。",
+      "growth_potential": "面向大型企业部署，个人副业变现空间极窄。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-011",
+    "title": "Azure / Azure-Sentinel",
+    "url": "https://github.com/Azure/Azure-Sentinel",
+    "raw_description": "Cloud-native SIEM for intelligent security analytics for your entire enterprise.",
+    "description": "微软云原生SIEM安全信息与事件管理平台，为企业提供全域智能安全分析。解决企业安全日志海量、人工分析不过来的痛点。",
+    "metaphor": "它就像给企业IT部署了一个「永不睡觉的安全警卫」，自动分析所有日志，发现异常立刻报警，人工只需处理真正的威胁。",
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 0,
+      "total": 3
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "安全规则和 SIEM 逻辑有一定复杂度，但主体是配置文件，复刻难度中偏高。",
+      "logic_moat": "安全检测规则库是业务逻辑护城河，但依赖微软生态，独立价值有限。",
+      "track_fit": "安全工具，未命中五大核心赛道，不得分。",
+      "growth_potential": "面向企业安全团队，个人副业变现路径极窄。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-012",
+    "title": "awslabs / mcp",
+    "url": "https://github.com/awslabs/mcp",
+    "raw_description": "Official MCP Servers for AWS",
+    "description": "AWS官方MCP服务器集合，让AI Agent能直接调用AWS S3、Lambda、DynamoDB等各类云服务。解决AI Agent与云服务集成繁琐的痛点。",
+    "metaphor": "它就像给AI Agent办了一张「AWS全服务VIP通行证」，想用什么云服务直接调，不用再手写SDK集成代码。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "MCP 服务器开发有标准协议，但需要理解 AWS 服务体系，复刻中等难度。",
+      "logic_moat": "MCP 协议封装 + AWS 服务集成逻辑有一定深度，护城河中等。",
+      "track_fit": "云服务工具，未命中五大核心赛道，不得分。",
+      "growth_potential": "开发者工具，受众有限，但 MCP 概念热度上升，传播潜力一般。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-013",
+    "title": "anthropics / skills",
+    "url": "https://github.com/anthropics/skills",
+    "raw_description": "Public repository for Agent Skills",
+    "description": "Anthropic官方Agent Skills公共仓库，提供可直接使用的Claude技能集合，覆盖各类实用场景。解决AI能力扩展需要从零开发的痛点。",
+    "metaphor": "它就像Claude的「官方技能商店」，开发者可以直接下载安装，让Claude具备OCR、数据分析、代码执行等各种专业能力，今天1139颗星的增量说明市场热度极高。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "Skills 是提示词 + 工具调用的纯逻辑编排，Cursor 一天内可复刻，极易。",
+      "logic_moat": "Skills 体系设计有一定的逻辑深度，但本质是 prompt 工程，护城河中等。",
+      "track_fit": "AI 工具赛道，未命中核心五大赛道，不得分。",
+      "growth_potential": "「AI 技能包」概念在小红书/即刻有传播潜力，可包装成付费产品。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-014",
+    "title": "PrefectHQ / prefect",
+    "url": "https://github.com/PrefectHQ/prefect",
+    "raw_description": "Prefect is a workflow orchestration framework for building resilient data pipelines in Python.",
+    "description": "Python数据管道工作流编排框架，构建弹性数据流水线，支持自动重试、监控、调度。解决数据工程师管理复杂数据流水线的痛点。",
+    "metaphor": "它就像给数据工程师配了一个「自动调度总指挥」，数据流水线失败了自动重试，成功了自动通知，你只管睡觉。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "工作流编排有标准化 SDK，逻辑清晰，Cursor 可以较快复刻，难度中等。",
+      "logic_moat": "工作流调度和状态管理逻辑有一定深度，竞品也多，护城河中等。",
+      "track_fit": "开发工具，未命中五大核心赛道，不得分。",
+      "growth_potential": "面向开发者和数据工程师，个人副业变现路径一般。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-015",
+    "title": "alirezarezvani / claude-skills",
+    "url": "https://github.com/alirezarezvani/claude-skills",
+    "raw_description": "A Collection of Skills for Claude Code and Claude AI for real-world Usage. Including Claude Code Subagents, Claude Code Commands",
+    "description": "Claude Code和Claude AI的实战技能集合，包含子Agent、自定义命令等现实场景应用，面向工程师的进阶玩法。",
+    "metaphor": "它就像一本「Claude实战秘籍」，把各种高级玩法打包好，拿来即用，让你的Claude比别人的Claude多出十八般武艺。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "Skills 封装是纯提示词工程，零代码基础也能复刻，极易实现。",
+      "logic_moat": "Skills 设计逻辑简单，主要是 prompt 堆叠，护城河较薄。",
+      "track_fit": "AI 工具，未命中五大核心赛道，不得分。",
+      "growth_potential": "「AI 技能扩展包」在社区有传播价值，可做付费内容变现。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-016",
+    "title": "openai / gpt-oss",
+    "url": "https://github.com/openai/gpt-oss",
+    "raw_description": "gpt-oss-120b and gpt-oss-20b are two open-weight language models by OpenAI",
+    "description": "OpenAI开源的两款大模型——gpt-oss-120b和gpt-oss-20b，填补OpenAI长期不开源的市场空白，对标DeepSeek。",
+    "metaphor": "它就像OpenAI终于把「镇店之宝」拿出来一部分放到橱窗里展示，开发者能在本地跑GPT级别的模型了，这是一个时代信号。",
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 3,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "GPT 底层模型涉及训练代码和底层算子，Vibe 复刻几乎不可能。",
+      "logic_moat": "OpenAI 开源的模型架构是真正的技术护城河，逻辑满分。",
+      "track_fit": "AI 基础模型，未命中五大核心赛道，不得分。",
+      "growth_potential": "开源模型发布本身有极大传播效应，但个人副业变现路径不清晰。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-017",
+    "title": "TEN-framework / ten-framework",
+    "url": "https://github.com/TEN-framework/ten-framework",
+    "raw_description": "Open-source framework for conversational voice AI agents",
+    "description": "开源的对话式语音AI Agent框架，专注于实时语音交互场景，可快速构建语音客服、语音助手、陪伴机器人等产品。解决语音AI应用开发门槛高的痛点。",
+    "metaphor": "它就像给AI装了一套「耳朵+嘴巴」，让Agent能像真人一样实时对话，银发族陪伴、儿童教育、宠物互动等场景全部打通。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 8
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "实时音视频 AI 框架有一定复杂度，但提供了高层 API，复刻中等难度。",
+      "logic_moat": "实时 AI 对话的编排逻辑和低延迟设计有一定护城河，护城河中等。",
+      "track_fit": "银发/教育赛道强命中，AI 陪伴对话场景适合老人和学生，满分。",
+      "growth_potential": "「AI 实时陪伴」在小红书/即刻极易爆，银发陪伴和儿童教育变现潜力巨大。"
+    }
+  },
+  {
+    "date": "2026-03-05",
+    "id": "2026-03-05-018",
+    "title": "ZHZisZZ / dllm",
+    "url": "https://github.com/ZHZisZZ/dllm",
+    "raw_description": "dLLM: Simple Diffusion Language Modeling",
+    "description": "简洁的扩散语言模型（Diffusion LLM）实现，探索非自回归文本生成新范式，打破传统自回归模型逐词生成的限制。",
+    "metaphor": "它就像把「图像生成的扩散魔法」移植到了文字上——不再一个字一个字地蹦出来，而是整体从噪声中「显影」出来，可能是下一代LLM的雏形。",
+    "scores": {
+      "vibecoding_ease": 0,
+      "logic_moat": 3,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 4
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "扩散语言模型涉及深度学习底层，Vibe 复刻极难，需要专业 ML 知识。",
+      "logic_moat": "扩散式 LLM 的生成机制是真正的算法护城河，逻辑满分。",
+      "track_fit": "AI 基础研究，未命中五大核心赛道，不得分。",
+      "growth_potential": "学术前沿项目，传播受众窄，个人副业变现路径极窄。"
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "id": "2026-03-06-001",
+    "title": "inclusionAI / AReaL",
+    "url": "https://github.com/inclusionAI/AReaL",
+    "raw_description": "Lightning-Fast RL for LLM Reasoning and Agents. Made Simple & Flexible.",
+    "description": "专为LLM推理与Agent设计的极速强化学习框架，主打简单灵活，让开发者用更少代码跑通RL训练流程。解决LLM强化学习门槛高、配置复杂的痛点。",
+    "metaphor": "它就像给LLM强化学习配了一个「一键启动的赛车引擎」——原来需要拼装一周的RL流水线，现在几行代码跑起来，速度还快到飞起。",
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 4
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "强化学习框架涉及分布式训练和底层调度，Vibe 复刻难度较高，需要 ML 背景。",
+      "logic_moat": "RL 训练调度逻辑有一定深度，但竞品（TRL、veRL）成熟，护城河中等。",
+      "track_fit": "AI 基础设施，未命中宠物/银发/玄学/金融/教育五大赛道，不得分。",
+      "growth_potential": "面向 AI 研究者，受众窄，个人副业变现路径不清晰。"
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "id": "2026-03-06-002",
+    "title": "agentscope-ai / ReMe",
+    "url": "https://github.com/agentscope-ai/ReMe",
+    "raw_description": "ReMe: Memory Management Kit for Agents - Remember Me, Refine Me.",
+    "description": "Agent记忆管理工具包，让AI Agent能「记住你、精炼记忆」，支持长期记忆存储、检索与动态更新。解决Agent对话无状态、每次重头来的核心痛点。",
+    "metaphor": "它就像给AI Agent装了一颗「海马体」——不再是金鱼记忆，能记住用户偏好、历史对话、关键事件，越用越懂你。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "记忆管理的核心是向量检索 + 摘要逻辑，有标准库可用，Cursor 可中等难度复刻 MVP。",
+      "logic_moat": "记忆的分层存储、精炼策略和个性化召回逻辑是真正的业务护城河，设计精妙，满分。",
+      "track_fit": "银发陪伴/教育场景强命中——老人AI伴侣记住家人信息、儿童AI老师记住学习进度，赛道满分。",
+      "growth_potential": "「AI终于能记住我了」这个概念在小红书/即刻极易引爆，个性化AI助手产品变现潜力巨大。"
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "id": "2026-03-06-003",
+    "title": "public-apis / public-apis",
+    "url": "https://github.com/public-apis/public-apis",
+    "raw_description": "A collective list of free APIs",
+    "description": "全球最大的免费公开API汇总列表，覆盖天气、金融、娱乐、AI等数百个领域，是开发者和Vibecoder的「原材料仓库」。",
+    "metaphor": "它就像一个「免费食材超市」——你要做什么菜（应用），直接来这里找原料（API），不用自己种地（开发底层接口）。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "这是一个资源列表，本身无需复刻；但利用其中的 API 组合出产品，Vibecoding 极易实现。",
+      "logic_moat": "纯资源聚合，无核心算法逻辑，任何人都能复制，护城河极薄。",
+      "track_fit": "工具资源类，未命中五大核心赛道，不得分。",
+      "growth_potential": "作为开发者资源传播潜力一般，个人直接变现路径不清晰。"
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "id": "2026-03-06-004",
+    "title": "Jeffallan / claude-skills",
+    "url": "https://github.com/Jeffallan/claude-skills",
+    "raw_description": "66 Specialized Skills for Full-Stack Developers. Transform Claude Code into your expert pair programmer.",
+    "description": "为全栈开发者打造的66个专业技能包，将Claude Code变身为专业结对编程伙伴，覆盖前后端、数据库、DevOps等全栈场景。",
+    "metaphor": "它就像给Claude装了一套「全栈工程师工具腰带」——前端、后端、数据库、部署，66把专业工具随时取用，秒变10倍效率程序员。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "纯提示词技能包，零门槛复刻，Vibecoding 极易实现，满分。",
+      "logic_moat": "技能设计偏通用，差异化不足，竞品（anthropics/skills等）多，护城河薄。",
+      "track_fit": "开发工具，未命中五大核心赛道，不得分。",
+      "growth_potential": "「AI 全栈助手」概念有一定传播力，可在开发者社区变现，潜力中等。"
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "id": "2026-03-06-005",
+    "title": "streamlit / streamlit",
+    "url": "https://github.com/streamlit/streamlit",
+    "raw_description": "Streamlit — A faster way to build and share data apps.",
+    "description": "快速构建和分享数据应用的Python框架，无需前端知识，纯Python即可做出交互式数据可视化应用。解决数据科学家不会前端却需要展示成果的痛点。",
+    "metaphor": "它就像给数据科学家配了一个「傻瓜相机」——不用学摄影技术，对准拍就出好照片；不用学前端，写几行Python就出漂亮应用。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "Streamlit 本身就是为快速开发设计的，Vibecoding 极易上手，满分。",
+      "logic_moat": "框架本身成熟，竞品（Gradio、Dash）多，护城河较薄。",
+      "track_fit": "数据工具，未命中五大核心赛道，不得分。",
+      "growth_potential": "面向数据科学家群体，个人副业变现路径一般。"
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "id": "2026-03-06-006",
+    "title": "ComposioHQ / awesome-claude-skills",
+    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "raw_description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+    "description": "精心策划的Claude Skills资源合集，汇聚最优质的Claude技能、工具和工作流定制资源，是Claude生态的「导航地图」。",
+    "metaphor": "它就像Claude技能生态的「米其林指南」——把散落各处的优质技能包、工具和教程精选归类，让你不用在信息海洋里自己捞，直接按图索骥。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "资源聚合类项目，内容是列表和链接，Vibecoding 极易复刻同类产品，满分。",
+      "logic_moat": "纯资源聚合，无算法护城河，先发优势是唯一壁垒，护城河薄。",
+      "track_fit": "AI 工具导航，未命中五大核心赛道，不得分。",
+      "growth_potential": "Claude 生态热度高，「技能导航站」有一定传播潜力，可做流量变现。"
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "id": "2026-03-06-007",
+    "title": "khoj-ai / khoj",
+    "url": "https://github.com/khoj-ai/khoj",
+    "raw_description": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
+    "description": "可自托管的AI第二大脑，能从网络或个人文档中检索答案、构建定制Agent、调度自动化任务、做深度研究。支持接入任意LLM，真正的个人自主AI助手。",
+    "metaphor": "它就像给你的大脑配了一个「永不遗忘的数字分身」——你读过的文章、存过的笔记、浏览过的网页，全都被它记住并随时调用，还能帮你自动执行任务。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "RAG + Agent 调度 + 自动化任务有一定复杂度，但开源代码可参考，Cursor 中等难度复刻 MVP。",
+      "logic_moat": "个人知识库检索策略 + 深度研究逻辑 + 多源数据融合是真正的业务护城河，设计精妙，满分。",
+      "track_fit": "教育/银发双赛道命中——学生深度研究助手、老人个人记忆助手，赛道满分。",
+      "growth_potential": "「AI 帮你记住一切并自动执行」概念在小红书极易爆，个人知识管理 + 自动化订阅产品变现潜力巨大。"
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "id": "2026-03-06-008",
+    "title": "anthropics / claude-plugins-official",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "raw_description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+    "description": "Anthropic官方维护的高质量Claude Code插件目录，是Claude生态插件的权威入口，覆盖开发、写作、分析等多类场景。",
+    "metaphor": "它就像Claude的「官方应用商店」——Anthropic亲自审核上架，质量有保证，开发者直接来这里找插件，不用在野生市场淘金。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "插件开发遵循标准协议，Vibecoding 极易上手开发自己的插件并提交，满分。",
+      "logic_moat": "官方背书的目录体系有一定的生态护城河，但本质是资源聚合，护城河中等。",
+      "track_fit": "AI 工具生态，未命中五大核心赛道，不得分。",
+      "growth_potential": "Claude 生态持续扩张，插件开发者有机会借助官方流量变现，潜力中等偏上。"
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "id": "2026-03-06-009",
+    "title": "microsoft / apm",
+    "url": "https://github.com/microsoft/apm",
+    "raw_description": "Agent Package Manager",
+    "description": "微软出品的Agent包管理器，为AI Agent生态提供类似npm/pip的包管理能力，让Agent技能的安装、更新、依赖管理标准化。",
+    "metaphor": "它就像AI Agent世界的「npm」——你不再需要手动下载、配置Agent技能，一行命令安装，版本冲突自动解决，Agent生态从此有了基础设施。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "包管理器涉及依赖解析和版本控制逻辑，有一定复杂度，Cursor 中等难度复刻。",
+      "logic_moat": "Agent 包管理的依赖解析和版本策略有技术深度，微软背书增加生态护城河，中等。",
+      "track_fit": "开发工具基础设施，未命中五大核心赛道，不得分。",
+      "growth_potential": "面向开发者，受众窄，个人副业变现路径不清晰。"
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "id": "2026-03-06-010",
+    "title": "QwenLM / Qwen",
+    "url": "https://github.com/QwenLM/Qwen",
+    "raw_description": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud.",
+    "description": "阿里云通义千问官方开源仓库，提供聊天和预训练大语言模型，是国内最强开源LLM之一，支持中英双语。",
+    "metaphor": "它就像阿里给国内开发者送来了一把「国产瑞士军刀」——中文理解超强，本地部署随心所欲，不再被海外模型卡脖子。",
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 3,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "大模型底层代码涉及分布式训练和推理优化，Vibe 复刻几乎不可能。",
+      "logic_moat": "LLM 预训练架构和中文优化是真正的技术护城河，满分。",
+      "track_fit": "AI 基础模型，未命中五大核心赛道，不得分。",
+      "growth_potential": "国内开发者使用广泛，但个人副业直接变现路径不清晰。"
+    }
+  },
+  {
+    "date": "2026-03-06",
+    "id": "2026-03-06-011",
+    "title": "Blaizzy / mlx-vlm",
+    "url": "https://github.com/Blaizzy/mlx-vlm",
+    "raw_description": "MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX.",
+    "description": "基于Apple MLX框架的视觉语言模型（VLM）推理与微调工具，让Mac用户能在本地跑多模态大模型。解决Mac用户无法高效本地部署VLM的痛点。",
+    "metaphor": "它就像给Mac装了一个「本地多模态AI实验室」——上传图片问问题，分析文档看图表，全在本地跑，数据不上云，隐私零泄露。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 8
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "基于 MLX 高层 API，有完整文档，Cursor 可中等难度复刻图片分析类应用 MVP。",
+      "logic_moat": "MLX 框架优化 + VLM 推理调度有一定技术深度，针对 Apple Silicon 的优化是护城河，中等。",
+      "track_fit": "教育赛道命中——本地VLM可做作业批改、图文解析教育工具；银发赛道也可做看图说话辅助，赛道满分。",
+      "growth_potential": "「Mac本地跑多模态AI」在小红书/即刻极易爆，隐私保护概念加持，可包装成付费工具变现。"
+    }
+  },
+  {
+    "date": "2026-03-07",
+    "id": "2026-03-07-001",
+    "title": "QwenLM / Qwen-Agent",
+    "url": "https://github.com/QwenLM/Qwen-Agent",
+    "raw_description": "Agent framework and applications built upon Qwen>=3.0, featuring Function Calling, MCP, Code Interpreter, RAG, Chrome extension, etc.",
+    "description": "基于Qwen3.0+构建的Agent框架与应用集合，集成函数调用、MCP协议、代码解释器、RAG、Chrome扩展等核心能力。解决开发者在Qwen生态上快速搭建Agent应用门槛高的痛点，今日684颗星增量说明热度极高。",
+    "metaphor": "它就像给Qwen大模型配了一套「全副武装的特种兵装备」——RAG是望远镜、Code Interpreter是工兵铲、MCP是通讯电台，拼装好就是一支能打硬仗的Agent特种队。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "Agent框架有标准化API，但MCP+RAG+Code Interpreter的组合集成有一定复杂度，Cursor中等难度复刻MVP。",
+      "logic_moat": "函数调用编排+RAG检索策略+多工具协同逻辑是真正的业务护城河，Qwen生态深度绑定形成技术壁垒，满分。",
+      "track_fit": "教育赛道强命中——Qwen-Agent可做AI家教、作业辅导、学习助手；金融赛道也可做数据分析Agent，赛道满分。",
+      "growth_potential": "「国产Agent框架+Qwen3.0」组合在小红书/即刻极易爆，本地化优势突出，可包装成付费AI助手产品变现。"
+    }
+  },
+  {
+    "date": "2026-03-07",
+    "id": "2026-03-07-002",
+    "title": "lingfengQAQ / webnovel-writer",
+    "url": "https://github.com/lingfengQAQ/webnovel-writer",
+    "raw_description": "基于 Claude Code 的长篇网文辅助创作系统，解决 AI 写作中的「遗忘」和「幻觉」问题，支持 200 万字量级连载创作。",
+    "description": "基于Claude Code的长篇网文辅助创作系统，核心攻克AI写作的「遗忘」和「幻觉」两大顽疾，支持200万字量级的超长连载创作。解决AI写长文时前后矛盾、人物失忆的核心痛点。",
+    "metaphor": "它就像给AI写手装了一个「超级剧情数据库」——主角的性格、过往剧情、世界观设定全部锁死，AI绝不会突然忘记男主叫什么、或者让已死的角色复活，200万字连载稳如磐石。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 10
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "纯逻辑编排——上下文管理+提示词工程+文件系统操作，Cursor一天内可复刻MVP，极易实现，满分。",
+      "logic_moat": "「记忆管理+一致性检查+剧情数据库」三位一体的架构设计是真正的业务护城河，解决了AI写作最核心的痛点，满分。",
+      "track_fit": "教育/娱乐双赛道命中——AI辅助写作是小红书高热话题，网文创作是千亿级市场，赛道满分。",
+      "growth_potential": "「AI帮你写200万字网文不崩人设」这个卖点在小红书/即刻/抖音极易引爆，可做付费写作工具或课程变现，潜力巨大。"
+    }
+  },
+  {
+    "date": "2026-03-07",
+    "id": "2026-03-07-003",
+    "title": "openai / skills",
+    "url": "https://github.com/openai/skills",
+    "raw_description": "Skills Catalog for Codex",
+    "description": "OpenAI官方为Codex发布的技能目录，是OpenAI版的Claude Skills生态，让Codex具备模块化的专业技能扩展能力。今日582颗星增量，是OpenAI对Claude Skills生态的直接回应。",
+    "metaphor": "它就像OpenAI给Codex开了一家「官方技能超市」——Claude有技能商店，OpenAI立刻跟进，两家巨头都在抢占AI技能生态的入口，这是一场无声的生态战争。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "技能是提示词+工具调用的纯逻辑编排，Cursor一天内可复刻自己的技能包，极易，满分。",
+      "logic_moat": "OpenAI官方背书的技能设计体系有一定逻辑深度，但本质仍是prompt工程，护城河中等。",
+      "track_fit": "AI开发工具，未命中宠物/银发/玄学/金融/教育五大核心赛道，不得分。",
+      "growth_potential": "「OpenAI官方技能包」概念在开发者社区有极高传播度，可参考其设计做垂直领域技能包变现。"
+    }
+  },
+  {
+    "date": "2026-03-07",
+    "id": "2026-03-07-004",
+    "title": "virattt / ai-hedge-fund",
+    "url": "https://github.com/virattt/ai-hedge-fund",
+    "raw_description": "An AI Hedge Fund Team",
+    "description": "AI对冲基金团队模拟系统，用多个AI Agent分别扮演基本面分析师、技术分析师、风险管理师、投资组合经理等角色，协同完成投资决策。解决个人投资者缺乏专业分析团队的痛点。",
+    "metaphor": "它就像花几百块钱「租了一整支华尔街分析师团队」——基本面、技术面、情绪面、风控全覆盖，每个AI角色各司其职，最后给你一个综合投资建议，散户也能用机构级分析。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "多Agent协同+金融数据API调用，有一定复杂度，但框架清晰，Cursor中等难度复刻MVP。",
+      "logic_moat": "多角色投资决策逻辑+风险管理框架是真正的金融业务护城河，46K星验证了市场认可度，满分。",
+      "track_fit": "金融赛道完美命中，AI量化投资是最高变现潜力赛道之一，赛道满分。",
+      "growth_potential": "「AI帮你炒股/做投资决策」在小红书/即刻是永恒爆款话题，可包装成付费投资工具或信号服务变现。"
+    }
+  },
+  {
+    "date": "2026-03-07",
+    "id": "2026-03-07-005",
+    "title": "p-e-w / heretic",
+    "url": "https://github.com/p-e-w/heretic",
+    "raw_description": "Fully automatic censorship removal for language models",
+    "description": "全自动语言模型审查移除工具，通过技术手段绕过LLM的内容限制，让模型能够回答被屏蔽的问题。解决AI过度审查导致实用性下降的痛点（存在合规风险）。",
+    "metaphor": "它就像给被「套了紧箍咒」的LLM施了一个「解咒符」——那些被安全护栏拦住的回答，现在可以正常输出了，但这把双刃剑用不好会伤到自己。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "绕过审查的技术方案有一定复杂度，涉及提示词注入和模型行为分析，复刻中等难度。",
+      "logic_moat": "审查绕过逻辑有一定技术深度，但存在合规风险，且模型厂商会持续修补，护城河不稳定。",
+      "track_fit": "技术工具，未命中五大核心赛道，不得分。",
+      "growth_potential": "话题争议性强，传播潜力有，但合规风险极高，不建议作为副业产品变现。"
+    }
+  },
+  {
+    "date": "2026-03-07",
+    "id": "2026-03-07-006",
+    "title": "apache / airflow",
+    "url": "https://github.com/apache/airflow",
+    "raw_description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
+    "description": "Apache顶级项目，用代码定义、调度、监控工作流的平台，是数据工程领域的绝对标杆，44K星的常青树级别项目。今日出现在趋势榜是因为新版本发布或社区热点。",
+    "metaphor": "它就像数据工程界的「瑞士手表」——精准、可靠、经久不衰，每个数据团队都在用，是流水线调度的工业标准，但不是适合个人副业的方向。",
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 0,
+      "total": 3
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "Airflow 配置和 DAG 编写有学习曲线，但有完整文档，Vibe 复刻难度中偏高。",
+      "logic_moat": "工作流调度逻辑成熟，但竞品（Prefect、Dagster）众多，护城河中等。",
+      "track_fit": "数据工程基础设施，未命中五大核心赛道，不得分。",
+      "growth_potential": "面向企业数据团队，个人副业变现路径几乎没有，潜力为0。"
+    }
+  },
+  {
+    "date": "2026-03-07",
+    "id": "2026-03-07-007",
+    "title": "github / awesome-copilot",
+    "url": "https://github.com/github/awesome-copilot",
+    "raw_description": "Community-contributed instructions, prompts, and configurations to help you make the most of GitHub Copilot.",
+    "description": "GitHub官方维护的Copilot社区资源集合，汇聚社区贡献的提示词、指令、配置，帮助用户最大化Copilot的使用效果。23K星说明Copilot生态的庞大用户基数。",
+    "metaphor": "它就像GitHub给Copilot用户编了一本「秘籍合集」——把全球用户摸索出来的最佳提示词、最牛配置全收录进来，让你站在所有人的肩膀上用好Copilot。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "纯资源聚合，内容是提示词和配置文件，Vibecoding极易复刻同类导航站，满分。",
+      "logic_moat": "纯资源聚合，无算法护城河，GitHub官方背书是唯一壁垒，护城河薄。",
+      "track_fit": "AI开发工具资源，未命中五大核心赛道，不得分。",
+      "growth_potential": "开发者资源传播潜力一般，个人副业直接变现路径不清晰。"
+    }
+  },
+  {
+    "date": "2026-03-07",
+    "id": "2026-03-07-008",
+    "title": "BerriAI / litellm",
+    "url": "https://github.com/BerriAI/litellm",
+    "raw_description": "Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI format, with cost tracking, guardrails, loadbalancing and logging.",
+    "description": "统一调用100+个LLM API的Python SDK和AI网关，支持成本追踪、护栏、负载均衡、日志。解决开发者对接多个LLM提供商时接口不统一、成本难控的痛点。",
+    "metaphor": "它就像AI应用开发者的「万能遥控器」——不管是GPT、Claude还是Gemini，统一一套代码调用，还能实时看哪个模型最便宜，自动切换省钱，38K星是市场最好的背书。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "统一API封装有一定复杂度，但有完整文档，Cursor中等难度复刻简化版网关。",
+      "logic_moat": "多LLM路由策略+成本优化逻辑有一定业务深度，但竞品（OpenRouter等）成熟，护城河中等。",
+      "track_fit": "AI基础设施工具，未命中五大核心赛道，不得分。",
+      "growth_potential": "面向开发者，受众有限，个人副业变现路径不清晰。"
+    }
+  },
+  {
+    "date": "2026-03-08",
+    "id": "2026-03-08-001",
+    "title": "666ghj / MiroFish",
+    "url": "https://github.com/666ghj/MiroFish",
+    "raw_description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+    "description": "简洁通用的群体智能引擎，用群体智能算法预测万物——股价、天气、用户行为皆可建模。解决传统预测模型泛化能力差、需要深度ML知识的痛点，今日345颗星增量，是同作者BettaFish生态的延伸。",
+    "metaphor": "它就像把「蚂蚁群体觅食的集体智慧」数字化——没有一只蚂蚁知道全局，但整个蚁群能找到最优路径；MiroFish把这套逻辑抽象成通用预测引擎，输入任何时序数据，群体智能给你答案。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "群体智能算法有一定数学背景要求，但框架已封装高层API，Cursor中等难度复刻金融预测MVP。",
+      "logic_moat": "群体智能预测逻辑是真正的算法护城河——粒子群、蚁群等优化算法组合的设计精妙度极高，满分。",
+      "track_fit": "金融赛道强命中——股价预测、量化信号是最直接的变现路径；玄学赛道也可包装成「AI命运预测引擎」，赛道满分。",
+      "growth_potential": "「AI群体智能预测股价/趋势」在小红书/即刻极易爆，可包装成付费预测工具或量化信号服务变现。"
+    }
+  },
+  {
+    "date": "2026-03-08",
+    "id": "2026-03-08-002",
+    "title": "666ghj / BettaFish",
+    "url": "https://github.com/666ghj/BettaFish",
+    "raw_description": "微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。",
+    "description": "多Agent舆情分析助手，打破信息茧房，还原舆情全貌并预测走向，辅助决策。零框架依赖，从零实现多Agent协同，今日158颗星，累计36K星说明市场认可度极高。",
+    "metaphor": "它就像给你配了一个「全网舆情侦察兵团队」——每个Agent盯一个信息源，汇总分析后给你一张完整的舆情地图，再也不会被算法茧房困住，看到的是真实的民意全貌。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "多Agent协同+舆情数据抓取+情感分析，有一定复杂度，但零框架依赖说明逻辑清晰，Cursor中等难度复刻MVP。",
+      "logic_moat": "多源数据融合+茧房打破策略+趋势预测逻辑是真正的业务护城河，36K星背书，从零实现证明逻辑护城河满分。",
+      "track_fit": "金融赛道强命中——舆情分析是量化投资的核心数据源；教育赛道也可做媒体素养工具，赛道满分。",
+      "growth_potential": "「AI帮你看穿信息茧房」在小红书/即刻是超高热话题，可包装成付费舆情订阅服务或企业决策工具变现。"
+    }
+  },
+  {
+    "date": "2026-03-08",
+    "id": "2026-03-08-003",
+    "title": "AIDC-AI / Pixelle-Video",
+    "url": "https://github.com/AIDC-AI/Pixelle-Video",
+    "raw_description": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine",
+    "description": "AI全自动短视频引擎，输入主题自动生成完整短视频，覆盖脚本、配音、画面生成全流程。解决短视频创作者内容生产效率低下的痛点，今日109颗星。",
+    "metaphor": "它就像一条「短视频流水线工厂」——你只需要扔进一个话题，自动出来一条有画面、有配音、有字幕的完整短视频，一天产出100条不是梦。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "视频生成流水线涉及多个AI模型API调用和媒体处理，有一定复杂度，Cursor中等难度复刻MVP。",
+      "logic_moat": "全流程视频生成的编排逻辑有一定深度，但竞品（MoneyPrinterV2等）成熟，护城河中等。",
+      "track_fit": "内容创作工具，未命中宠物/银发/玄学/金融/教育五大核心赛道，不得分。",
+      "growth_potential": "「AI全自动生成短视频」在小红书/抖音有极高传播潜力，可包装成付费内容工具变现。"
+    }
+  },
+  {
+    "date": "2026-03-08",
+    "id": "2026-03-08-004",
+    "title": "Dao-AILab / flash-attention",
+    "url": "https://github.com/Dao-AILab/flash-attention",
+    "raw_description": "Fast and memory-efficient exact attention",
+    "description": "快速且内存高效的精确注意力机制实现，是LLM训练和推理加速的核心底层组件，22K星的工业级标准库。今日出现在趋势榜说明有新版本或重大更新。",
+    "metaphor": "它就像给Transformer的「注意力计算」装了涡轮增压——同样的算法，显存减少10倍，速度提升3倍，是每个大模型训练必装的底层加速器。",
+    "scores": {
+      "vibecoding_ease": 0,
+      "logic_moat": 3,
+      "track_fit": 0,
+      "growth_potential": 0,
+      "total": 3
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "CUDA底层注意力算子，涉及GPU内存管理和并行计算，Vibe复刻极难，几乎不可能。",
+      "logic_moat": "FlashAttention算法是真正的技术护城河，Tri Dao博士论文级别的创新，逻辑满分。",
+      "track_fit": "AI基础设施，未命中五大核心赛道，不得分。",
+      "growth_potential": "面向大型AI研究机构和企业，个人副业变现路径几乎为零。"
+    }
+  },
+  {
+    "date": "2026-03-08",
+    "id": "2026-03-08-005",
+    "title": "fastino-ai / GLiNER2",
+    "url": "https://github.com/fastino-ai/GLiNER2",
+    "raw_description": "Unified Schema-Based Information Extraction",
+    "description": "统一的基于Schema的信息抽取框架，能从非结构化文本中精准提取实体、关系、事件等结构化信息。解决企业文档智能化处理中信息抽取精度低、泛化差的痛点。",
+    "metaphor": "它就像给AI配了一套「精密手术刀」——面对一堆杂乱的文本，能精准切出你想要的实体和关系，比传统NER模型更懂你的意图，一个模型搞定所有信息抽取任务。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 2,
+      "growth_potential": 1,
+      "total": 7
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "基于预训练模型的信息抽取，有高层API，Cursor可中等难度复刻垂直领域信息抽取MVP。",
+      "logic_moat": "Schema驱动的统一抽取框架设计有一定逻辑深度，泛化能力强，护城河中等偏上。",
+      "track_fit": "金融赛道命中——可用于财报信息抽取、新闻结构化处理等金融数据场景，赛道满分。",
+      "growth_potential": "金融文档智能化是企业级需求，个人副业变现路径存在但受众相对窄。"
+    }
+  },
+  {
+    "date": "2026-03-08",
+    "id": "2026-03-08-006",
+    "title": "teng-lin / notebooklm-py",
+    "url": "https://github.com/teng-lin/notebooklm-py",
+    "raw_description": "Unofficial Python API for Google NotebookLM",
+    "description": "Google NotebookLM的非官方Python API封装，让开发者能用代码调用NotebookLM的知识问答和播客生成能力。解决NotebookLM无官方API、无法自动化集成的痛点。",
+    "metaphor": "它就像给Google NotebookLM开了一扇「后门」——官方不给API，社区自己凿，现在你可以用Python脚本批量上传文档、自动生成播客摘要，把NotebookLM变成你工作流的一环。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 8
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "非官方API封装是纯逻辑工程，主要是HTTP请求逆向，Cursor极易复刻类似的API包装器，满分。",
+      "logic_moat": "逆向工程的API封装护城河极薄——官方一更新就可能失效，且竞品易出现，护城河低。",
+      "track_fit": "教育赛道命中——NotebookLM是学生和研究者最爱的学习工具，Python API让教育场景自动化成为可能，满分。",
+      "growth_potential": "「用Python自动化NotebookLM生成学习播客」在小红书/即刻有传播潜力，可做教育工具变现。"
+    }
+  },
+  {
+    "date": "2026-03-08",
+    "id": "2026-03-08-007",
+    "title": "donnemartin / system-design-primer",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "raw_description": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.",
+    "description": "大规模系统设计学习资源，包含系统设计面试备考指南和Anki闪卡，337K星的常青树级别教育资源，是程序员面试必备。今日290颗星说明面试季来临。",
+    "metaphor": "它就像程序员界的「系统设计圣经」——337K星告诉你全球每个准备大厂面试的程序员都在用它，是最经典的面试备考资源，经久不衰。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 8
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "纯教育内容资源，基于此做AI辅助学习工具，Vibecoding极易实现，满分。",
+      "logic_moat": "纯资源聚合，无算法护城河，先发优势和337K星是唯一壁垒，护城河薄。",
+      "track_fit": "教育赛道完美命中——程序员面试备考是刚需市场，赛道满分。",
+      "growth_potential": "「AI辅助系统设计面试备考」在程序员社区有极高传播潜力，可包装成付费面试辅导产品变现。"
+    }
+  },
+  {
+    "date": "2026-03-08",
+    "id": "2026-03-08-008",
+    "title": "pgmpy / pgmpy",
+    "url": "https://github.com/pgmpy/pgmpy",
+    "raw_description": "Python library for Causal AI",
+    "description": "Python因果AI库，提供贝叶斯网络、因果推断、结构学习等核心功能，是学术界和工业界因果推理的标准工具。解决AI系统「相关性陷阱」——让模型真正理解因果而非只看相关。",
+    "metaphor": "它就像给AI装了一套「逻辑推理大脑」——不只是看到「下雨路湿」的相关性，而是真正理解「下雨导致路湿」的因果链，这是AI从「聪明」到「智慧」的关键跨越。",
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 1,
+      "total": 7
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "因果推断涉及概率图模型和统计学背景，Vibe复刻有较高门槛，难度偏高。",
+      "logic_moat": "贝叶斯网络+因果推断算法是真正的学术级护城河，逻辑精妙度满分。",
+      "track_fit": "金融赛道命中——因果推断在量化投资中有直接应用，可做因果驱动的投资策略，赛道满分。",
+      "growth_potential": "学术工具，面向研究者，个人副业变现路径相对窄，但金融应用场景有潜力。"
+    }
+  },
+  {
+    "date": "2026-03-09",
+    "id": "2026-03-09-001",
+    "title": "Lightricks / ComfyUI-LTXVideo",
+    "url": "https://github.com/Lightricks/ComfyUI-LTXVideo",
+    "raw_description": "LTX-Video Support for ComfyUI",
+    "description": "Lightricks官方出品的ComfyUI视频生成插件，将LTX-Video模型集成到ComfyUI工作流，让用户能用可视化节点方式生成高质量AI视频。解决LTX-Video模型使用门槛高、缺乏可视化操作界面的痛点。",
+    "metaphor": "它就像给「LTX视频生成引擎」装了一个「可视化驾驶舱」——原来需要敲代码才能驾驭的视频生成模型，现在拖拽节点就能操控，创作者变成了AI视频导演。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "ComfyUI插件开发有标准接口，但视频生成涉及多个模型组件，Cursor中等难度复刻同类插件MVP。",
+      "logic_moat": "LTX-Video的ComfyUI集成逻辑有一定技术深度，Lightricks官方背书是额外壁垒，护城河中等。",
+      "track_fit": "AI视频生成工具，未命中宠物/银发/玄学/金融/教育五大核心赛道，不得分。",
+      "growth_potential": "「AI视频生成」赛道已趋于饱和，个人副业变现路径存在但竞争激烈，潜力一般。"
+    }
+  },
+  {
+    "date": "2026-03-09",
+    "id": "2026-03-09-002",
+    "title": "the-momentum / open-wearables",
+    "url": "https://github.com/the-momentum/open-wearables",
+    "raw_description": "Self-hosted platform to unify wearable health data through one AI-ready API.",
+    "description": "可自托管的可穿戴健康数据统一平台，通过一个AI就绪的API整合来自不同设备（Apple Watch、Garmin、Fitbit等）的健康数据。解决健康数据碎片化、各平台孤岛化、无法统一AI分析的痛点。",
+    "metaphor": "它就像给你所有的健康设备装了一个「统一翻译官」——Apple Watch说英语、Garmin说法语、Fitbit说日语，现在都翻译成同一种AI能听懂的语言，你的健康数据第一次真正被统一管理。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "多设备数据适配层+统一API封装有一定复杂度，但架构清晰，Cursor中等难度复刻单设备健康数据MVP。",
+      "logic_moat": "多平台健康数据标准化协议+AI就绪接口设计是真正的业务护城河——每新增一个设备适配就加深一层壁垒，设计精妙，满分。",
+      "track_fit": "银发赛道完美命中——老人健康监测是最紧迫的刚需场景，统一健康数据API可直接赋能银发AI健康助手；宠物健康监测也是潜在赛道，满分。",
+      "growth_potential": "「AI统一管理你的全部健康数据」在小红书/即刻是超高热话题，可包装成付费健康AI订阅服务或银发关爱产品变现，增长潜力巨大。"
+    }
+  },
+  {
+    "date": "2026-03-09",
+    "id": "2026-03-09-003",
+    "title": "Free-TV / IPTV",
+    "url": "https://github.com/Free-TV/IPTV",
+    "raw_description": "M3U Playlist for free TV channels",
+    "description": "免费电视频道M3U播放列表资源，汇聚全球各国免费直播电视频道链接，是IPTV爱好者的必备资源库，14.6K星的成熟项目。今日208颗星说明有新频道更新或用户持续增长。",
+    "metaphor": "它就像一本「全球免费电视台频道表」——把全世界能免费看的直播频道链接都收录进来，想看哪国电视台，复制链接扔进播放器就行，免费全球电视随便看。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 1,
+      "total": 7
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "纯资源列表，基于此做IPTV播放器或频道管理工具，Vibecoding极易实现，满分。",
+      "logic_moat": "纯资源聚合，无算法护城河，先发优势和14.6K星是唯一壁垒，护城河薄。",
+      "track_fit": "银发赛道命中——老年人看电视是刚需，AI辅助的智能IPTV频道推荐是绝佳的银发产品切入点，赛道满分。",
+      "growth_potential": "「免费看全球电视台」在中老年用户群体有极高传播潜力，可包装成银发友好的IPTV应用变现。"
+    }
+  },
+  {
+    "date": "2026-03-10",
+    "id": "2026-03-10-001",
+    "title": "karpathy / nanochat",
+    "url": "https://github.com/karpathy/nanochat",
+    "raw_description": "The best ChatGPT that $100 can buy.",
+    "description": "Andrej Karpathy出品的极简ChatGPT实现，用100美元搭建一个最好的ChatGPT替代品。解决普通用户高额API费用和复杂部署门槛的痛点，45K星说明这是Karpathy系列中又一个爆款教学项目。",
+    "metaphor": "它就像Karpathy亲手写的「AI入门教科书」——用最少的代码、最低的成本，还原ChatGPT的核心能力，既是学习利器，又是「穷人版GPT」的完美示范，大神出手就是不一样。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 2,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "极简LLM应用封装，Karpathy风格的代码极度清晰，Cursor一天内可复刻并扩展，极易实现，满分。",
+      "logic_moat": "Karpathy的代码设计哲学是真正的护城河——极简但不失深度，教学逻辑精妙，45K星是最好的背书，护城河中等偏上。",
+      "track_fit": "教育赛道强命中——Karpathy项目是AI学习者的圣经级资源，可包装成AI教育课程或学习工具，赛道满分。",
+      "growth_potential": "「100美元搭建最好的ChatGPT」这个噱头在小红书/即刻极易引爆，可做AI教育内容变现或低成本AI工具订阅，潜力巨大。"
+    }
+  },
+  {
+    "date": "2026-03-10",
+    "id": "2026-03-10-002",
+    "title": "NousResearch / hermes-agent",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "raw_description": "The agent that grows with you",
+    "description": "NousResearch出品的「会成长的Agent」，随用户使用不断学习和进化，实现真正的个性化AI助手体验。解决现有Agent千人一面、无法个性化进化的核心痛点，2.9K星但今日358颗星增量说明爆发中。",
+    "metaphor": "它就像一个「会学习你习惯的AI管家」——不是固定程序，而是真正随着你的使用偏好、工作习惯、思维方式不断进化，越用越懂你，最终成为你的数字分身。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "个性化进化Agent涉及记忆管理+用户建模+反馈循环，有一定复杂度，Cursor中等难度复刻基础版MVP。",
+      "logic_moat": "「会成长的Agent」的用户画像构建和个性化进化逻辑是真正的业务护城河——数据飞轮效应显著，越用越难被替代，护城河满分。",
+      "track_fit": "银发/教育双赛道强命中——会成长的AI伴侣对老人和学生都是刚需，个性化AI助手是最强的情感连接产品，赛道满分。",
+      "growth_potential": "「AI终于真正懂我了」这个概念是小红书/即刻的永恒爆款话题，个性化AI订阅产品变现潜力极大。"
+    }
+  },
+  {
+    "date": "2026-03-10",
+    "id": "2026-03-10-003",
+    "title": "strands-agents / samples",
+    "url": "https://github.com/strands-agents/samples",
+    "raw_description": "Agent samples built using the Strands Agents SDK.",
+    "description": "Strands Agents SDK的官方示例集合，展示如何用Strands框架构建各类AI Agent应用，是AWS推出的新一代Agent开发框架的配套学习资源。682星但今日仅6颗星，属于新兴框架早期项目。",
+    "metaphor": "它就像一本「Strands Agent框架的实战食谱」——每个示例都是一道菜，从简单炒蛋到满汉全席，手把手教你用AWS新框架做出各种AI Agent应用，是进入Strands生态的入门钥匙。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "示例代码即教学材料，Vibecoding极易参考复刻，满分。",
+      "logic_moat": "纯示例集合，无核心算法逻辑，护城河极薄，依赖Strands框架本身的生态。",
+      "track_fit": "AWS Agent开发工具，未命中宠物/银发/玄学/金融/教育五大核心赛道，不得分。",
+      "growth_potential": "Strands框架刚起步，受众窄，个人副业变现路径不清晰，潜力一般。"
+    }
+  },
+  {
+    "date": "2026-03-10",
+    "id": "2026-03-10-004",
+    "title": "exo-explore / exo",
+    "url": "https://github.com/exo-explore/exo",
+    "raw_description": "Run frontier AI locally.",
+    "description": "本地运行前沿AI模型的框架，支持将多台设备（手机、笔记本、台式机）组成分布式集群，协同运行大模型。解决单台设备显存不足无法本地运行大模型的痛点，42K星的成熟项目。",
+    "metaphor": "它就像给你家里所有设备组了一个「AI算力联盟」——手机、平板、笔记本、台式机全部联网，算力叠加，一起跑原本需要A100的大模型，家庭设备秒变私人AI服务器集群。",
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 8
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "分布式推理涉及设备发现、网络通信、模型分片等底层技术，Vibe复刻难度较高，需要系统编程背景。",
+      "logic_moat": "多设备分布式AI推理的调度算法和模型分片策略是真正的技术护城河，42K星验证了市场认可度，护城河满分。",
+      "track_fit": "教育/银发双赛道命中——本地AI保护隐私，可做家庭隐私AI助手；银发用户对数据安全极其敏感，本地部署是核心卖点，赛道满分。",
+      "growth_potential": "「用家里的旧设备组AI集群，免费跑大模型」在小红书/即刻是超高热话题，隐私保护+免费使用双重卖点，传播潜力巨大。"
+    }
+  },
+  {
+    "date": "2026-03-10",
+    "id": "2026-03-10-005",
+    "title": "Blaizzy / mlx-audio",
+    "url": "https://github.com/Blaizzy/mlx-audio",
+    "raw_description": "A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple MLX framework.",
+    "description": "基于Apple MLX框架的全套语音处理库，支持TTS（文字转语音）、STT（语音转文字）、STS（语音转语音），专为Apple Silicon优化，本地运行零隐私泄露。解决Mac用户本地语音AI处理效率低的痛点。",
+    "metaphor": "它就像给Mac装了一套「本地语音AI工作室」——TTS帮你把文章念出来、STT帮你把会议录音转文字、STS帮你实时变声，全在本地跑，苹果芯片的能效比拉满，隐私零泄露。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 8
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "基于MLX高层API，有完整文档，Cursor可中等难度复刻语音应用MVP，如AI播客生成器或会议转录工具。",
+      "logic_moat": "MLX框架深度优化+TTS/STT/STS全链路整合是真正的技术护城河，针对Apple Silicon的专项优化难以复制，护城河中等偏上。",
+      "track_fit": "银发/教育双赛道命中——老人语音助手（不用打字，直接说话）是银发刚需；AI语音辅助学习是教育赛道热点，赛道满分。",
+      "growth_potential": "「Mac本地语音AI，完全免费不上云」在小红书/即刻极易爆，可包装成银发语音助手或AI播客工具变现，增长潜力大。"
+    }
+  },
+  {
+    "date": "2026-03-10",
+    "id": "2026-03-10-006",
+    "title": "hpcaitech / Open-Sora",
+    "url": "https://github.com/hpcaitech/Open-Sora",
+    "raw_description": "Open-Sora: Democratizing Efficient Video Production for All",
+    "description": "民主化高效视频生成的开源项目，让所有人都能用上Sora级别的AI视频生成能力。解决OpenAI Sora封闭、高成本、无法本地部署的痛点，28K星的成熟开源替代方案。",
+    "metaphor": "它就像OpenAI Sora的「开源平替」——Sora只能用网页版且价格昂贵，Open-Sora直接开源让你本地跑，视频生成民主化，人人都是AI导演。",
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 4
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "视频生成模型涉及扩散模型底层和大量GPU计算，Vibe复刻难度极高，需要深度ML背景。",
+      "logic_moat": "DiT视频生成架构有一定技术深度，但作为开源平替，护城河中等，随时可被更好的开源项目替代。",
+      "track_fit": "AI视频生成工具，未命中宠物/银发/玄学/金融/教育五大核心赛道，不得分。",
+      "growth_potential": "「免费本地跑Sora级视频生成」有一定传播潜力，但视频生成赛道趋于饱和，个人副业变现竞争激烈。"
+    }
+  },
+  {
+    "date": "2026-03-11",
+    "id": "2026-03-11-001",
+    "title": "bytedance / deer-flow",
+    "url": "https://github.com/bytedance/deer-flow",
+    "raw_description": "An open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skills and subagents, it handles different levels of tasks that could take minutes to hours.",
+    "description": "字节跳动出品的开源超级Agent框架，集沙箱、记忆、工具、技能、子Agent于一体，能处理从分钟级到小时级的复杂任务。解决现有Agent框架任务粒度粗、无法处理长时复杂任务的核心痛点，今日1443颗星增量说明爆发中。",
+    "metaphor": "它就像字节给AI Agent造了一套「特种作战指挥系统」——不是普通的问答机器人，而是能独立完成调研、写代码、创作内容的超级特工，沙箱是训练场、记忆是情报库、子Agent是特种小队，接到任务自动拆解执行，几小时后直接交付成果。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "超级Agent涉及沙箱隔离+记忆管理+子Agent协调，有一定复杂度，但字节开源代码架构清晰，Cursor中等难度复刻垂直场景MVP。",
+      "logic_moat": "长时复杂任务拆解策略+多层子Agent协同+沙箱安全执行是真正的业务护城河，字节工程团队背书，技术深度满分。",
+      "track_fit": "教育赛道强命中——SuperAgent可做AI学习助手，自动完成研究报告、代码作业；金融赛道也可做自动化投研Agent，赛道满分。",
+      "growth_potential": "「AI帮你完成几小时的复杂工作」这个概念在小红书/即刻极易引爆，字节品牌背书加持，可包装成付费AI工作助手变现，增长潜力巨大。"
+    }
+  },
+  {
+    "date": "2026-03-11",
+    "id": "2026-03-11-002",
+    "title": "theOehrly / Fast-F1",
+    "url": "https://github.com/theOehrly/Fast-F1",
+    "raw_description": "FastF1 is a python package for accessing and analyzing Formula 1 results, schedules, timing data and telemetry",
+    "description": "F1赛车数据分析Python包，提供对F1比赛结果、赛程、计时数据和遥测数据的完整访问与分析能力。解决F1数据爱好者和分析师获取、处理赛车数据门槛高的痛点，4.6K星的成熟工具，今日52颗星受F1赛季开幕驱动。",
+    "metaphor": "它就像F1车队「数据工厂的民用版」——原本只有顶级车队才能获取的赛车遥测数据、圈速分析、轮胎策略数据，现在任何人用Python几行代码就能拿到，F1迷变身数据分析师。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 6
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "高层API封装完善，文档齐全，Cursor极易复刻F1数据可视化应用或赛事预测工具，满分。",
+      "logic_moat": "赛车遥测数据解析逻辑有一定技术深度，且是F1数据领域的标准工具，护城河中等偏上。",
+      "track_fit": "体育数据分析工具，未命中宠物/银发/玄学/金融/教育五大核心赛道，不得分。",
+      "growth_potential": "F1赛季期间有传播潜力，可做F1数据可视化内容或赛事预测工具，但受众相对窄，潜力一般。"
+    }
+  },
+  {
+    "date": "2026-03-11",
+    "id": "2026-03-11-003",
+    "title": "AstrBotDevs / AstrBot",
+    "url": "https://github.com/AstrBotDevs/AstrBot",
+    "raw_description": "Agentic IM Chatbot infrastructure that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative.",
+    "description": "支持多IM平台（微信、QQ、Telegram等）的Agentic聊天机器人基础设施，集成多种LLM、插件和AI功能，可作为openclaw替代方案。解决开发者在不同IM平台部署AI助手需要重复开发的痛点，20.5K星的成熟生态。",
+    "metaphor": "它就像给AI助手配了一套「全平台通行证」——不管用户在微信、QQ还是Telegram，同一个AI大脑通吃所有平台，你只需要搭一次，用户在哪里你就在哪里。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 8
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "多平台IM集成有一定复杂度，但框架已封装好各平台适配层，Cursor中等难度复刻垂直场景AI机器人MVP。",
+      "logic_moat": "多IM平台统一接入层+插件生态是真正的业务护城河，20.5K星验证了生态成熟度，护城河中等偏上。",
+      "track_fit": "银发/教育双赛道命中——微信AI助手是银发刚需（老人都在用微信），教育AI机器人在QQ/微信也有大量场景，赛道满分。",
+      "growth_potential": "「在微信/QQ里接入AI助手」在中国市场有极高传播潜力，可包装成垂直场景AI机器人（银发助手/学习助手）付费变现。"
+    }
+  },
+  {
+    "date": "2026-03-11",
+    "id": "2026-03-11-004",
+    "title": "modelscope / sirchmunk",
+    "url": "https://github.com/modelscope/sirchmunk",
+    "raw_description": "🐿️ Sirchmunk: Raw data to self-evolving intelligence, real-time.",
+    "description": "阿里ModelScope出品的实时自进化智能框架，将原始数据转化为能自我进化的实时智能体，强调「进化」而非「训练」。解决传统AI系统静态、需要重新训练才能适应新数据的痛点，365星但今日65颗星说明刚起步。",
+    "metaphor": "它就像给AI装了一套「生物进化系统」——不是固定的神经网络，而是像生命体一样能感知环境变化、自动调整自己，原始数据进去，进化后的智能出来，越用越聪明。",
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 8
+    },
+    "is_top": true,
+    "score_reasons": {
+      "vibecoding_ease": "自进化智能涉及在线学习+实时推理+数据流处理，架构复杂，Vibe复刻难度较高，需要ML背景。",
+      "logic_moat": "实时自进化的在线学习机制是真正的算法护城河——不需要重新训练就能进化，这是AI系统的范式级突破，逻辑满分。",
+      "track_fit": "教育赛道命中——自进化AI可做真正个性化的学习助手，随学生进度自动调整；金融赛道也可做自适应量化策略，赛道满分。",
+      "growth_potential": "「AI能自己进化，越用越聪明」这个概念在小红书/即刻极易引爆，可包装成自进化AI助手产品，增长潜力大。"
+    }
+  },
+  {
+    "date": "2026-03-11",
+    "id": "2026-03-11-005",
+    "title": "volcengine / OpenViking",
+    "url": "https://github.com/volcengine/OpenViking",
+    "raw_description": "OpenViking is an open-source context database designed specifically for AI Agents(such as openclaw). OpenViking unifies the management of context (memory, resources, and skills) that Agents need through a file system paradigm, enabling hierarchical context delivery and self-evolving.",
+    "description": "火山引擎出品的专为AI Agent设计的开源上下文数据库，通过文件系统范式统一管理Agent所需的记忆、资源和技能，支持层级化上下文传递和自进化。解决Agent上下文管理混乱、各类资源孤岛化的痛点，5.6K星今日306颗星增量。",
+    "metaphor": "它就像给AI Agent建了一个「统一的大脑存储系统」——记忆放哪里、技能怎么调用、资源如何传递，全部用文件系统的方式标准化管理，Agent的「工作记忆」第一次有了真正的秩序。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 3,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 6
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "上下文数据库的层级管理和文件系统范式有一定复杂度，但接口清晰，Cursor中等难度复刻Agent记忆管理MVP。",
+      "logic_moat": "文件系统范式的Agent上下文统一管理逻辑是真正的架构护城河——层级化传递+自进化设计精妙，满分。",
+      "track_fit": "AI Agent基础设施，未命中宠物/银发/玄学/金融/教育五大核心赛道，不得分。",
+      "growth_potential": "面向Agent开发者，受众相对窄，个人副业变现路径不清晰，潜力一般。"
+    }
+  },
+  {
+    "date": "2026-03-11",
+    "id": "2026-03-11-006",
+    "title": "apify / crawlee-python",
+    "url": "https://github.com/apify/crawlee-python",
+    "raw_description": "Crawlee—A web scraping and browser automation library for Python to build reliable crawlers. Extract data for AI, LLMs, RAG, or GPTs. Download HTML, PDF, JPG, PNG, and other files from websites. Works with Parsel, BeautifulSoup, Playwright, and raw HTTP. Both headful and headless mode. With proxy rotation.",
+    "description": "Python网络爬虫和浏览器自动化库，专为AI/LLM/RAG数据采集设计，支持Parsel、BeautifulSoup、Playwright，内置代理轮换，构建可靠爬虫的首选工具。解决AI应用数据采集不稳定、反爬绕过繁琐的痛点，8.4K星的成熟工具。",
+    "metaphor": "它就像给AI数据采集配了一套「专业潜水装备」——普通爬虫是游泳，Crawlee是深潜，JS渲染、代理轮换、反爬绕过全套搞定，专门为给AI喂数据而生。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "is_top": false,
+    "score_reasons": {
+      "vibecoding_ease": "爬虫框架有完整文档和高层API，Cursor中等难度复刻垂直场景数据采集工具MVP。",
+      "logic_moat": "代理轮换+反爬策略+多引擎支持有一定技术深度，但竞品（Scrapy、playwright等）成熟，护城河中等。",
+      "track_fit": "数据采集工具，未命中宠物/银发/玄学/金融/教育五大核心赛道，不得分。",
+      "growth_potential": "开发者工具，受众有限，个人副业变现路径不清晰，潜力一般。"
+    }
+  },
+  {
+    "date": "2026-03-13",
+    "id": "2026-03-13-003",
+    "title": "langflow-ai / openrag",
+    "url": "https://github.com/langflow-ai/openrag",
+    "raw_description": "OpenRAG is a comprehensive, single package Retrieval-Augmented Generation platform built on Langflow, Docling, and Opensearch.",
+    "description": "基于Langflow、Docling和Opensearch构建的综合RAG平台，单包集成文档解析、向量检索、生成全链路。解决RAG系统搭建需要拼接多个组件、配置繁琐的痛点，1.4K星的新兴项目，今日491颗星爆发式增长。",
+    "metaphor": "它就像把RAG的「三件套」（文档解析+向量数据库+LLM生成）打包成一个「一键开箱的全餐套餐」——原来需要分别配置Docling、Opensearch、Langflow，现在一个pip install全搞定，知识库问答系统30分钟上线。",
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 2,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "score_reasons": {
+      "vibecoding_ease": "单包集成RAG平台，高层API封装完善，Cursor极易复刻垂直场景知识库问答MVP，满分。",
+      "logic_moat": "RAG全链路集成+Docling文档解析+Opensearch检索的组合有一定技术深度，但竞品（RAGFlow等）成熟，护城河中等。",
+      "track_fit": "教育赛道命中——企业/学校知识库问答是刚需；金融赛道也可做财报RAG分析系统，赛道满分。",
+      "growth_potential": "「一键搭建企业知识库AI」在小红书/即刻有极高传播潜力，可包装成付费RAG解决方案或SaaS产品变现。"
+    },
+    "is_top": true
+  },
+  {
+    "date": "2026-03-13",
+    "id": "2026-03-13-004",
+    "title": "vectorize-io / hindsight",
+    "url": "https://github.com/vectorize-io/hindsight",
+    "raw_description": "Hindsight: Agent Memory That Learns",
+    "description": "会学习的Agent记忆系统，不只是简单存储对话历史，而是从交互中主动学习和提炼记忆，让Agent越用越聪明。解决现有Agent记忆系统静态、无法自我优化的核心痛点，3K星今日300颗星增量。",
+    "metaphor": "它就像给Agent装了一个「会自我进化的记忆皮质」——普通记忆是录音机，只会回放；Hindsight是大脑，会从每次对话中提炼经验、更新认知，用过100次之后的Agent和第一次用的完全不同，越用越懂你。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "score_reasons": {
+      "vibecoding_ease": "记忆学习涉及记忆提炼算法+向量存储+反馈循环，有一定复杂度，Cursor中等难度复刻基础版MVP。",
+      "logic_moat": "「会学习的记忆」的自我进化机制是真正的业务护城河——记忆提炼策略和个性化学习逻辑设计精妙，满分。",
+      "track_fit": "银发/教育双赛道强命中——会学习的AI伴侣记住老人的习惯和偏好，越用越贴心；AI家教记住学生的弱点，越教越精准，赛道满分。",
+      "growth_potential": "「AI终于会从经验中学习了」这个概念在小红书/即刻极易爆，个性化AI订阅产品变现潜力极大。"
+    },
+    "is_top": true
+  },
+  {
+    "date": "2026-03-13",
+    "id": "2026-03-13-005",
+    "title": "sansan0 / TrendRadar",
+    "url": "https://github.com/sansan0/TrendRadar",
+    "raw_description": "AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts. 告别信息过载，你的AI舆情监控助手与热点筛选工具！",
+    "description": "AI驱动的多平台舆情监控与热点筛选工具，聚合多平台热点+RSS订阅，支持关键词精准筛选，AI智能分析简报直推手机，支持MCP架构和Docker部署，集成微信/飞书/钉钉等多渠道推送。解决信息过载、热点追踪效率低的痛点，48K星的超级爆款项目。",
+    "metaphor": "它就像给你配了一个「全网信息侦察卫星」——同时盯着微博、知乎、Twitter、RSS等所有信息源，AI自动过滤噪音、提炼精华、生成简报，直接推到你手机，你只需要喝咖啡等结论。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 9
+    },
+    "score_reasons": {
+      "vibecoding_ease": "多平台数据采集+AI分析+推送通知有一定复杂度，但Docker一键部署说明架构成熟，Cursor中等难度复刻垂直场景MVP。",
+      "logic_moat": "多源数据融合+AI智能筛选+MCP架构的组合是真正的业务护城河，48K星验证了市场认可度，逻辑护城河满分。",
+      "track_fit": "金融赛道强命中——舆情监控是量化投资的核心数据源，AI简报直推是最高效的信息获取方式；教育赛道也可做学术热点追踪，赛道满分。",
+      "growth_potential": "「AI帮你过滤信息噪音，只推你需要的」这个概念是小红书/即刻永恒爆款，可包装成付费信息订阅服务或企业舆情监控SaaS变现。"
+    },
+    "is_top": true
+  },
+  {
+    "date": "2026-03-13",
+    "id": "2026-03-13-001",
+    "title": "microsoft / BitNet",
+    "url": "https://github.com/microsoft/BitNet",
+    "raw_description": "Official inference framework for 1-bit LLMs",
+    "description": "微软官方出品的1-bit大语言模型推理框架，将LLM的参数量化到1-bit，大幅降低推理所需的内存和算力。解决大模型在边缘设备和低算力环境下无法部署的核心痛点，32K星的爆款工业级项目，今日2149颗星说明持续高热。",
+    "metaphor": "它就像给LLM做了一次「极限瘦身手术」——把每个参数从32位浮点数压缩成1个bit，体积缩小32倍，速度飙升，原本需要A100才能跑的大模型，现在树莓派都能驾驭，这是AI普惠化的核武器。",
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 3,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 8
+    },
+    "score_reasons": {
+      "vibecoding_ease": "1-bit量化推理涉及底层CUDA算子和模型量化技术，Vibe复刻极难，需要深度ML系统知识，难度高。",
+      "logic_moat": "1-bit LLM推理的量化算法是真正的技术护城河——微软研究院级别的创新，逻辑精妙度满分。",
+      "track_fit": "教育赛道命中——边缘设备部署使得本地AI教育助手成为可能；银发赛道也可做低成本本地AI陪伴，赛道满分。",
+      "growth_potential": "「手机本地跑大模型」这个概念在小红书/即刻极易引爆，边缘AI普惠化是下一个超级赛道，增长潜力巨大。"
+    },
+    "is_top": false
+  },
+  {
+    "date": "2026-03-13",
+    "id": "2026-03-13-002",
+    "title": "fishaudio / fish-speech",
+    "url": "https://github.com/fishaudio/fish-speech",
+    "raw_description": "SOTA Open Source TTS",
+    "description": "当前SOTA级别的开源文字转语音系统，支持多语言、多音色、极低延迟，音质媲美商业TTS服务。解决开发者无法低成本获取高质量TTS服务的痛点，26K星的成熟项目，今日630颗星说明持续活跃。",
+    "metaphor": "它就像给AI应用装了一副「顶级播音员的嗓子」——开源免费，音质媲美微软Azure TTS，想让AI说什么腔调就什么腔调，银发陪伴、儿童故事、有声书全拿下。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 8
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于预训练TTS模型的高层API，Cursor可中等难度复刻语音应用MVP，如AI有声书生成器或语音助手。",
+      "logic_moat": "SOTA TTS的声学模型和多音色克隆技术有真正的技术壁垒，开源生态护城河中等偏上。",
+      "track_fit": "银发/教育双赛道命中——老人语音助手是银发刚需（不用打字，直接听说）；AI讲故事、英语口语练习是教育爆款，赛道满分。",
+      "growth_potential": "「AI帮你克隆声音/生成有声书」在小红书/抖音是永恒爆款话题，可包装成声音克隆工具或AI播客生成器变现，潜力极大。"
+    },
+    "is_top": false
+  },
+  {
+    "date": "2026-03-13",
+    "id": "2026-03-13-006",
+    "title": "google / adk-docs",
+    "url": "https://github.com/google/adk-docs",
+    "raw_description": "An open-source, code-first toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",
+    "description": "Google出品的开源代码优先AI Agent开发工具包，支持构建、评估、部署复杂AI Agent，强调灵活性和可控性。解决开发者构建生产级Agent缺乏官方工具链的痛点，1.2K星的新兴项目，Google背书是最大加分项。",
+    "metaphor": "它就像Google给AI Agent开发者送来了一套「官方工程图纸」——不只是示例代码，而是从设计到评估到部署的完整工程体系，Google亲自背书，意味着这将成为Agent开发的行业标准。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "Google ADK提供高层API和完整文档，Cursor中等难度复刻Agent应用MVP，有官方示例参考。",
+      "logic_moat": "Google官方工具链+评估框架有一定技术深度，但作为文档类项目，核心护城河在于生态绑定，护城河中等。",
+      "track_fit": "AI Agent开发工具，未命中宠物/银发/玄学/金融/教育五大核心赛道，不得分。",
+      "growth_potential": "Google ADK将成为Agent开发标准，早期学习者有先发优势，可包装成Google ADK教程或Agent开发课程变现，潜力中等偏上。"
+    },
+    "is_top": false
+  },
+  {
+    "date": "2026-03-13",
+    "id": "2026-03-13-007",
+    "title": "searxng / searxng",
+    "url": "https://github.com/searxng/searxng",
+    "raw_description": "SearXNG is a free internet metasearch engine which aggregates results from various search services and databases. Users are neither tracked nor profiled.",
+    "description": "免费的隐私保护元搜索引擎，聚合来自各大搜索服务的结果，不追踪用户、不建立用户画像。解决主流搜索引擎隐私泄露和算法茧房问题，26K星的成熟开源项目，今日85颗星。",
+    "metaphor": "它就像互联网的「匿名侦探」——同时向Google、Bing、DuckDuckGo等所有搜索引擎发出查询，汇总结果返回给你，但全程不留下任何你的踪迹，搜索从此不被监视。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "元搜索引擎有成熟架构，Docker一键部署，Cursor中等难度复刻垂直场景搜索工具MVP。",
+      "logic_moat": "多源搜索聚合+隐私保护机制有一定技术深度，但竞品（DuckDuckGo等）成熟，护城河中等。",
+      "track_fit": "搜索工具，未命中宠物/银发/玄学/金融/教育五大核心赛道，不得分。",
+      "growth_potential": "隐私保护概念在小红书有一定传播力，但搜索引擎赛道个人副业变现路径不清晰，潜力一般。"
+    },
+    "is_top": false
+  },
+  {
+    "date": "2026-03-13",
+    "id": "2026-03-13-008",
+    "title": "langchain-ai / deepagents",
+    "url": "https://github.com/langchain-ai/deepagents",
+    "raw_description": "Deep Agents is an agent harness built on langchain and langgraph. Deep Agents are equipped with a planning tool, a filesystem backend, and the ability to spawn subagents - making them well-equipped to handle complex agentic tasks.",
+    "description": "基于LangChain和LangGraph构建的深度Agent框架，配备规划工具、文件系统后端和子Agent生成能力，专为处理复杂Agent任务设计。解决现有Agent框架难以处理多步骤复杂任务的痛点，10K星今日126颗星。",
+    "metaphor": "它就像给LangChain装了一个「战略参谋部」——不只是单个Agent执行任务，而是有专门的规划Agent负责拆解任务、文件系统Agent负责持久化、子Agent负责并行执行，复杂任务分而治之，效率倍增。",
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "LangChain生态有完整文档，但多层Agent协同有一定复杂度，Cursor中等难度复刻垂直场景Agent MVP。",
+      "logic_moat": "规划+文件系统+子Agent的三层架构有一定设计深度，LangChain生态护城河中等。",
+      "track_fit": "AI Agent开发框架，未命中宠物/银发/玄学/金融/教育五大核心赛道，不得分。",
+      "growth_potential": "LangChain生态受众广，但Agent框架赛道竞争激烈，个人副业变现路径不清晰，潜力一般。"
+    },
+    "is_top": false
+  }
+]

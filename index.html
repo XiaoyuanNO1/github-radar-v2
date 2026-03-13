@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub AI 雷达 · 每日趋势精选</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <span class="logo-icon">📡</span>
+          <div>
+            <h1>GitHub AI 雷达</h1>
+            <p>每日扫描趋势榜 · VC 视角深度解读</p>
+          </div>
+        </div>
+        <div class="header-meta">
+          <span id="last-update">加载中...</span>
+          <a href="https://github.com/trending/python?since=daily" target="_blank" class="btn-outline">
+            🔗 GitHub Trending
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== STATS BAR ===== -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-inner">
+        <div class="stat-item">
+          <span class="stat-num" id="stat-total">—</span>
+          <span class="stat-label">累计归档</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" id="stat-today">—</span>
+          <span class="stat-label">今日新增</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" id="stat-days">—</span>
+          <span class="stat-label">已扫描天数</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" id="stat-avg">—</span>
+          <span class="stat-label">今日均分</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" id="stat-top-score">—</span>
+          <span class="stat-label">今日最高分</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <!-- ===== TOP 3 SECTION ===== -->
+    <section class="section" id="top3-section">
+      <div class="section-header">
+        <div class="section-title-group">
+          <span class="section-badge">🏆 今日精选</span>
+          <h2 class="section-title">Top 3 黑马项目</h2>
+          <p class="section-subtitle">今日评分最高、最具 Vibecoding 变现潜力的三个项目</p>
+        </div>
+        <div class="date-filter">
+          <label for="top3-date">查看日期</label>
+          <select id="top3-date"></select>
+        </div>
+      </div>
+      <div class="top3-grid" id="top3-grid">
+        <div class="loading-placeholder">
+          <div class="spinner"></div>
+          <p>正在加载数据...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HISTORY SECTION ===== -->
+    <section class="section" id="history-section">
+      <div class="section-header">
+        <div class="section-title-group">
+          <span class="section-badge">📚 历史项目榜单</span>
+          <h2 class="section-title">所有归档项目</h2>
+          <p class="section-subtitle">共 <span id="total-count">0</span> 个项目 · 点击表头排序</p>
+        </div>
+        <div class="filter-bar">
+          <div class="search-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="search-input" placeholder="搜索项目名称或描述..." />
+          </div>
+          <select id="sort-select">
+            <option value="total_desc">总分 ↓</option>
+            <option value="total_asc">总分 ↑</option>
+            <option value="date_desc">日期 ↓</option>
+            <option value="date_asc">日期 ↑</option>
+            <option value="vibecoding_desc">Vibecoding 难度 ↓</option>
+            <option value="logic_desc">逻辑护城河 ↓</option>
+            <option value="growth_desc">增长潜力 ↓</option>
+          </select>
+          <!-- 赛道筛选标签 -->
+          <div class="track-filter" id="track-filter">
+            <button class="track-btn active" data-track="all">全部</button>
+            <button class="track-btn" data-track="top">🏆 精选</button>
+            <button class="track-btn" data-track="high">高分 ≥8</button>
+            <button class="track-btn" data-track="vibe">⚡ Vibe ≥3</button>
+            <button class="track-btn" data-track="growth">📈 增长 ≥2</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="history-table" id="history-table">
+          <thead>
+            <tr>
+              <th class="col-rank">#</th>
+              <th class="col-title sortable" data-sort="title">项目名称</th>
+              <th class="col-date sortable" data-sort="date">日期</th>
+              <th class="col-score sortable active" data-sort="total">总分</th>
+              <th class="col-score sortable" data-sort="vibecoding_ease">Vibe</th>
+              <th class="col-score sortable" data-sort="logic_moat">护城河</th>
+              <th class="col-score sortable" data-sort="track_fit">赛道</th>
+              <th class="col-score sortable" data-sort="growth_potential">增长</th>
+              <th class="col-top">精选</th>
+            </tr>
+          </thead>
+          <tbody id="history-tbody">
+            <tr><td colspan="9" class="loading-cell"><div class="spinner"></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- 分页控件 -->
+      <div class="pagination" id="pagination"></div>
+    </section>
+
+  </main>
+
+  <!-- ===== DETAIL MODAL ===== -->
+  <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>🤖 由 AI 自动分析 · 每日北京时间 07:00 更新 · 数据来源 <a href="https://github.com/trending/python?since=daily" target="_blank">GitHub Trending</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
