@@ -10,6 +10,39 @@ let trackFilter = 'all';
 let currentPage = 1;       // 新增：当前页
 const PAGE_SIZE = 15;      // 新增：每页条数
 
+// Stars 缓存
+const starsCache = {};
+
+// ===== 从 GitHub API 获取 Stars =====
+async function fetchStars(repoUrl) {
+  if (!repoUrl) return null;
+  // 从 URL 提取 owner/repo
+  const match = repoUrl.match(/github\.com\/([^/]+\/[^/]+)/);
+  if (!match) return null;
+  const repo = match[1].replace(/\/$/, '');
+  if (starsCache[repo] !== undefined) return starsCache[repo];
+  try {
+    const res = await fetch(`https://api.github.com/repos/${repo}`, {
+      headers: { 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (!res.ok) { starsCache[repo] = null; return null; }
+    const data = await res.json();
+    const stars = data.stargazers_count;
+    starsCache[repo] = stars;
+    return stars;
+  } catch {
+    starsCache[repo] = null;
+    return null;
+  }
+}
+
+// 格式化 Stars 数字
+function formatStars(n) {
+  if (n === null || n === undefined) return '—';
+  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+  return String(n);
+}
+
 // ===== 初始化 =====
 async function init() {
   try {
@@ -28,7 +61,7 @@ async function init() {
     document.getElementById('top3-grid').innerHTML =
       `<div class="empty-state" style="grid-column:1/-1"><div class="icon">⚠️</div><p>数据加载失败，请确认 radar_history.json 与 index.html 在同一目录</p></div>`;
     document.getElementById('history-tbody').innerHTML =
-      `<tr><td colspan="9" class="loading-cell"><div class="empty-state"><div class="icon">⚠️</div><p>无数据</p></div></td></tr>`;
+      `<tr><td colspan="10" class="loading-cell"><div class="empty-state"><div class="icon">⚠️</div><p>无数据</p></div></td></tr>`;
   }
 }
 
@@ -45,16 +78,6 @@ function updateStats() {
   document.getElementById('stat-today').textContent = todayProjects.length;
   // 已扫描天数
   document.getElementById('stat-days').textContent = dates.length;
-  // 今日均分
-  const avg = todayProjects.length
-    ? (todayProjects.reduce((s, p) => s + p.scores.total, 0) / todayProjects.length).toFixed(1)
-    : '—';
-  document.getElementById('stat-avg').textContent = avg;
-  // 今日最高分
-  const topScore = todayProjects.length
-    ? Math.max(...todayProjects.map(p => p.scores.total))
-    : '—';
-  document.getElementById('stat-top-score').textContent = topScore;
 }
 
 // ===== 更新最后更新时间 =====
@@ -145,10 +168,21 @@ function renderTop3(date) {
           <span class="num">${s.total}</span>
           <span class="denom">/10</span>
         </div>
-        <span class="card-date">${p.date}</span>
+        <div class="card-footer-right">
+          <span class="card-stars" id="stars-card-${p.id}">⭐ —</span>
+          <span class="card-date">${p.date}</span>
+        </div>
       </div>
     </div>`;
   }).join('');
+
+  // 异步加载 Stars
+  tops.forEach(p => {
+    fetchStars(p.url).then(stars => {
+      const el = document.getElementById(`stars-card-${p.id}`);
+      if (el) el.textContent = '⭐ ' + formatStars(stars);
+    });
+  });
 }
 
 // ===== 计算评分样式 =====
@@ -220,7 +254,7 @@ function renderHistory() {
   const tbody = document.getElementById('history-tbody');
 
   if (!data.length) {
-    tbody.innerHTML = `<tr><td colspan="9"><div class="empty-state"><div class="icon">🔍</div><p>没有找到匹配的项目</p></div></td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="10"><div class="empty-state"><div class="icon">🔍</div><p>没有找到匹配的项目</p></div></td></tr>`;
     renderPagination(0, 1, totalItems);
     return;
   }
@@ -238,6 +272,7 @@ function renderHistory() {
         <span class="project-desc-short">${p.description}</span>
       </td>
       <td class="col-date"><span class="date-tag">${p.date}</span></td>
+      <td class="col-stars"><span class="stars-tag" id="stars-${p.id}">⭐ —</span></td>
       <td class="col-score"><span class="score-chip total ${scoreClass(s.total, 10)}">${s.total}</span></td>
       <td class="col-score"><span class="score-chip ${scoreClass(s.vibecoding_ease, 3)}">${s.vibecoding_ease}</span></td>
       <td class="col-score"><span class="score-chip ${scoreClass(s.logic_moat, 3)}">${s.logic_moat}</span></td>
@@ -248,6 +283,14 @@ function renderHistory() {
   }).join('');
 
   renderPagination(currentPage, totalPages, totalItems);
+
+  // 异步加载当页 Stars
+  pageData.forEach(p => {
+    fetchStars(p.url).then(stars => {
+      const el = document.getElementById(`stars-${p.id}`);
+      if (el) el.textContent = '⭐ ' + formatStars(stars);
+    });
+  });
 }
 
 // ===== 渲染分页控件 =====
@@ -304,16 +347,20 @@ function openModal(id) {
   const s = p.scores;
   const r = p.score_reasons || {};
 
+  // 生成使用场景文本（基于评分和描述智能推断）
+  const usageScene = generateUsageScene(p);
+
   document.getElementById('modal-content').innerHTML = `
     <div class="modal-header">
       <div class="modal-rank-label">${p.is_top ? '🏆 今日精选' : '📦 归档项目'} · ${p.date}</div>
       <div class="modal-title">
         <a href="${p.url}" target="_blank">${p.title}</a>
       </div>
+      <div class="modal-stars-row" id="modal-stars-${p.id}">⭐ 加载中...</div>
     </div>
 
     <div class="modal-body-grid">
-      <!-- 左栏：简介 + 比喻 + 链接 -->
+      <!-- 左栏：简介 + 比喻 + 使用场景 -->
       <div class="modal-body-left">
         <div class="modal-section">
           <div class="modal-section-label">项目简介</div>
@@ -323,12 +370,13 @@ function openModal(id) {
           <div class="modal-section-label">生动比喻</div>
           <div class="modal-metaphor">${p.metaphor}</div>
         </div>
-        <a href="${p.url}" target="_blank" class="modal-link-btn">
-          🔗 前往 GitHub 查看项目
-        </a>
+        <div class="modal-section">
+          <div class="modal-section-label">使用场景</div>
+          <div class="modal-usage">${usageScene}</div>
+        </div>
       </div>
 
-      <!-- 右栏：评分详情 -->
+      <!-- 右栏：评分详情 + 综合总分 -->
       <div class="modal-body-right">
         <div class="modal-section">
           <div class="modal-section-label">评分详情</div>
@@ -400,6 +448,62 @@ function openModal(id) {
 
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
+
+  // 异步加载弹窗 Stars
+  fetchStars(p.url).then(stars => {
+    const el = document.getElementById(`modal-stars-${p.id}`);
+    if (el) el.textContent = '⭐ ' + formatStars(stars) + ' Stars';
+  });
+}
+
+// ===== 生成使用场景 =====
+function generateUsageScene(p) {
+  const s = p.scores;
+  const desc = (p.description || '') + ' ' + (p.raw_description || '');
+  const descLower = desc.toLowerCase();
+
+  const scenes = [];
+
+  // 根据 Vibecoding 分数
+  if (s.vibecoding_ease >= 3) {
+    scenes.push('🛠️ <strong>独立开发者快速落地</strong>：Vibecoding 友好，可用 Cursor/Claude 在 1-2 天内搭出可用 MVP，适合快速验证想法');
+  } else if (s.vibecoding_ease >= 2) {
+    scenes.push('🛠️ <strong>小团队产品原型</strong>：技术门槛适中，适合 2-3 人小团队用 AI 辅助开发完整产品');
+  }
+
+  // 根据逻辑护城河
+  if (s.logic_moat >= 3) {
+    scenes.push('🏢 <strong>企业级工具集成</strong>：业务逻辑复杂度高，适合作为企业内部工具或 SaaS 产品的核心模块');
+  } else if (s.logic_moat <= 1) {
+    scenes.push('📦 <strong>开源二次开发</strong>：逻辑护城河低，适合 Fork 后定制化改造，打造差异化版本');
+  }
+
+  // 根据增长潜力
+  if (s.growth_potential >= 2) {
+    scenes.push('📢 <strong>社群传播与副业变现</strong>：增长潜力强，可通过技术博客、视频教程等方式传播，适合做付费课程或工具订阅');
+  }
+
+  // 根据赛道契合
+  if (s.track_fit >= 2) {
+    scenes.push('💰 <strong>垂直赛道变现</strong>：赛道契合度高，可针对宠物/银发/教育/金融等细分市场打造专属产品');
+  }
+
+  // 根据描述关键词补充
+  if (descLower.includes('agent') || descLower.includes('ai')) {
+    scenes.push('🤖 <strong>AI 应用开发参考</strong>：适合作为构建 AI Agent 或智能助手产品的技术参考与灵感来源');
+  }
+  if (descLower.includes('api') || descLower.includes('sdk')) {
+    scenes.push('🔌 <strong>开发者工具链集成</strong>：提供 API/SDK 接口，适合集成到现有开发工作流或产品中');
+  }
+
+  // 保证至少2条，最多3条
+  const result = scenes.slice(0, 3);
+  if (result.length === 0) {
+    result.push('🔍 <strong>技术学习与研究</strong>：适合作为学习参考，了解该领域的最新技术实践');
+    result.push('🛠️ <strong>工具链扩展</strong>：可集成到现有技术栈，提升开发效率');
+  }
+
+  return result.map(s => `<div class="usage-scene-item">${s}</div>`).join('');
 }
 
 // ===== 关闭 Modal =====
