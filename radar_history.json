@@ -3437,5 +3437,1005 @@
       "growth_potential": "基于 Stars 数量（27179）估算"
     },
     "is_top": false
+  },
+  {
+    "id": "24bd78f7",
+    "date": "2026-03-15",
+    "title": "volcengine/OpenViking",
+    "url": "https://github.com/volcengine/OpenViking",
+    "raw_description": "OpenViking is an open-source context database designed specifically for AI Agents(such as openclaw). OpenViking unifies the management of context (memory, resources, and skills) that Agents need through a file system paradigm, enabling hierarchical context delivery and self-evolving.",
+    "description": "OpenViking is an open-source context dat",
+    "metaphor": "这是一个 python 领域的开源工具项目",
+    "language": "python",
+    "stars": 10434,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（10434）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "c2d3b932",
+    "date": "2026-03-15",
+    "title": "anthropics/claude-plugins-official",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "raw_description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+    "description": "Official, Anthropic-managed directory of",
+    "metaphor": "这是一个 python 领域的开源工具项目",
+    "language": "python",
+    "stars": 11253,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（11253）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "7f69fec7",
+    "date": "2026-03-15",
+    "title": "dimensionalOS/dimos",
+    "url": "https://github.com/dimensionalOS/dimos",
+    "raw_description": "The Dimensional Framework",
+    "description": "The Dimensional Framework",
+    "metaphor": "这是一个 python 领域的开源工具项目",
+    "language": "python",
+    "stars": 838,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（838）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "331f7312",
+    "date": "2026-03-15",
+    "title": "p-e-w/heretic",
+    "url": "https://github.com/p-e-w/heretic",
+    "raw_description": "Fully automatic censorship removal for language models",
+    "description": "Fully automatic censorship removal for l",
+    "metaphor": "这是一个 python 领域的开源工具项目",
+    "language": "python",
+    "stars": 13674,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（13674）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "f23de2af",
+    "date": "2026-03-15",
+    "title": "langflow-ai/openrag",
+    "url": "https://github.com/langflow-ai/openrag",
+    "raw_description": "OpenRAG is a comprehensive, single package Retrieval-Augmented Generation platform built on Langflow, Docling, and Opensearch.",
+    "description": "OpenRAG is a comprehensive, single packa",
+    "metaphor": "这是一个 python 领域的开源工具项目",
+    "language": "python",
+    "stars": 2689,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（2689）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "7d1c6162",
+    "date": "2026-03-15",
+    "title": "fishaudio/fish-speech",
+    "url": "https://github.com/fishaudio/fish-speech",
+    "raw_description": "SOTA Open Source TTS",
+    "description": "SOTA Open Source TTS",
+    "metaphor": "这是一个 python 领域的开源工具项目",
+    "language": "python",
+    "stars": 27196,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（27196）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "fdd87e85",
+    "date": "2026-03-15",
+    "title": "666ghj/MiroFish",
+    "url": "https://github.com/666ghj/MiroFish",
+    "raw_description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
+    "description": "A Simple and Universal Swarm Intelligenc",
+    "metaphor": "这是一个 python 领域的开源工具项目",
+    "language": "python",
+    "stars": 23907,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（23907）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "dd8cec2f",
+    "date": "2026-03-15",
+    "title": "vectorize-io/hindsight",
+    "url": "https://github.com/vectorize-io/hindsight",
+    "raw_description": "Hindsight: Agent Memory That Learns",
+    "description": "Hindsight: Agent Memory That Learns",
+    "metaphor": "这是一个 python 领域的开源工具项目",
+    "language": "python",
+    "stars": 3911,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（3911）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "8d415ec5",
+    "date": "2026-03-15",
+    "title": "microsoft/BitNet",
+    "url": "https://github.com/microsoft/BitNet",
+    "raw_description": "Official inference framework for 1-bit LLMs",
+    "description": "Official inference framework for 1-bit L",
+    "metaphor": "这是一个 python 领域的开源工具项目",
+    "language": "python",
+    "stars": 34540,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（34540）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "cd7a5fe2",
+    "date": "2026-03-15",
+    "title": "topoteretes/cognee",
+    "url": "https://github.com/topoteretes/cognee",
+    "raw_description": "Knowledge Engine for AI Agent Memory in 6 lines of code",
+    "description": "Knowledge Engine for AI Agent Memory in ",
+    "metaphor": "这是一个 python 领域的开源工具项目",
+    "language": "python",
+    "stars": 13464,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（13464）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "8dad038a",
+    "date": "2026-03-15",
+    "title": "mrdoob/three.js",
+    "url": "https://github.com/mrdoob/three.js",
+    "raw_description": "JavaScript 3D Library.",
+    "description": "JavaScript 3D Library.",
+    "metaphor": "这是一个 javascript 领域的开源工具项目",
+    "language": "javascript",
+    "stars": 111359,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（111359）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "0f5710f5",
+    "date": "2026-03-15",
+    "title": "FreeTubeApp/FreeTube",
+    "url": "https://github.com/FreeTubeApp/FreeTube",
+    "raw_description": "An Open Source YouTube app for privacy",
+    "description": "An Open Source YouTube app for privacy",
+    "metaphor": "这是一个 javascript 领域的开源工具项目",
+    "language": "javascript",
+    "stars": 20344,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（20344）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "b7697025",
+    "date": "2026-03-15",
+    "title": "qist/tvbox",
+    "url": "https://github.com/qist/tvbox",
+    "raw_description": "OK影视、tvbox配置文件，如果喜欢，请Fork自用。使用前请仔细阅读仓库说明，一旦使用将被视为你已了解。",
+    "description": "OK影视、tvbox配置文件，如果喜欢，请Fork自用。使用前请仔细阅读仓库说明",
+    "metaphor": "这是一个 javascript 领域的开源工具项目",
+    "language": "javascript",
+    "stars": 8499,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（8499）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "06e781e7",
+    "date": "2026-03-15",
+    "title": "gsd-build/get-shit-done",
+    "url": "https://github.com/gsd-build/get-shit-done",
+    "raw_description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
+    "description": "A light-weight and powerful meta-prompti",
+    "metaphor": "这是一个 javascript 领域的开源工具项目",
+    "language": "javascript",
+    "stars": 30043,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（30043）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "ee2d269d",
+    "date": "2026-03-15",
+    "title": "SheepChef/Abracadabra",
+    "url": "https://github.com/SheepChef/Abracadabra",
+    "raw_description": "Abracadabra 魔曰，古文风文本加密工具",
+    "description": "Abracadabra 魔曰，古文风文本加密工具",
+    "metaphor": "这是一个 javascript 领域的开源工具项目",
+    "language": "javascript",
+    "stars": 2298,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（2298）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "bcd5b398",
+    "date": "2026-03-15",
+    "title": "jaywcjlove/awesome-mac",
+    "url": "https://github.com/jaywcjlove/awesome-mac",
+    "raw_description": " Now we have become very big, Different from the original idea. Collect premium software in various categories.",
+    "description": " Now we have become very big, Different",
+    "metaphor": "这是一个 javascript 领域的开源工具项目",
+    "language": "javascript",
+    "stars": 100174,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（100174）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "15253764",
+    "date": "2026-03-15",
+    "title": "sub-store-org/Sub-Store",
+    "url": "https://github.com/sub-store-org/Sub-Store",
+    "raw_description": "Advanced Subscription Manager for QX, Loon, Surge, Stash, Egern and Shadowrocket!",
+    "description": "Advanced Subscription Manager for QX, Lo",
+    "metaphor": "这是一个 javascript 领域的开源工具项目",
+    "language": "javascript",
+    "stars": 8909,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（8909）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "c9a5cc80",
+    "date": "2026-03-15",
+    "title": "mui/material-ui",
+    "url": "https://github.com/mui/material-ui",
+    "raw_description": "Material UI: Comprehensive React component library that implements Google's Material Design. Free forever.",
+    "description": "Material UI: Comprehensive React compone",
+    "metaphor": "这是一个 javascript 领域的开源工具项目",
+    "language": "javascript",
+    "stars": 98014,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（98014）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "4f297c53",
+    "date": "2026-03-15",
+    "title": "alam00000/bentopdf",
+    "url": "https://github.com/alam00000/bentopdf",
+    "raw_description": "A Privacy First PDF Toolkit",
+    "description": "A Privacy First PDF Toolkit",
+    "metaphor": "这是一个 javascript 领域的开源工具项目",
+    "language": "javascript",
+    "stars": 12044,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（12044）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "5f537e19",
+    "date": "2026-03-15",
+    "title": "SynkraAI/aiox-core",
+    "url": "https://github.com/SynkraAI/aiox-core",
+    "raw_description": "Synkra AIOS: AI-Orchestrated System for Full Stack Development - Core Framework v4.0",
+    "description": "Synkra AIOS: AI-Orchestrated System for ",
+    "metaphor": "这是一个 javascript 领域的开源工具项目",
+    "language": "javascript",
+    "stars": 2276,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（2276）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "87019fa4",
+    "date": "2026-03-15",
+    "title": "InsForge/InsForge",
+    "url": "https://github.com/InsForge/InsForge",
+    "raw_description": "Give agents everything they need to ship fullstack apps. The backend built for agentic development.",
+    "description": "Give agents everything they need to ship",
+    "metaphor": "这是一个 typescript 领域的开源工具项目",
+    "language": "typescript",
+    "stars": 4130,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（4130）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "8a9e0fd6",
+    "date": "2026-03-15",
+    "title": "Crosstalk-Solutions/project-nomad",
+    "url": "https://github.com/Crosstalk-Solutions/project-nomad",
+    "raw_description": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.",
+    "description": "Project N.O.M.A.D, is a self-contained, ",
+    "metaphor": "这是一个 typescript 领域的开源工具项目",
+    "language": "typescript",
+    "stars": 583,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（583）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "6d0bff9f",
+    "date": "2026-03-15",
+    "title": "alibaba/page-agent",
+    "url": "https://github.com/alibaba/page-agent",
+    "raw_description": "JavaScript in-page GUI agent. Control web interfaces with natural language.",
+    "description": "JavaScript in-page GUI agent. Control we",
+    "metaphor": "这是一个 typescript 领域的开源工具项目",
+    "language": "typescript",
+    "stars": 8328,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（8328）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "b3b9a00e",
+    "date": "2026-03-15",
+    "title": "promptfoo/promptfoo",
+    "url": "https://github.com/promptfoo/promptfoo",
+    "raw_description": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, Llama, and more. Simple declarative configs with command line and CI/CD integration.",
+    "description": "Test your prompts, agents, and RAGs. Red",
+    "metaphor": "这是一个 typescript 领域的开源工具项目",
+    "language": "typescript",
+    "stars": 15895,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（15895）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "bf5f6c68",
+    "date": "2026-03-15",
+    "title": "dreamhunter2333/cloudflare_temp_email",
+    "url": "https://github.com/dreamhunter2333/cloudflare_temp_email",
+    "raw_description": "CloudFlare free temp domain email 免费收发 临时域名邮箱 支持附件 IMAP SMTP TelegramBot",
+    "description": "CloudFlare free temp domain email 免费收发 临",
+    "metaphor": "这是一个 typescript 领域的开源工具项目",
+    "language": "typescript",
+    "stars": 6667,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（6667）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "f945c233",
+    "date": "2026-03-15",
+    "title": "google/A2UI",
+    "url": "https://github.com/google/A2UI",
+    "raw_description": "",
+    "description": "暂无描述",
+    "metaphor": "这是一个 typescript 领域的开源工具项目",
+    "language": "typescript",
+    "stars": 13183,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（13183）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "037e244d",
+    "date": "2026-03-15",
+    "title": "getnao/nao",
+    "url": "https://github.com/getnao/nao",
+    "raw_description": "👾 nao is an open source analytics agent. (1) Create context with nao-core cli, (2) deploy nao chat interface for everyone",
+    "description": "👾 nao is an open source analytics agent.",
+    "metaphor": "这是一个 typescript 领域的开源工具项目",
+    "language": "typescript",
+    "stars": 726,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（726）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "8919ea04",
+    "date": "2026-03-15",
+    "title": "zhukunpenglinyutong/idea-claude-code-gui",
+    "url": "https://github.com/zhukunpenglinyutong/idea-claude-code-gui",
+    "raw_description": "IDEA Claude Code GUI Plugin",
+    "description": "IDEA Claude Code GUI Plugin",
+    "metaphor": "这是一个 typescript 领域的开源工具项目",
+    "language": "typescript",
+    "stars": 1722,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（1722）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "dbea081c",
+    "date": "2026-03-15",
+    "title": "vudovn/antigravity-kit",
+    "url": "https://github.com/vudovn/antigravity-kit",
+    "raw_description": "",
+    "description": "暂无描述",
+    "metaphor": "这是一个 typescript 领域的开源工具项目",
+    "language": "typescript",
+    "stars": 6023,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（6023）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "2b0c6f0a",
+    "date": "2026-03-15",
+    "title": "open-metadata/OpenMetadata",
+    "url": "https://github.com/open-metadata/OpenMetadata",
+    "raw_description": "OpenMetadata is a unified metadata platform for data discovery, data observability, and data governance powered by a central metadata repository, in-depth column level lineage, and seamless team collaboration.",
+    "description": "OpenMetadata is a unified metadata platf",
+    "metaphor": "这是一个 typescript 领域的开源工具项目",
+    "language": "typescript",
+    "stars": 8920,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（8920）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "0a808376",
+    "date": "2026-03-15",
+    "title": "dolthub/dolt",
+    "url": "https://github.com/dolthub/dolt",
+    "raw_description": "Dolt – Git for Data",
+    "description": "Dolt – Git for Data",
+    "metaphor": "这是一个 go 领域的开源工具项目",
+    "language": "go",
+    "stars": 21301,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（21301）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "d6694ac7",
+    "date": "2026-03-15",
+    "title": "jesseduffield/lazygit",
+    "url": "https://github.com/jesseduffield/lazygit",
+    "raw_description": "simple terminal UI for git commands",
+    "description": "simple terminal UI for git commands",
+    "metaphor": "这是一个 go 领域的开源工具项目",
+    "language": "go",
+    "stars": 74213,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（74213）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "a6414e34",
+    "date": "2026-03-15",
+    "title": "coder/coder",
+    "url": "https://github.com/coder/coder",
+    "raw_description": "Secure environments for developers and their agents",
+    "description": "Secure environments for developers and t",
+    "metaphor": "这是一个 go 领域的开源工具项目",
+    "language": "go",
+    "stars": 12488,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（12488）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "ec3dfbd2",
+    "date": "2026-03-15",
+    "title": "wavetermdev/waveterm",
+    "url": "https://github.com/wavetermdev/waveterm",
+    "raw_description": "An open-source, AI-integrated, cross-platform terminal for seamless workflows",
+    "description": "An open-source, AI-integrated, cross-pla",
+    "metaphor": "这是一个 go 领域的开源工具项目",
+    "language": "go",
+    "stars": 18124,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（18124）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "1b0d280b",
+    "date": "2026-03-15",
+    "title": "grafana/loki",
+    "url": "https://github.com/grafana/loki",
+    "raw_description": "Like Prometheus, but for logs.",
+    "description": "Like Prometheus, but for logs.",
+    "metaphor": "这是一个 go 领域的开源工具项目",
+    "language": "go",
+    "stars": 27808,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（27808）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "2c7446b1",
+    "date": "2026-03-15",
+    "title": "opencontainers/runc",
+    "url": "https://github.com/opencontainers/runc",
+    "raw_description": "CLI tool for spawning and running containers according to the OCI specification",
+    "description": "CLI tool for spawning and running contai",
+    "metaphor": "这是一个 go 领域的开源工具项目",
+    "language": "go",
+    "stars": 13119,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（13119）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "7f419aac",
+    "date": "2026-03-15",
+    "title": "go-playground/validator",
+    "url": "https://github.com/go-playground/validator",
+    "raw_description": "💯Go Struct and Field validation, including Cross Field, Cross Struct, Map, Slice and Array diving",
+    "description": "💯Go Struct and Field validation, includi",
+    "metaphor": "这是一个 go 领域的开源工具项目",
+    "language": "go",
+    "stars": 19795,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（19795）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "3c784dca",
+    "date": "2026-03-15",
+    "title": "argoproj/argo-workflows",
+    "url": "https://github.com/argoproj/argo-workflows",
+    "raw_description": "Workflow Engine for Kubernetes",
+    "description": "Workflow Engine for Kubernetes",
+    "metaphor": "这是一个 go 领域的开源工具项目",
+    "language": "go",
+    "stars": 16524,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（16524）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "0c2aa9a0",
+    "date": "2026-03-15",
+    "title": "kubernetes-sigs/gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api",
+    "raw_description": "Repository for the next iteration of composite service (e.g. Ingress) and load balancing APIs.",
+    "description": "Repository for the next iteration of com",
+    "metaphor": "这是一个 go 领域的开源工具项目",
+    "language": "go",
+    "stars": 2715,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（2715）估算"
+    },
+    "is_top": false
+  },
+  {
+    "id": "85b78f49",
+    "date": "2026-03-15",
+    "title": "kubeflow/trainer",
+    "url": "https://github.com/kubeflow/trainer",
+    "raw_description": "Distributed AI Model Training and LLM Fine-Tuning on Kubernetes",
+    "description": "Distributed AI Model Training and LLM Fi",
+    "metaphor": "这是一个 go 领域的开源工具项目",
+    "language": "go",
+    "stars": 2052,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（2052）估算"
+    },
+    "is_top": false
   }
 ]
