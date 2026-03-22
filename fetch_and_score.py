@@ -99,7 +99,7 @@ def parse_trending(html, lang):
     soup = BeautifulSoup(html, "html.parser")
     repos = []
 
-    for article in soup.select("article.Box-row"):
+    for idx, article in enumerate(soup.select("article.Box-row"), start=1):
         try:
             # 项目名
             h2 = article.select_one("h2.h3 a")
@@ -118,12 +118,29 @@ def parse_trending(html, lang):
             stars_text = stars_el.get_text(strip=True) if stars_el else "0"
             stars = int(re.sub(r"[^\d]", "", stars_text) or "0")
 
+            # 今日新增 Stars
+            stars_today_el = article.select_one("span.d-inline-block.float-sm-right")
+            stars_today_text = stars_today_el.get_text(strip=True) if stars_today_el else ""
+            stars_today = int(re.sub(r"[^\d]", "", stars_today_text) or "0")
+
+            # 编程语言
+            lang_el = article.select_one("span[itemprop='programmingLanguage']")
+            repo_lang = lang_el.get_text(strip=True) if lang_el else lang
+
+            # Forks
+            forks_el = article.select_one("a[href$='/forks']")
+            forks_text = forks_el.get_text(strip=True) if forks_el else "0"
+            forks = int(re.sub(r"[^\d]", "", forks_text) or "0")
+
             repos.append({
                 "full_name": full_name,
                 "url": f"https://github.com/{full_name}",
                 "raw_description": raw_desc,
-                "language": lang,
+                "language": repo_lang,
                 "stars": stars,
+                "stars_today": stars_today,
+                "forks": forks,
+                "trending_rank": idx,
             })
         except Exception:
             continue
@@ -288,6 +305,9 @@ def main():
                 "metaphor": result.get("metaphor", ""),
                 "language": repo["language"],
                 "stars": repo["stars"],
+                "stars_today": repo.get("stars_today", 0),
+                "forks": repo.get("forks", 0),
+                "trending_rank": repo.get("trending_rank", 0),
                 "scores": result.get("scores", {}),
                 "score_reasons": result.get("score_reasons", {}),
                 "is_top": result.get("is_top", False),

@@ -209,12 +209,64 @@ a:hover { color: var(--accent-hover); text-decoration: underline; }
   font-weight: 600;
 }
 
+/* ===== HIDDEN UTILITY ===== */
+.hidden { display: none !important; }
+
+/* ===== TAB NAV ===== */
+.tab-nav-wrap {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 61px;
+  z-index: 90;
+}
+
+.tab-nav {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+}
+
+.tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 14px 24px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all var(--transition);
+  white-space: nowrap;
+  margin-bottom: -1px;
+}
+
+.tab-btn:hover {
+  color: var(--text-primary);
+  background: rgba(88, 166, 255, 0.04);
+}
+
+.tab-btn.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: 600;
+}
+
+.tab-icon { font-size: 15px; }
+
+/* ===== TAB PANELS ===== */
+.tab-panel { display: block; }
+
 /* ===== MAIN SECTIONS ===== */
-main { padding: 56px 0 60px; }
+main { padding: 40px 0 60px; }
 
 .section { margin-bottom: 56px; }
 
-/* 第一个 section（今日精选）与 stats-bar 之间额外留白 */
 .section:first-child { margin-top: 20px; }
 
 .section-header {
@@ -714,9 +766,9 @@ select:hover, select:focus { border-color: var(--accent); }
   background: var(--bg-card);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  max-width: 920px;
+  max-width: 1060px;
   width: 100%;
-  max-height: 90vh;
+  max-height: 92vh;
   overflow: hidden;
   position: relative;
   box-shadow: var(--shadow-lg);
@@ -1080,4 +1132,169 @@ select:hover, select:focus { border-color: var(--accent); }
   height: 32px;
   font-size: 13px;
   color: var(--text-muted);
+}
+
+/* Trending 弹窗：单栏全宽布局 */
+.modal-trending-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+/* ===== TRENDING TABLE ===== */
+.trending-list-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.trending-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.trending-table thead {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+}
+
+.trending-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.trending-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.trending-table tbody tr:last-child td { border-bottom: none; }
+
+.trending-table tbody tr {
+  background: var(--bg-table);
+  transition: background var(--transition);
+  cursor: pointer;
+}
+
+.trending-table tbody tr:hover { background: var(--bg-card); }
+
+.trending-rank {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent) !important;
+  background: rgba(88, 166, 255, 0.08) !important;
+  border: 1px solid rgba(88, 166, 255, 0.2);
+}
+
+/* 语言标签 */
+.lang-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.lang-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.lang-dot-inline {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+/* 今日新增 Stars */
+.stars-today-tag {
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.stars-today-tag.has-stars {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.forks-tag {
+  font-size: 12px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* trending 表格列宽 */
+.trending-table .col-rank { width: 52px; text-align: center; }
+.trending-table .col-title { min-width: 220px; }
+.trending-table .col-lang { width: 110px; }
+.trending-table .col-stars { width: 90px; text-align: right; }
+.trending-table .col-stars-today { width: 100px; text-align: right; }
+.trending-table .col-forks { width: 90px; text-align: right; }
+
+/* Trending 弹窗：单栏全宽布局 */
+.modal-trending-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+/* ===== TRENDING TABLE ===== */
+.trending-list-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+/* 弹窗 meta 行（Stars + 今日新增 + Forks + 语言） */
+.modal-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+.modal-stars-row {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.modal-stars-today {
+  font-size: 12px;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.modal-forks {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.modal-lang {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
 }

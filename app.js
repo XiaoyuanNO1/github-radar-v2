@@ -7,8 +7,9 @@ let allProjects = [];
 let currentSort = { key: 'total', dir: 'desc' };
 let searchQuery = '';
 let trackFilter = 'all';
-let currentPage = 1;       // 新增：当前页
-const PAGE_SIZE = 15;      // 新增：每页条数
+let currentPage = 1;
+const PAGE_SIZE = 15;
+let currentTab = 'trending'; // 默认展示 trending tab
 
 // Stars 缓存
 const starsCache = {};
@@ -16,7 +17,6 @@ const starsCache = {};
 // ===== 从 GitHub API 获取 Stars =====
 async function fetchStars(repoUrl) {
   if (!repoUrl) return null;
-  // 从 URL 提取 owner/repo
   const match = repoUrl.match(/github\.com\/([^/]+\/[^/]+)/);
   if (!match) return null;
   const repo = match[1].replace(/\/$/, '');
@@ -36,7 +36,13 @@ async function fetchStars(repoUrl) {
   }
 }
 
-// 格式化 Stars 数字
+// 格式化数字
+function formatNum(n) {
+  if (n === null || n === undefined || n === 0) return '—';
+  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+  return String(n);
+}
+
 function formatStars(n) {
   if (n === null || n === undefined) return '—';
   if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
@@ -51,18 +57,32 @@ async function init() {
     allProjects = await res.json();
 
     updateLastUpdate();
-    updateStats();       // 新增：更新统计看板
+    updateStats();
     buildDateOptions();
+    renderTrending();
     renderTop3();
     renderHistory();
     bindEvents();
   } catch (e) {
     console.error(e);
+    document.getElementById('trending-tbody').innerHTML =
+      `<tr><td colspan="6" class="loading-cell"><div class="empty-state"><div class="icon">⚠️</div><p>数据加载失败，请确认 radar_history.json 与 index.html 在同一目录</p></div></td></tr>`;
     document.getElementById('top3-grid').innerHTML =
-      `<div class="empty-state" style="grid-column:1/-1"><div class="icon">⚠️</div><p>数据加载失败，请确认 radar_history.json 与 index.html 在同一目录</p></div>`;
+      `<div class="empty-state" style="grid-column:1/-1"><div class="icon">⚠️</div><p>数据加载失败</p></div>`;
     document.getElementById('history-tbody').innerHTML =
       `<tr><td colspan="10" class="loading-cell"><div class="empty-state"><div class="icon">⚠️</div><p>无数据</p></div></td></tr>`;
   }
+}
+
+// ===== Tab 切换 =====
+function switchTab(tab) {
+  currentTab = tab;
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === tab);
+  });
+  document.querySelectorAll('.tab-panel').forEach(panel => {
+    panel.classList.toggle('hidden', panel.id !== `tab-${tab}`);
+  });
 }
 
 // ===== 更新统计看板 =====
@@ -72,11 +92,8 @@ function updateStats() {
   const latestDate = dates[0];
   const todayProjects = allProjects.filter(p => p.date === latestDate);
 
-  // 累计归档
   document.getElementById('stat-total').textContent = allProjects.length;
-  // 今日新增
   document.getElementById('stat-today').textContent = todayProjects.length;
-  // 已扫描天数
   document.getElementById('stat-days').textContent = dates.length;
 }
 
@@ -91,13 +108,89 @@ function updateLastUpdate() {
 // ===== 构建日期选项 =====
 function buildDateOptions() {
   const dates = [...new Set(allProjects.map(p => p.date))].sort().reverse();
-  const sel = document.getElementById('top3-date');
+
+  // trending tab 日期选项
+  const trendingSel = document.getElementById('trending-date');
+  trendingSel.innerHTML = '';
   dates.forEach((d, i) => {
     const opt = document.createElement('option');
     opt.value = d;
     opt.textContent = d + (i === 0 ? ' (最新)' : '');
-    sel.appendChild(opt);
+    trendingSel.appendChild(opt);
   });
+
+  // 黑马榜日期选项
+  const top3Sel = document.getElementById('top3-date');
+  top3Sel.innerHTML = '';
+  dates.forEach((d, i) => {
+    const opt = document.createElement('option');
+    opt.value = d;
+    opt.textContent = d + (i === 0 ? ' (最新)' : '');
+    top3Sel.appendChild(opt);
+  });
+}
+
+// ===== 渲染 GitHub Trending 榜单 =====
+function renderTrending(date) {
+  const dates = [...new Set(allProjects.map(p => p.date))].sort().reverse();
+  const targetDate = date || dates[0];
+
+  // 获取该日期的项目，按 trending_rank 排序（若无则按 stars 降序）
+  let data = allProjects.filter(p => p.date === targetDate);
+  data.sort((a, b) => {
+    const ra = a.trending_rank || 9999;
+    const rb = b.trending_rank || 9999;
+    if (ra !== rb) return ra - rb;
+    return (b.stars || 0) - (a.stars || 0);
+  });
+
+  const tbody = document.getElementById('trending-tbody');
+
+  if (!data.length) {
+    tbody.innerHTML = `<tr><td colspan="6"><div class="empty-state"><div class="icon">📭</div><p>该日期暂无数据</p></div></td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = data.map((p, i) => {
+    const rank = p.trending_rank || (i + 1);
+    const langDot = p.language ? `<span class="lang-dot" style="background:${getLangColor(p.language)}"></span>` : '';
+    return `
+    <tr onclick="openTrendingModal('${p.id}')">
+      <td class="col-rank"><span class="rank-num trending-rank">${rank}</span></td>
+      <td class="col-title">
+        <span class="project-title">
+          <a href="${p.url}" target="_blank" onclick="event.stopPropagation()">${p.title}</a>
+        </span>
+        <span class="project-desc-short">${p.raw_description || p.description || ''}</span>
+      </td>
+      <td class="col-lang">
+        <span class="lang-badge">${langDot}${p.language || '—'}</span>
+      </td>
+      <td class="col-stars">
+        <span class="stars-tag" id="tr-stars-${p.id}">⭐ ${formatNum(p.stars)}</span>
+      </td>
+      <td class="col-stars-today">
+        <span class="stars-today-tag ${(p.stars_today || 0) > 0 ? 'has-stars' : ''}">
+          ${(p.stars_today || 0) > 0 ? '▲ ' + formatNum(p.stars_today) : '—'}
+        </span>
+      </td>
+      <td class="col-forks">
+        <span class="forks-tag">${p.forks ? '🍴 ' + formatNum(p.forks) : '—'}</span>
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+// 语言颜色映射
+function getLangColor(lang) {
+  const colors = {
+    'Python': '#3572A5', 'JavaScript': '#f1e05a', 'TypeScript': '#2b7489',
+    'Go': '#00ADD8', 'Rust': '#dea584', 'Java': '#b07219', 'C++': '#f34b7d',
+    'C': '#555555', 'C#': '#178600', 'Ruby': '#701516', 'Swift': '#ffac45',
+    'Kotlin': '#F18E33', 'PHP': '#4F5D95', 'Shell': '#89e051',
+    'HTML': '#e34c26', 'CSS': '#563d7c', 'Vue': '#2c3e50', 'Dart': '#00B4AB',
+  };
+  return colors[lang] || '#8b949e';
 }
 
 // ===== 渲染 Top 3 =====
@@ -105,7 +198,6 @@ function renderTop3(date) {
   const dates = [...new Set(allProjects.map(p => p.date))].sort().reverse();
   const targetDate = date || dates[0];
 
-  // 取当天 is_top 项目，不足则按分数补，最终按总分降序排列
   let tops = allProjects.filter(p => p.date === targetDate && p.is_top);
   if (tops.length < 3) {
     const others = allProjects
@@ -176,7 +268,6 @@ function renderTop3(date) {
     </div>`;
   }).join('');
 
-  // 异步加载 Stars
   tops.forEach(p => {
     fetchStars(p.url).then(stars => {
       const el = document.getElementById(`stars-card-${p.id}`);
@@ -199,7 +290,6 @@ function renderHistory() {
 
   let data = [...allProjects];
 
-  // 搜索过滤
   if (searchQuery) {
     const q = searchQuery.toLowerCase();
     data = data.filter(p =>
@@ -209,7 +299,6 @@ function renderHistory() {
     );
   }
 
-  // 赛道标签过滤
   if (trackFilter === 'top') {
     data = data.filter(p => p.is_top);
   } else if (trackFilter === 'high') {
@@ -220,31 +309,21 @@ function renderHistory() {
     data = data.filter(p => p.scores.growth_potential >= 2);
   }
 
-  // 排序
   const { key, dir } = currentSort;
   data.sort((a, b) => {
     let va, vb;
-    if (key === 'date') {
-      va = a.date; vb = b.date;
-    } else if (key === 'title') {
-      va = a.title.toLowerCase(); vb = b.title.toLowerCase();
-    } else if (key === 'total') {
-      va = a.scores.total; vb = b.scores.total;
-    } else if (key === 'vibecoding_ease') {
-      va = a.scores.vibecoding_ease; vb = b.scores.vibecoding_ease;
-    } else if (key === 'logic_moat') {
-      va = a.scores.logic_moat; vb = b.scores.logic_moat;
-    } else if (key === 'track_fit') {
-      va = a.scores.track_fit; vb = b.scores.track_fit;
-    } else if (key === 'growth_potential') {
-      va = a.scores.growth_potential; vb = b.scores.growth_potential;
-    }
+    if (key === 'date') { va = a.date; vb = b.date; }
+    else if (key === 'title') { va = a.title.toLowerCase(); vb = b.title.toLowerCase(); }
+    else if (key === 'total') { va = a.scores.total; vb = b.scores.total; }
+    else if (key === 'vibecoding_ease') { va = a.scores.vibecoding_ease; vb = b.scores.vibecoding_ease; }
+    else if (key === 'logic_moat') { va = a.scores.logic_moat; vb = b.scores.logic_moat; }
+    else if (key === 'track_fit') { va = a.scores.track_fit; vb = b.scores.track_fit; }
+    else if (key === 'growth_potential') { va = a.scores.growth_potential; vb = b.scores.growth_potential; }
     if (va < vb) return dir === 'asc' ? -1 : 1;
     if (va > vb) return dir === 'asc' ? 1 : -1;
     return 0;
   });
 
-  // 分页计算
   const totalItems = data.length;
   const totalPages = Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
   if (currentPage > totalPages) currentPage = totalPages;
@@ -284,7 +363,6 @@ function renderHistory() {
 
   renderPagination(currentPage, totalPages, totalItems);
 
-  // 异步加载当页 Stars
   pageData.forEach(p => {
     fetchStars(p.url).then(stars => {
       const el = document.getElementById(`stars-${p.id}`);
@@ -298,15 +376,11 @@ function renderPagination(page, totalPages, totalItems) {
   let el = document.getElementById('pagination');
   if (!el) return;
 
-  if (totalPages <= 1) {
-    el.innerHTML = '';
-    return;
-  }
+  if (totalPages <= 1) { el.innerHTML = ''; return; }
 
   const start = (page - 1) * PAGE_SIZE + 1;
   const end = Math.min(page * PAGE_SIZE, totalItems);
 
-  // 生成页码按钮（最多显示7个）
   let pages = [];
   if (totalPages <= 7) {
     for (let i = 1; i <= totalPages; i++) pages.push(i);
@@ -332,22 +406,67 @@ function renderPagination(page, totalPages, totalItems) {
   `;
 }
 
-// ===== 跳转页码 =====
 function goPage(p) {
   currentPage = p;
   renderHistory();
-  // 平滑滚动到表格顶部
   document.getElementById('history-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-// ===== 打开 Modal =====
+// ===== 打开 Trending Modal（无评分，只展示简介/比喻/使用场景）=====
+function openTrendingModal(id) {
+  const p = allProjects.find(x => x.id === id);
+  if (!p) return;
+
+  const usageScene = generateUsageScene(p);
+  const rank = p.trending_rank || '—';
+  const langDot = p.language ? `<span class="lang-dot-inline" style="background:${getLangColor(p.language)}"></span>` : '';
+
+  document.getElementById('modal-content').innerHTML = `
+    <div class="modal-header">
+      <div class="modal-rank-label">🔥 GitHub Trending #${rank} · ${p.date}</div>
+      <div class="modal-title">
+        <a href="${p.url}" target="_blank">${p.title}</a>
+      </div>
+      <div class="modal-meta-row">
+        <span class="modal-stars-row" id="modal-stars-${p.id}">⭐ 加载中...</span>
+        ${p.stars_today ? `<span class="modal-stars-today">▲ ${formatNum(p.stars_today)} 今日新增</span>` : ''}
+        ${p.forks ? `<span class="modal-forks">🍴 ${formatNum(p.forks)} Forks</span>` : ''}
+        ${p.language ? `<span class="modal-lang">${langDot} ${p.language}</span>` : ''}
+      </div>
+    </div>
+
+    <div class="modal-trending-grid">
+      <div class="modal-section">
+        <div class="modal-section-label">项目简介</div>
+        <div class="modal-desc">${p.raw_description || p.description || '暂无描述'}</div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-label">生动比喻</div>
+        <div class="modal-metaphor">${p.metaphor || '—'}</div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-label">使用场景</div>
+        <div class="modal-usage">${usageScene}</div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+
+  fetchStars(p.url).then(stars => {
+    const el = document.getElementById(`modal-stars-${p.id}`);
+    if (el) el.textContent = '⭐ ' + formatStars(stars) + ' Stars';
+  });
+}
+
+// ===== 打开黑马榜 Modal（含评分）=====
 function openModal(id) {
   const p = allProjects.find(x => x.id === id);
   if (!p) return;
   const s = p.scores;
   const r = p.score_reasons || {};
 
-  // 生成使用场景文本（基于评分和描述智能推断）
   const usageScene = generateUsageScene(p);
 
   document.getElementById('modal-content').innerHTML = `
@@ -356,7 +475,9 @@ function openModal(id) {
       <div class="modal-title">
         <a href="${p.url}" target="_blank">${p.title}</a>
       </div>
-      <div class="modal-stars-row" id="modal-stars-${p.id}">⭐ 加载中...</div>
+      <div class="modal-meta-row">
+        <span class="modal-stars-row" id="modal-stars-${p.id}">⭐ 加载中...</span>
+      </div>
     </div>
 
     <div class="modal-body-grid">
@@ -449,7 +570,6 @@ function openModal(id) {
   document.getElementById('modal-overlay').classList.add('open');
   document.body.style.overflow = 'hidden';
 
-  // 异步加载弹窗 Stars
   fetchStars(p.url).then(stars => {
     const el = document.getElementById(`modal-stars-${p.id}`);
     if (el) el.textContent = '⭐ ' + formatStars(stars) + ' Stars';
@@ -457,7 +577,6 @@ function openModal(id) {
 }
 
 // ===== 生成使用场景 =====
-// 基于项目描述内容，推断这个项目本身适合在哪些真实场景中使用
 function generateUsageScene(p) {
   const desc = (p.description || '') + ' ' + (p.raw_description || '') + ' ' + (p.metaphor || '');
   const d = desc.toLowerCase();
@@ -465,70 +584,45 @@ function generateUsageScene(p) {
 
   const scenes = [];
 
-  // ---- 内容创作 / 视频 / 音频 ----
   if (d.includes('视频') || d.includes('video') || d.includes('短视频') || d.includes('配音') || d.includes('tts') || d.includes('音频') || d.includes('audio')) {
     scenes.push('🎬 <strong>内容创作者</strong>：适合 UP 主、自媒体人用来批量生产视频脚本、配音或剪辑素材，大幅压缩内容生产时间');
   }
-
-  // ---- 代码 / 开发工具 ----
   if (d.includes('代码') || d.includes('coding') || d.includes('code') || d.includes('开发') || d.includes('编程') || d.includes('ide') || d.includes('cursor') || d.includes('vscode')) {
     scenes.push('💻 <strong>软件开发日常</strong>：适合开发者在编码、调试、代码审查等日常工作中直接使用，提升研发效率');
   }
-
-  // ---- Agent / 自动化 ----
   if (d.includes('agent') || d.includes('自动化') || d.includes('automation') || d.includes('workflow') || d.includes('工作流')) {
     scenes.push('🤖 <strong>自动化业务流程</strong>：适合将重复性工作交给 AI Agent 自动执行，如数据采集、报告生成、定时任务等');
   }
-
-  // ---- 科研 / 学术 / 数据分析 ----
   if (d.includes('科研') || d.includes('research') || d.includes('分析') || d.includes('analysis') || d.includes('数据') || d.includes('data') || d.includes('金融') || d.includes('finance')) {
     scenes.push('📊 <strong>数据分析与科研</strong>：适合研究员、数据分析师在文献整理、数据处理、报告撰写等场景中辅助使用');
   }
-
-  // ---- 模型训练 / 微调 ----
   if (d.includes('微调') || d.includes('fine-tun') || d.includes('训练') || d.includes('train') || d.includes('llm') || d.includes('模型')) {
     scenes.push('🧠 <strong>AI 模型研发</strong>：适合算法工程师或研究员在模型微调、实验迭代、性能优化等场景中使用');
   }
-
-  // ---- 沙箱 / 安全隔离 ----
   if (d.includes('沙箱') || d.includes('sandbox') || d.includes('隔离') || d.includes('安全') || d.includes('security') || d.includes('docker') || d.includes('container')) {
     scenes.push('🔒 <strong>安全隔离执行环境</strong>：适合需要在隔离环境中运行不可信代码的场景，如在线评测、AI 代码执行、多租户 SaaS 平台');
   }
-
-  // ---- RAG / 知识库 / 搜索 ----
   if (d.includes('rag') || d.includes('知识库') || d.includes('检索') || d.includes('search') || d.includes('向量') || d.includes('embedding')) {
     scenes.push('🔍 <strong>企业知识管理</strong>：适合构建内部知识库、智能客服或文档检索系统，让员工快速找到所需信息');
   }
-
-  // ---- 多 Agent / 协作 ----
   if (d.includes('多agent') || d.includes('multi-agent') || d.includes('多智能体') || d.includes('协作') || d.includes('orchestrat')) {
     scenes.push('🏗️ <strong>复杂任务编排</strong>：适合需要多个 AI 角色协同完成复杂任务的场景，如自动化研究、代码生成流水线');
   }
-
-  // ---- 教育 / 学习 ----
   if (d.includes('教育') || d.includes('学习') || d.includes('education') || d.includes('learn') || d.includes('课程') || d.includes('course') || d.includes('tutor')) {
     scenes.push('📚 <strong>教育与学习辅助</strong>：适合学生、教师或培训机构用来制作教学内容、个性化辅导或练习题生成');
   }
-
-  // ---- 电商 / 营销 / 运营 ----
   if (d.includes('营销') || d.includes('marketing') || d.includes('电商') || d.includes('ecommerce') || d.includes('运营') || d.includes('变现') || d.includes('monetiz')) {
     scenes.push('💰 <strong>电商与内容营销</strong>：适合电商卖家、运营人员用来批量生成商品文案、营销素材或自动化运营流程');
   }
-
-  // ---- CLI / 命令行工具 ----
   if (d.includes('cli') || d.includes('命令行') || d.includes('terminal') || d.includes('shell') || d.includes('bash')) {
     scenes.push('⌨️ <strong>开发者命令行工作流</strong>：适合喜欢命令行操作的开发者，将其集成到终端工作流中提升效率');
   }
-
-  // ---- API / SDK / 平台集成 ----
   if (d.includes('sdk') || d.includes('api') || d.includes('接口') || d.includes('集成') || d.includes('integrat') || d.includes('plugin') || d.includes('插件')) {
     scenes.push('🔌 <strong>产品功能集成</strong>：适合将其作为模块集成进现有产品或平台，快速扩展功能而无需从零开发');
   }
 
-  // ---- 去重，取前3条 ----
   const result = scenes.slice(0, 3);
 
-  // ---- 兜底：如果没有命中任何关键词 ----
   if (result.length === 0) {
     result.push('🛠️ <strong>开发者工具增强</strong>：可集成到现有技术栈，作为功能模块使用，提升团队开发效率');
     result.push('🔍 <strong>技术调研与学习</strong>：适合作为了解该领域最新技术实践的参考项目，帮助团队做技术选型决策');
@@ -545,7 +639,17 @@ function closeModal() {
 
 // ===== 绑定事件 =====
 function bindEvents() {
-  // 日期切换
+  // Tab 切换
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+  });
+
+  // Trending 日期切换
+  document.getElementById('trending-date').addEventListener('change', e => {
+    renderTrending(e.target.value);
+  });
+
+  // 黑马榜日期切换
   document.getElementById('top3-date').addEventListener('change', e => {
     renderTop3(e.target.value);
   });
@@ -553,18 +657,13 @@ function bindEvents() {
   // 搜索
   document.getElementById('search-input').addEventListener('input', e => {
     searchQuery = e.target.value.trim();
-    currentPage = 1;  // 搜索时重置页码
+    currentPage = 1;
     renderHistory();
   });
 
   // 下拉排序
   document.getElementById('sort-select').addEventListener('change', e => {
     const val = e.target.value;
-    const [key, dir] = val.split('_').length === 2
-      ? val.split('_')
-      : [val.replace(/_desc$|_asc$/, ''), val.endsWith('asc') ? 'asc' : 'desc'];
-
-    // 特殊处理 vibecoding_ease / logic_moat / growth_potential
     if (val === 'vibecoding_desc') {
       currentSort = { key: 'vibecoding_ease', dir: 'desc' };
     } else if (val === 'logic_desc') {
@@ -572,9 +671,12 @@ function bindEvents() {
     } else if (val === 'growth_desc') {
       currentSort = { key: 'growth_potential', dir: 'desc' };
     } else {
+      const [key, dir] = val.split('_').length === 2
+        ? val.split('_')
+        : [val.replace(/_desc$|_asc$/, ''), val.endsWith('asc') ? 'asc' : 'desc'];
       currentSort = { key, dir };
     }
-    currentPage = 1;  // 排序时重置页码
+    currentPage = 1;
     renderHistory();
     syncTableHeader();
   });
@@ -588,7 +690,7 @@ function bindEvents() {
       } else {
         currentSort = { key, dir: 'desc' };
       }
-      currentPage = 1;  // 排序时重置页码
+      currentPage = 1;
       renderHistory();
       syncTableHeader();
     });
@@ -601,7 +703,7 @@ function bindEvents() {
     document.querySelectorAll('.track-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     trackFilter = btn.dataset.track;
-    currentPage = 1;  // 筛选时重置页码
+    currentPage = 1;
     renderHistory();
   });
 
