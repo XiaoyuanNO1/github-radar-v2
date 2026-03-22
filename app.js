@@ -438,7 +438,7 @@ function openTrendingModal(id) {
     <div class="modal-trending-grid">
       <div class="modal-section">
         <div class="modal-section-label">项目简介</div>
-        <div class="modal-desc">${p.raw_description || p.description || '暂无描述'}</div>
+        <div class="modal-desc">${p.description || p.raw_description || '暂无描述'}</div>
       </div>
       <div class="modal-section">
         <div class="modal-section-label">生动比喻</div>
@@ -578,6 +578,10 @@ function openModal(id) {
 
 // ===== 生成使用场景 =====
 function generateUsageScene(p) {
+  // 优先使用 JSON 中已有的深度分析内容
+  if (p.usage_scene && p.usage_scene.length > 20) {
+    return p.usage_scene;
+  }
   const desc = (p.description || '') + ' ' + (p.raw_description || '') + ' ' + (p.metaphor || '');
   const d = desc.toLowerCase();
   const title = (p.title || '').toLowerCase();
