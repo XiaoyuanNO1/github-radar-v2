@@ -298,6 +298,7 @@ def main():
             project = {
                 "id": str(uuid.uuid4())[:8],
                 "date": TODAY,
+                "fetched_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
                 "title": repo["full_name"],
                 "url": repo["url"],
                 "raw_description": repo.get("raw_description", ""),

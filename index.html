@@ -37,11 +37,11 @@
       <div class="combined-inner">
         <!-- 左侧：Tab 按钮 -->
         <div class="tab-nav">
-          <button class="tab-btn active" data-tab="trending">
-            <span class="tab-icon">🔥</span> GitHub Trending
-          </button>
-          <button class="tab-btn" data-tab="radar">
+          <button class="tab-btn active" data-tab="radar">
             <span class="tab-icon">🚀</span> 创业黑马榜
+          </button>
+          <button class="tab-btn" data-tab="trending">
+            <span class="tab-icon">🔥</span> GitHub Trending
           </button>
         </div>
         <!-- 右侧：统计数据 -->
@@ -68,7 +68,7 @@
   <main class="container">
 
     <!-- ===== GITHUB TRENDING TAB ===== -->
-    <div class="tab-panel" id="tab-trending">
+    <div class="tab-panel hidden" id="tab-trending">
 
       <!-- 今日 Trending 榜单 -->
       <section class="section" id="trending-section">
@@ -106,7 +106,7 @@
     </div>
 
     <!-- ===== 创业黑马榜 TAB ===== -->
-    <div class="tab-panel hidden" id="tab-radar">
+    <div class="tab-panel" id="tab-radar">
 
       <!-- ===== TOP 3 SECTION ===== -->
       <section class="section" id="top3-section">

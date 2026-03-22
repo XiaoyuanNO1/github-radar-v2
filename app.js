@@ -9,7 +9,7 @@ let searchQuery = '';
 let trackFilter = 'all';
 let currentPage = 1;
 const PAGE_SIZE = 15;
-let currentTab = 'trending'; // 默认展示 trending tab
+let currentTab = 'radar'; // 默认展示 radar tab
 
 // Stars 缓存
 const starsCache = {};
@@ -102,7 +102,16 @@ function updateLastUpdate() {
   if (!allProjects.length) return;
   const dates = [...new Set(allProjects.map(p => p.date))].sort().reverse();
   const latest = dates[0];
-  document.getElementById('last-update').textContent = `最近更新：${latest}`;
+  // 尝试读取最新日期中最晚的 fetched_at 时间
+  const latestProjects = allProjects.filter(p => p.date === latest);
+  const fetchedTimes = latestProjects.map(p => p.fetched_at).filter(Boolean).sort().reverse();
+  if (fetchedTimes.length > 0) {
+    // fetched_at 格式为 "2026-03-22 07:05"，取时间部分
+    const timeStr = fetchedTimes[0].includes(' ') ? fetchedTimes[0].split(' ')[1] : '';
+    document.getElementById('last-update').textContent = `最近更新：${latest}${timeStr ? ' ' + timeStr : ''}`;
+  } else {
+    document.getElementById('last-update').textContent = `最近更新：${latest}`;
+  }
 }
 
 // ===== 构建日期选项 =====
