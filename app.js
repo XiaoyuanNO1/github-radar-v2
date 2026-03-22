@@ -170,7 +170,7 @@ function renderTrending(date) {
         <span class="project-title">
           <a href="${p.url}" target="_blank" onclick="event.stopPropagation()">${p.title}</a>
         </span>
-        <span class="project-desc-short">${p.raw_description || p.description || ''}</span>
+        <span class="project-desc-short">${(p.description || p.raw_description || '').slice(0, 60)}</span>
       </td>
       <td class="col-lang">
         <span class="lang-badge">${langDot}${p.language || '—'}</span>
