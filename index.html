@@ -31,38 +31,36 @@
     </div>
   </header>
 
-  <!-- ===== STATS BAR ===== -->
-  <div class="stats-bar">
+  <!-- ===== COMBINED BAR：Stats + Tab Nav 同一行 ===== -->
+  <div class="combined-bar">
     <div class="container">
-      <div class="stats-inner">
-        <div class="stat-item">
-          <span class="stat-num" id="stat-total">—</span>
-          <span class="stat-label">累计归档</span>
+      <div class="combined-inner">
+        <!-- 左侧：Tab 按钮 -->
+        <div class="tab-nav">
+          <button class="tab-btn active" data-tab="trending">
+            <span class="tab-icon">🔥</span> GitHub Trending
+          </button>
+          <button class="tab-btn" data-tab="radar">
+            <span class="tab-icon">🚀</span> 创业黑马榜
+          </button>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num" id="stat-today">—</span>
-          <span class="stat-label">今日新增</span>
+        <!-- 右侧：统计数据 -->
+        <div class="stats-inline">
+          <div class="stat-item-inline">
+            <span class="stat-num-inline" id="stat-total">—</span>
+            <span class="stat-label-inline">累计归档</span>
+          </div>
+          <div class="stat-divider-inline"></div>
+          <div class="stat-item-inline">
+            <span class="stat-num-inline" id="stat-today">—</span>
+            <span class="stat-label-inline">今日新增</span>
+          </div>
+          <div class="stat-divider-inline"></div>
+          <div class="stat-item-inline">
+            <span class="stat-num-inline" id="stat-days">—</span>
+            <span class="stat-label-inline">已扫描天数</span>
+          </div>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num" id="stat-days">—</span>
-          <span class="stat-label">已扫描天数</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ===== TAB NAV ===== -->
-  <div class="tab-nav-wrap">
-    <div class="container">
-      <div class="tab-nav">
-        <button class="tab-btn active" data-tab="trending">
-          <span class="tab-icon">🔥</span> GitHub Trending
-        </button>
-        <button class="tab-btn" data-tab="radar">
-          <span class="tab-icon">🚀</span> 创业黑马榜
-        </button>
       </div>
     </div>
   </div>
