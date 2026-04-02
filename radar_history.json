@@ -22557,5 +22557,875 @@
     },
     "is_top": false,
     "usage_scene": "适合有 Homelab 或 NAS 的技术用户和注重隐私的家庭网络管理员。可在树莓派或 NAS 上部署 blocky，为家庭所有设备（包括智能电视、手机、IoT 设备）提供统一的广告拦截服务；企业可在内网部署作为 DNS 安全层，防止员工访问恶意域名；通过查询日志分析功能，可发现网络中异常的 DNS 请求行为，及时识别潜在安全威胁。"
+  },
+  {
+    "id": "4754bf52",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "sherlock-project/sherlock",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "raw_description": "Hunt down social media accounts by username across social networks",
+    "description": "开源社区出品的社交账号追踪神器，GitHub 77K Star 的顶流安全工具。核心功能是通过输入一个用户名，在 300+ 个主流社交平台（Twitter/X、Instagram、TikTok、Reddit、LinkedIn 等）上批量搜索并定位该账号是否存在，一次查询即可生成完整的「数字足迹报告」。支持命令行直接运行、Docker 部署、CSV 导出，无需 API Key，完全免费开源。是网络安全研究、OSINT（开源情报）调查、个人数字隐私审计的核心工具之一。",
+    "metaphor": "它是数字世界的「人肉搜索引擎」——你只需要一个用户名，它就能替你在 300 多个社交平台上地毯式搜索，把一个人在互联网上留下的所有公开痕迹一网打尽。就像侦探拿着一张名片，能顺藤摸瓜找出当事人所有的社会关系网络。",
+    "language": "Python",
+    "stars": 77194,
+    "stars_today": 807,
+    "forks": 9062,
+    "trending_rank": 1,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（77194）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合网络安全研究员、渗透测试工程师和 OSINT 调查人员。具体用法：`python3 sherlock username` 一行命令即可跨平台批量查询目标账号存在情况，结果可导出为 CSV 供进一步分析。个人用户也可用于自查自己的用户名在哪些平台有注册记录，评估个人隐私暴露面，提前清理不用的账号，降低数据泄露风险。"
+  },
+  {
+    "id": "76b27737",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "MervinPraison/PraisonAI",
+    "url": "https://github.com/MervinPraison/PraisonAI",
+    "raw_description": "PraisonAI 🦞 - Your 24/7 AI employee team. Automate and solve complex challenges with low-code multi-agent AI that plans, researches, codes, and delivers to Telegram, Discord, and WhatsApp. Handoffs, guardrails, memory, RAG, 100+ LLMs.",
+    "description": "低代码多智能体 AI 框架，定位为「7×24 小时 AI 员工团队」。核心功能是通过简单配置即可编排多个 AI Agent 协同工作，支持自动规划、联网研究、代码生成、任务交接（Handoffs）等完整 Agent 工作流。独特价值在于原生集成 Telegram、Discord、WhatsApp 三大通讯平台，Agent 执行结果可直接推送到消息群组，支持 100+ LLM（包括 GPT-4、Claude、Gemini、Ollama 本地模型），内置 RAG 知识库、记忆系统和安全护栏（Guardrails），是目前集成度最高的多 Agent 低代码框架之一。",
+    "metaphor": "它是 AI 时代的「外包团队管理平台」——你不用自己写代码，只需像写工作说明书一样描述任务，PraisonAI 就会自动招募一组 AI 专家（研究员、程序员、分析师）分工协作完成，最后把结果直接发到你的微信群（WhatsApp）。彻底打通了「想法」到「执行结果」的最后一公里。",
+    "language": "Python",
+    "stars": 6305,
+    "stars_today": 105,
+    "forks": 919,
+    "trending_rank": 2,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（6305）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合独立开发者、中小企业主和 AI 应用构建者。可用于构建自动化市场调研 Agent（每天定时抓取竞品信息推送到 Telegram 群）、代码审查 Bot（PR 提交后自动分析并在 Discord 频道汇报）、客服自动化系统等。低代码特性使非专业开发者也能快速搭建，100+ LLM 支持保证了灵活性，内置记忆系统让 Agent 能持续学习迭代。"
+  },
+  {
+    "id": "86364b4f",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "yusufkaraaslan/Skill_Seekers",
+    "url": "https://github.com/yusufkaraaslan/Skill_Seekers",
+    "raw_description": "Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection",
+    "description": "一款将文档资源自动转化为 Claude AI Skills 的工具，12K Star 的新兴实用工具。核心功能是将文档网站、GitHub 仓库、PDF 文件一键解析并转换为 Claude AI 可直接调用的 Skill 格式，内置冲突检测机制自动识别并解决不同来源文档之间的知识冲突。独特价值在于打通了「外部知识源」到「Claude 可执行能力」的转换通道，让 Claude 能真正「读懂」并「使用」你指定的专有文档，而非依赖通用训练数据。是 Claude Code 生态中知识注入层的重要基础设施。",
+    "metaphor": "它是给 Claude 装「专业技能芯片」的机器——把一本厚厚的 API 文档或技术手册「压缩」成 Claude 能直接调用的技能包，就像把一本医学教材变成医生的直觉反应。冲突检测功能则像专业编辑，确保不同来源的知识不会互相打架。",
+    "language": "Python",
+    "stars": 12141,
+    "stars_today": 278,
+    "forks": 1217,
+    "trending_rank": 3,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（12141）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 AI 应用开发者、企业知识管理团队和 Claude Code 深度用户。具体用法：将公司内部文档网站 URL 或 GitHub 仓库链接输入工具，自动生成 Claude Skill 文件，注入后 Claude 即可基于专有知识库回答问题或执行任务。特别适合需要让 Claude 掌握特定框架文档、私有 API 规范或行业专业知识的场景，大幅提升 Claude 在垂直领域的专业准确度。"
+  },
+  {
+    "id": "c978a23f",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "zai-org/GLM-OCR",
+    "url": "https://github.com/zai-org/GLM-OCR",
+    "raw_description": "GLM-OCR: Accurate × Fast × Comprehensive",
+    "description": "智谱 AI（ZhipuAI）出品的新一代 OCR 文字识别模型，主打「精准 × 快速 × 全面」三位一体。基于 GLM 大模型架构，相比传统 OCR 工具具备语义理解能力，不仅能识别文字，还能理解文档结构（表格、公式、图表）并输出结构化结果。支持复杂排版文档、手写体、多语言混排、数学公式等高难度场景，是目前国产 OCR 领域与 Mathpix、Mistral OCR 同台竞技的顶尖选手。5K Star 的快速增长反映了市场对高质量中文 OCR 的迫切需求。",
+    "metaphor": "它是文档世界的「超级速记员」——不只是认字，还懂得文档在说什么。传统 OCR 像一个只会抄字的小学生，GLM-OCR 像一个理解上下文的速记专家，能把一张乱糟糟的扫描件变成整洁的结构化数据，连数学公式和表格都能完美还原。",
+    "language": "Python",
+    "stars": 5236,
+    "stars_today": 238,
+    "forks": 453,
+    "trending_rank": 4,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（5236）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合需要大批量处理文档的企业开发者、学术研究者和 AI 应用构建者。具体场景：将历史纸质档案批量数字化、提取 PDF 研究论文中的数学公式用于 LaTeX 重排、将发票/合同扫描件转为结构化数据接入财务系统。对于需要构建 RAG 知识库的 AI 开发者，GLM-OCR 是处理非结构化文档的关键前置工具，能显著提升最终 AI 回答的准确性。"
+  },
+  {
+    "id": "5cc21b44",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "google-research/timesfm",
+    "url": "https://github.com/google-research/timesfm",
+    "raw_description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+    "description": "Google Research 出品的时间序列预测基础模型（Foundation Model），13K Star 的顶级学术工程项目。核心创新是将 LLM 的预训练范式引入时间序列领域——在海量时间序列数据上预训练后，无需针对具体业务数据微调，即可「零样本」直接预测任意时间序列。支持任意长度输入、任意预测步长，覆盖金融、气象、能源、零售等多个垂直领域。相比传统的 ARIMA、Prophet、LSTM 等方案，TimesFM 在零样本场景下的预测精度大幅领先，代表了时间序列 AI 的下一代范式。",
+    "metaphor": "它是时间序列界的「ChatGPT」——就像 GPT 不需要针对每个问题单独训练一样，TimesFM 也不需要针对你的业务数据重新训练，拿来就能预测股价走势、商品销量、用电负荷。Google Research 用海量数据预训练好了一个「时间感知大脑」，你只需要把数据喂进去，未来就预测出来了。",
+    "language": "Python",
+    "stars": 13354,
+    "stars_today": 1195,
+    "forks": 1127,
+    "trending_rank": 5,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（13354）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合量化研究员、数据科学家和 AI 应用开发者。具体用法：将历史时间序列数据（如过去两年的销售额）直接输入模型，无需任何训练即可获得未来 N 步的预测结果。特别适合数据量不足以训练专有模型的中小企业，或需要快速验证预测可行性的原型开发阶段。结合 Python API 可快速集成到现有数据分析流水线，显著降低时间序列预测的技术门槛。"
+  },
+  {
+    "id": "90077859",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "roboflow/supervision",
+    "url": "https://github.com/roboflow/supervision",
+    "raw_description": "We write your reusable computer vision tools. 💜",
+    "description": "Roboflow 出品的计算机视觉工具库，37K Star 的 CV 领域明星工具。定位为「可复用的计算机视觉工具集」，提供目标检测、实例分割、关键点检测、追踪（ByteTrack/SORT）、标注可视化等全套后处理工具，并与 YOLO 系列、SAM、CLIP 等主流模型无缝集成。独特价值在于将 CV 应用开发中最繁琐的「模型输出后处理」环节标准化，开发者不再需要重复造轮子，专注于业务逻辑即可。是目前计算机视觉工程化落地的最佳实践库之一。",
+    "metaphor": "它是 CV 工程师的「瑞士军刀」——YOLO 检测出了目标，但如何画框、如何追踪、如何统计人流、如何过滤误检？这些「最后一公里」的脏活累活，supervision 全包了。就像有了好食材（模型）还需要厨具（工具库），supervision 就是那套专业厨具。",
+    "language": "Python",
+    "stars": 37412,
+    "stars_today": 548,
+    "forks": 3253,
+    "trending_rank": 6,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（37412）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合计算机视觉工程师、安防系统开发者和 AI 应用构建者。具体用法：在 YOLO 等检测模型输出结果后，用 supervision 的 Detections 对象统一封装，然后调用 BoxAnnotator 绘制检测框、ByteTrack 实现多目标追踪、LineZone 统计越线计数。特别适合工厂质检、零售客流分析、交通监控等需要将 CV 模型快速落地为可用产品的场景，大幅缩短从模型到产品的开发周期。"
+  },
+  {
+    "id": "0e0d5275",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "Alishahryar1/free-claude-code",
+    "url": "https://github.com/Alishahryar1/free-claude-code",
+    "raw_description": "Use claude-code for free in the terminal, VSCode extension or via discord like openclaw",
+    "description": "免费使用 Claude Code 的开源解决方案，1.4K Star 的实用工具。核心功能是通过代理和路由机制，让用户无需付费订阅即可在终端、VSCode 扩展或 Discord Bot 等多种界面中使用 Claude Code 的核心能力。支持类似 OpenClaw 的接口调用方式，降低了 Claude Code 的使用门槛。项目面向无法或不愿付费的开发者群体，是 Claude Code 生态中「平民化」方向的代表，反映了市场对 AI 编程工具可及性的强烈需求。",
+    "metaphor": "它是 Claude Code 的「平民版入口」——就像 VPN 让更多人能访问被限制的内容一样，free-claude-code 打通了付费墙，让没有订阅预算的开发者也能体验顶级 AI 编程助手的威力。是 Claude Code 生态「普惠化」的一块重要拼图。",
+    "language": "Python",
+    "stars": 1420,
+    "stars_today": 56,
+    "forks": 223,
+    "trending_rank": 7,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（1420）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合学生开发者、独立黑客和预算有限的初创团队。安装配置后可在终端直接调用 Claude Code 能力进行代码生成、调试和重构，也可通过 VSCode 扩展集成到日常开发工作流。对于想在正式付费前先体验和评估 Claude Code 价值的开发者，这是最低成本的试用路径。Discord 集成功能还支持团队共享使用，适合小型开发团队协作场景。"
+  },
+  {
+    "id": "47dc904e",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "axios/axios",
+    "url": "https://github.com/axios/axios",
+    "raw_description": "Promise based HTTP client for the browser and node.js",
+    "description": "前端生态基础设施级工具，109K Star 的超级明星库。axios 是基于 Promise 的 HTTP 客户端，同时支持浏览器端和 Node.js 环境，是 JavaScript 生态中使用最广泛的网络请求库。核心特性包括：请求/响应拦截器、自动 JSON 序列化/反序列化、请求取消、超时控制、CSRF 防护、并发请求管理等。作为前端工程化的「基础设施」，几乎所有现代 Web 应用都依赖 axios 处理 API 通信。连续多年位居 npm 下载量前列，是 JavaScript 生态中不可替代的核心组件。",
+    "metaphor": "它是 JavaScript 世界的「邮政总局」——无论你要向服务器发什么请求、收什么数据，axios 都帮你打包、寄送、签收，还能在中途拦截检查（拦截器）。就像没有邮政系统城市就无法运转，没有 axios 现代 Web 应用就少了最重要的通信基础设施。",
+    "language": "JavaScript",
+    "stars": 108996,
+    "stars_today": 216,
+    "forks": 11593,
+    "trending_rank": 1,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（108996）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合所有前端开发者和全栈工程师。在 Vue、React、Angular 等任何前端框架中，用 `axios.get/post` 替代原生 fetch，享受自动 JSON 处理、统一错误处理、请求拦截等开箱即用功能。企业级项目中可通过拦截器统一注入 Token、处理 401 跳转登录、记录请求日志，大幅减少重复代码。也适合 Node.js 后端服务调用第三方 API，是全栈开发者必备的基础工具。"
+  },
+  {
+    "id": "26017003",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "affaan-m/everything-claude-code",
+    "url": "https://github.com/affaan-m/everything-claude-code",
+    "raw_description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "description": "Claude Code 生态中最受关注的性能优化系统，133K Star 的现象级项目，连续多日霸榜 GitHub Trending。核心定位是为 Claude Code、Codex、Opencode、Cursor 等 AI 编程工具提供全面的「Agent 强化框架」，涵盖 Skills（技能库）、Instincts（直觉反射规则）、Memory（持久记忆系统）、Security（安全护栏）、Research-First（研究优先开发范式）五大维度。是目前 AI 编程工具优化领域覆盖最全面、社区最活跃的开源项目，代表了 AI 编程工具「能力扩展层」的最佳实践。",
+    "metaphor": "它是 AI 编程助手的「外骨骼装甲」——原版 Claude Code 已经很强，但套上 everything-claude-code 就像普通士兵穿上钢铁侠战甲，Skills 给它装上专业技能，Instincts 让它形成肌肉记忆，Memory 让它不再健忘，Security 给它装上安全阀，瞬间从助手升级为真正的 AI 开发搭档。",
+    "language": "JavaScript",
+    "stars": 133509,
+    "stars_today": 3067,
+    "forks": 19379,
+    "trending_rank": 2,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（133509）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 Claude Code 重度用户、AI 编程工具深度玩家和企业级 AI 开发团队。具体用法：克隆仓库后按需选择安装不同模块，Skills 库可让 Claude 掌握特定框架的最佳实践，Memory 系统让 Claude 记住项目上下文和个人偏好，Security 模块防止 AI 生成危险代码。特别适合需要在大型代码库中长期使用 AI 辅助开发的团队，显著提升 AI 编程的一致性和安全性。"
+  },
+  {
+    "id": "6167e70a",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "sgoudelis/ground-station",
+    "url": "https://github.com/sgoudelis/ground-station",
+    "raw_description": "Ground Station is all-in-one satellite monitoring suite",
+    "description": "一体化卫星监控套件，3.5K Star 的专业航天工具。核心功能是提供完整的卫星轨道追踪、地面站管理、信号监控和数据可视化能力，将原本分散在多个专业工具中的卫星监控功能整合为一个统一平台。支持 TLE（两行轨道根数）数据解析、实时轨道预测、过境时间计算、多卫星并行监控等专业功能。是业余无线电爱好者、航天研究机构和商业小卫星运营商进行地面站管理的开源利器。",
+    "metaphor": "它是卫星世界的「飞行管制中心」——就像机场塔台统一管理所有飞机的起降，Ground Station 把天上所有你关心的卫星的轨道、信号、过境时间都汇聚到一个界面上，让你坐在家里就能像专业航天工程师一样监控太空。",
+    "language": "JavaScript",
+    "stars": 3557,
+    "stars_today": 87,
+    "forks": 620,
+    "trending_rank": 3,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（3557）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合业余无线电爱好者（HAM）、航天院校学生和商业小卫星运营团队。具体用法：输入目标卫星的 NORAD ID 或 TLE 数据，系统自动计算实时位置、下次过境时间和仰角方位，配合天线控制器可实现自动跟踪。商业用户可用于管理自有小卫星星座的地面站网络，学术用户可用于空间目标监视研究，业余爱好者可用于接收气象卫星图像或 ISS 信号。"
+  },
+  {
+    "id": "8de6077a",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "harvard-edge/cs249r_book",
+    "url": "https://github.com/harvard-edge/cs249r_book",
+    "raw_description": "Machine Learning Systems",
+    "description": "哈佛大学边缘计算研究组出品的《机器学习系统》开源教材，23K Star 的顶级学术资源。这本书系统讲解了 ML 系统的全栈知识体系，涵盖从芯片架构、编译器优化、模型压缩到边缘部署的完整技术链路。由哈佛 CS249r 课程配套教材演变而来，汇聚了 Arm、Google、Intel 等顶尖工程师的实战经验。是目前覆盖 MLOps、TinyML、边缘 AI 最系统的免费教材，代表了 AI 能力下沉到边缘设备这一重要趋势的知识沉淀。",
+    "metaphor": "它是 AI 工程师的「武功秘籍全集」——市面上教你用 PyTorch 训练模型的教程满天飞，但从芯片到系统再到部署的完整修炼路径却极为稀缺。这本哈佛出品的教材就像武林秘籍，把 AI 系统工程的内功心法从根基到顶层完整传授，是从「会用 AI」到「能造 AI 系统」的必读升级材料。",
+    "language": "JavaScript",
+    "stars": 23290,
+    "stars_today": 154,
+    "forks": 2778,
+    "trending_rank": 4,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（23290）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 AI 工程师、ML 系统研究者和计划深入边缘 AI 领域的开发者。可作为系统性学习 ML 系统工程的主教材，按章节学习芯片架构对模型性能的影响、如何用量化/剪枝压缩模型以适配边缘设备、如何设计高效的 ML 推理流水线。企业技术团队可用于内部培训，提升工程师对 AI 系统全栈的理解深度，减少「会调参但不懂系统」的能力短板。"
+  },
+  {
+    "id": "685e135a",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "ComposioHQ/open-claude-cowork",
+    "url": "https://github.com/ComposioHQ/open-claude-cowork",
+    "raw_description": "Open Source version of Claude Cowork with 500+ SaaS app integrations",
+    "description": "Composio 出品的 Claude 多智能体协作平台开源版，3.3K Star 的新兴工具。核心功能是提供 500+ SaaS 应用集成能力，让多个 Claude Agent 能够直接操作 GitHub、Slack、Notion、Salesforce、Gmail 等主流工具，实现真正的自动化工作流。作为 Claude Cowork 商业产品的开源版本，保留了核心的多 Agent 协作架构和工具调用能力，是 Composio 生态在 Claude Code 时代的重要布局，代表了「AI 团队协作工具层」这一新兴高价值赛道。",
+    "metaphor": "它是 Claude Agent 的「超级插线板」——单个 Claude 再聪明，如果不能操作你的工具，就只是个会说话的助手。open-claude-cowork 给 Claude 团队插上了 500+ 个工具接口，让 AI 员工们真正能动手干活——发邮件、提 PR、更新数据库，一气呵成，从「说说而已」变成「真正执行」。",
+    "language": "JavaScript",
+    "stars": 3347,
+    "stars_today": 96,
+    "forks": 450,
+    "trending_rank": 5,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（3347）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合希望用 AI 自动化业务流程的企业技术团队和独立开发者。具体用法：配置 Claude Agent 团队，分配不同角色（研究员负责搜索、开发者负责写代码、项目经理负责汇报），通过 Composio 的 500+ 集成让每个 Agent 都能直接操作对应工具。适合自动化客户跟进流程（CRM 更新+邮件发送+日历安排）、代码审查流水线（GitHub PR 分析+Slack 通知+Jira 更新）等复杂多系统协作场景。"
+  },
+  {
+    "id": "b9d34308",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "maboloshi/github-chinese",
+    "url": "https://github.com/maboloshi/github-chinese",
+    "raw_description": "GitHub 汉化插件，GitHub 中文化界面。 (GitHub Translation To Chinese)",
+    "description": "GitHub 界面中文汉化浏览器插件，22K Star 的高人气实用工具。通过浏览器扩展方式将 GitHub 网页界面的英文菜单、按钮、提示文字实时翻译为中文，覆盖 Issues、Pull Requests、Actions、Settings 等几乎所有页面。采用词条映射+正则替换的技术方案，支持动态内容的实时翻译，并随 GitHub 界面更新持续维护词条库。是降低中文开发者 GitHub 使用门槛、提升工作效率的重要工具，也是国内开源社区最活跃的本地化项目之一。",
+    "metaphor": "它是 GitHub 的「同声传译耳机」——对于英文不够流利的开发者来说，GitHub 就像一个全英文的外国会议室，github-chinese 就是那副实时翻译耳机，让你不再为看不懂界面文字而分心，专注于代码本身。",
+    "language": "JavaScript",
+    "stars": 22278,
+    "stars_today": 93,
+    "forks": 1235,
+    "trending_rank": 6,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（22278）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合英文阅读不够流畅的中国开发者、学生和技术初学者。安装浏览器扩展后，GitHub 的所有界面文字自动显示为中文，无需任何配置。特别适合刚开始学习使用 GitHub 的新手，降低认知负担；也适合需要在 GitHub 上高效处理大量 Issues 和 PR 的中文开发者，减少英文理解耗时。在企业内部 GitHub 培训场景中，可作为辅助工具帮助新员工快速上手。"
+  },
+  {
+    "id": "a649a2c0",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "AikidoSec/safe-chain",
+    "url": "https://github.com/AikidoSec/safe-chain",
+    "raw_description": "Protect against malicious code installed via npm, yarn, pnpm, npx, and pnpx with Aikido Safe Chain. Free to use, no tokens required.",
+    "description": "Aikido Security 出品的供应链安全防护工具，1K Star 的新兴安全利器。核心功能是在 npm、yarn、pnpm、npx、pnpx 执行时实时拦截并检测恶意代码，防止通过依赖包安装传播的供应链攻击（如 typosquatting、恶意 postinstall 脚本等）。完全免费使用，无需 Token 或账号注册，一行命令即可接入现有工作流。在近年供应链攻击事件频发的背景下（如 XZ Utils 后门、polyfill.io 劫持），safe-chain 代表了开发者工具安全化的重要趋势。",
+    "metaphor": "它是 npm 安装时的「安检门」——每次 `npm install` 就像打开一个来历不明的包裹，safe-chain 在包裹开箱前先过一遍安全扫描仪，把藏在依赖包里的恶意代码拦在门外。在供应链攻击成为黑客新宠的今天，这道安检门是每个项目都应该装上的标配防线。",
+    "language": "JavaScript",
+    "stars": 1015,
+    "stars_today": 34,
+    "forks": 48,
+    "trending_rank": 7,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（1015）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合所有 JavaScript/TypeScript 开发者，特别是负责企业级项目安全的工程师和 DevSecOps 团队。具体用法：在 CI/CD 流水线中用 `safe-chain npm install` 替代原有安装命令，无需改动其他配置，即可为所有依赖安装添加恶意代码检测。本地开发时同样适用，保护开发机不被恶意包污染。对于维护开源项目的开发者，可防止被攻击者通过依赖包投毒危害下游用户。"
+  },
+  {
+    "id": "0ca179f6",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "jellyfin/jellyfin-web",
+    "url": "https://github.com/jellyfin/jellyfin-web",
+    "raw_description": "The Free Software Media System - Official Web Client",
+    "description": "Jellyfin 媒体服务器的官方 Web 客户端，3.4K Star。Jellyfin 是完全开源免费的个人媒体服务器系统（Plex 的开源替代品），jellyfin-web 是其前端界面，提供电影、电视剧、音乐、照片的浏览、播放和管理功能。支持响应式设计、多主题、字幕管理、媒体库组织等完整功能，可在任何现代浏览器中运行。作为「无追踪、无订阅、完全自托管」理念的代表项目，是隐私优先自托管媒体管理领域的核心基础设施。",
+    "metaphor": "它是你家私人的「Netflix 前台」——后端 Jellyfin 服务器是你自己的影视仓库，jellyfin-web 就是那个漂亮的播放界面，让你的私人媒体库看起来和 Netflix 一样专业流畅，而且完全属于你，没有月费、没有内容下架、没有观看记录被收集。",
+    "language": "JavaScript",
+    "stars": 3473,
+    "stars_today": 2,
+    "forks": 1902,
+    "trending_rank": 8,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（3473）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合注重隐私的个人用户、NAS 爱好者和家庭媒体中心搭建者。部署 Jellyfin 服务器后，通过 jellyfin-web 在任意设备浏览器中访问自己的媒体库，支持直播流式播放和转码。特别适合有大量本地影视收藏的用户，告别 Plex 的付费订阅限制；也适合家庭共享场景，为家庭成员提供统一的媒体访问入口，同时保持完全的数据隐私控制。"
+  },
+  {
+    "id": "cbb46d33",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "lodash/lodash",
+    "url": "https://github.com/lodash/lodash",
+    "raw_description": "A modern JavaScript utility library delivering modularity, performance, & extras.",
+    "description": "JavaScript 工具函数库的绝对标杆，62K Star 的超级基础设施项目。lodash 提供了数组、对象、字符串、函数等数据类型的 200+ 实用操作函数，以一致的 API 和出色的性能著称。支持模块化按需引入、惰性求值链式调用、函数柯里化等高级特性。尽管现代 JavaScript 原生 API 已覆盖部分功能，lodash 在跨浏览器兼容性、边界情况处理和性能优化方面仍具有不可替代的价值，是前端工程化的必备工具库，也是学习函数式编程思想的优秀参考实现。",
+    "metaphor": "它是 JavaScript 的「标准零件库」——就像工厂生产不需要每次从零锻造螺丝，lodash 把开发中最常用的数据处理操作（去重、分组、深拷贝、防抖）全部标准化，拿来即用，省去了无数重复造轮子的时间，让开发者专注于业务逻辑而非基础操作。",
+    "language": "JavaScript",
+    "stars": 61518,
+    "stars_today": 7,
+    "forks": 7126,
+    "trending_rank": 9,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（61518）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合所有 JavaScript 和 TypeScript 开发者。在处理复杂数据结构时，用 `_.groupBy`、`_.flatMap`、`_.merge` 等函数替代手写循环，代码更简洁、可读性更强。特别适合后端 Node.js 开发中的数据转换场景，以及前端复杂状态管理中的数据处理逻辑。通过按需引入（`import groupBy from 'lodash/groupBy'`）可最小化打包体积，是现代前端工程化的最佳实践之一。"
+  },
+  {
+    "id": "2d46926d",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "npm/cli",
+    "url": "https://github.com/npm/cli",
+    "raw_description": "the package manager for JavaScript",
+    "description": "JavaScript 包管理器 npm 的官方命令行工具，9.6K Star 的核心基础设施项目。npm CLI 是全球最大软件注册表 npm registry 的官方客户端，负责包的安装、更新、发布、版本管理等全生命周期操作。作为 Node.js 默认捆绑的包管理器，npm CLI 是 JavaScript 生态的基础设施核心，每天被数百万开发者使用。尽管 yarn、pnpm 等竞争者不断涌现，npm CLI 凭借官方地位和持续的性能改进（workspaces、overrides、audit）仍是最广泛使用的 JS 包管理工具。",
+    "metaphor": "它是 JavaScript 世界的「物流中枢」——每一个 `npm install` 背后都是这个工具在全球软件仓库中精准调度、解析依赖、下载分发。就像没有物流系统电商就无法运转，没有 npm CLI，JavaScript 生态庞大的包共享体系就会瞬间瘫痪。",
+    "language": "JavaScript",
+    "stars": 9649,
+    "stars_today": 3,
+    "forks": 4262,
+    "trending_rank": 10,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（9649）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合所有 JavaScript 和 Node.js 开发者。日常开发中用于安装项目依赖（`npm install`）、运行脚本（`npm run build`）、发布自己的开源包（`npm publish`）。企业级场景中，npm workspaces 支持 monorepo 管理，`npm audit` 自动检测依赖安全漏洞，`npm overrides` 解决依赖版本冲突。对于想发布开源工具的开发者，npm CLI 是将代码分享给全球百万开发者的最直接通道。"
+  },
+  {
+    "id": "af247aa4",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "siddharthvaddem/openscreen",
+    "url": "https://github.com/siddharthvaddem/openscreen",
+    "raw_description": "Create stunning demos for free. Open-source, no subscriptions, no watermarks, and free for commercial use. An alternative to Screen Studio.",
+    "description": "免费开源的屏幕录制与演示视频制作工具，15K Star 的快速崛起项目。定位为 Screen Studio 的开源替代品，提供高质量演示视频录制、鼠标光标动效、背景模糊/替换、缩放动画等专业视频效果，完全免费、无订阅、无水印，且允许商业使用。解决了 Screen Studio 高达 89 美元年费的痛点，让独立开发者和内容创作者能够免费制作专业级产品演示视频。在 AI 工具演示、产品 Demo、技术教程制作场景下具有极高价值。",
+    "metaphor": "它是产品演示视频的「免费平替神器」——Screen Studio 让你花 89 美元年费才能做出那种光标丝滑、背景漂亮的专业演示视频，openscreen 分文不取就给你同等效果。就像 Figma 的免费版打破了设计工具的付费壁垒，openscreen 正在打破演示视频制作的价格门槛。",
+    "language": "TypeScript",
+    "stars": 15689,
+    "stars_today": 2496,
+    "forks": 1066,
+    "trending_rank": 1,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（15689）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合独立开发者、产品经理和技术内容创作者。具体用法：录制产品功能演示时，openscreen 自动为鼠标点击添加动效、为窗口切换添加缩放动画，输出专业级 MP4 视频，直接用于产品 Landing Page、App Store 预览、技术博客嵌入。特别适合需要频繁制作产品 Demo 但预算有限的独立开发者，以及制作技术教程的 YouTube 创作者，零成本实现专业视觉效果。"
+  },
+  {
+    "id": "42ae949e",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:03",
+    "title": "Yeachan-Heo/oh-my-codex",
+    "url": "https://github.com/Yeachan-Heo/oh-my-codex",
+    "raw_description": "OmX - Oh My codeX: Your codex is not alone. Add hooks, agent teams, HUDs, and so much more.",
+    "description": "OpenAI Codex 的能力增强框架，11.5K Star 的新兴工具，定位为「oh-my-claudecode」的 Codex 版本。核心功能是为 Codex 添加 Hooks（钩子系统）、Agent Teams（多智能体协作）、HUDs（实时状态显示界面）等高级扩展能力，将原本功能相对单一的 Codex 升级为功能完整的 AI 编程协作平台。是 AI 编程工具「能力扩展层」赛道的重要玩家，反映了市场对各类 AI 编程工具统一增强框架的强烈需求，也代表了 Claude Code 生态向 OpenAI Codex 生态的方法论迁移。",
+    "metaphor": "它是 Codex 的「改装套件」——原版 Codex 就像一辆性能不错但配置标准的车，oh-my-codex 给它装上了氮气加速（Hooks 系统）、车队协同（Agent Teams）和驾驶舱仪表盘（HUDs），让这辆车从代步工具变成赛车级别的 AI 编程战车。",
+    "language": "TypeScript",
+    "stars": 11501,
+    "stars_today": 2852,
+    "forks": 1064,
+    "trending_rank": 2,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（11501）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 OpenAI Codex 用户和 AI 编程工具深度玩家。安装后可通过 Hooks 系统在代码生成前后自动执行自定义逻辑（如自动格式化、安全检查）；Agent Teams 功能让多个专业化 Codex Agent 分工协作处理复杂任务；HUDs 提供实时的 Agent 执行状态可视化，方便调试和监控。特别适合需要将 AI 编程工具深度集成到团队开发流程的工程师，以及探索 AI 编程工具极限能力的技术爱好者。"
+  },
+  {
+    "id": "1e890fb2",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:04",
+    "title": "google/adk-go",
+    "url": "https://github.com/google/adk-go",
+    "raw_description": "An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",
+    "description": "Google 官方出品的 Go 语言 AI Agent 开发工具包，7.3K Star 的重量级开源项目。adk-go 是 Google Agent Development Kit 的 Go 语言实现，提供构建、评估和部署 AI Agent 的完整工具链，包括 Agent 编排、工具调用、状态管理、流式响应、多模态支持等核心能力。作为 Python 版 ADK 的 Go 语言移植，将 Google 在 Agent 工程化方面的最佳实践带入 Go 生态，为高性能、高并发的 AI Agent 服务端开发提供了官方级别的解决方案。",
+    "metaphor": "它是 Google 给 Go 语言开发者的「Agent 建筑蓝图」——用 Python 搭 AI Agent 就像用木头建房子，速度快但承重有限；用 Go + adk-go 就像用钢筋混凝土建摩天大楼，能支撑高并发、高性能的生产级 AI Agent 服务。Google 亲自设计这套蓝图，质量和可靠性都有保证。",
+    "language": "Go",
+    "stars": 7380,
+    "stars_today": 42,
+    "forks": 607,
+    "trending_rank": 1,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 8
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（7380）估算"
+    },
+    "is_top": true,
+    "usage_scene": "适合 Go 语言后端工程师和需要构建高性能 AI Agent 服务的企业技术团队。具体用法：使用 adk-go 的 Agent 类定义 AI 角色和工具集，通过 Session 管理多轮对话状态，利用 Go 的并发优势处理大规模并发 Agent 请求。特别适合需要将 AI Agent 能力嵌入现有 Go 微服务架构的场景，以及对延迟和吞吐量有严格要求的生产级 AI 应用，是 Go 生态 AI Agent 开发的首选框架。"
+  },
+  {
+    "id": "f93ac8a2",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:04",
+    "title": "777genius/claude-notifications-go",
+    "url": "https://github.com/777genius/claude-notifications-go",
+    "raw_description": "🔔 Cross-platform smart notifications plugin for Claude Code. 6 types. Click-to-focus. 1 line installation. Instant. Analyze context. Zero dependencies. webhooks (ntfy, slack, telegram...). Linux, MacOS, Windows.",
+    "description": "Claude Code 跨平台智能通知插件，460 Star 的轻量级实用工具。核心功能是为 Claude Code 提供 6 种类型的智能通知（任务完成、错误告警、进度更新等），支持点击通知直接跳转聚焦到对应任务，一行命令即可安装，零依赖。支持 Linux、macOS、Windows 三大平台，并集成 ntfy、Slack、Telegram 等 Webhook 通知渠道，让开发者在 Claude Code 执行长时间任务时无需盯屏等待，任务完成后自动收到推送。是提升 Claude Code 工作流效率的小而美工具。",
+    "metaphor": "它是 Claude Code 的「外卖到了提醒铃」——让 Claude Code 跑长任务时，你可以去干别的事，任务完成了它会主动「叮」你一声，还能直接跳回任务现场。就像点了外卖不用一直守在门口，到了自然有人通知你。",
+    "language": "Go",
+    "stars": 460,
+    "stars_today": 19,
+    "forks": 54,
+    "trending_rank": 2,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 1,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（460）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合使用 Claude Code 处理耗时任务（大型代码重构、批量文件处理、长时间测试）的开发者。一行命令安装后，当 Claude Code 完成任务或遇到错误时，系统会自动弹出桌面通知或推送到 Telegram/Slack 频道，开发者可以放心去处理其他工作。特别适合在 CI/CD 流水线中集成，让团队在 Claude Code 完成自动化任务后第一时间收到通知，提升整体工作流的响应效率。"
+  },
+  {
+    "id": "14a03085",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:04",
+    "title": "krillinai/KrillinAI",
+    "url": "https://github.com/krillinai/KrillinAI",
+    "raw_description": "Video translation and dubbing tool powered by LLMs. The video translator offers 100 language translations and one-click full-process deployment. The video translation output is optimized for platforms like YouTube，TikTok. AI视频翻译配音工具，100种语言双向翻译，一键部署全流程，可以生抖音，小红书，哔哩哔哩，视频号，TikTok，Youtube等形态的内容成适配",
+    "description": "基于 LLM 的视频翻译配音工具，9.8K Star 的 AI 视频变现神器。支持 100 种语言的双向翻译，提供视频字幕翻译、AI 配音、口型同步等完整功能，一键部署全流程，无需专业视频编辑技能。输出格式针对 YouTube、TikTok、抖音、小红书、哔哩哔哩、视频号等主流平台优化，是 AI 短视频出海和多语言内容变现的利器。在 AI 视频变现赛道持续升温的背景下，KrillinAI 代表了「内容全球化」这一高价值变现方向的最佳开源实践。",
+    "metaphor": "它是视频内容的「全球通行证」——一个中文视频，经过 KrillinAI 处理，可以同时变成英文、日文、韩文、西班牙文版本，配上对应语言的 AI 配音，直接投放到全球各大平台。就像一个工厂，把你的内容批量「本地化」，让一份创作可以在 100 个市场同时变现。",
+    "language": "Go",
+    "stars": 9808,
+    "stars_today": 21,
+    "forks": 860,
+    "trending_rank": 3,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（9808）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 YouTube 创作者、短视频出海运营者和内容本地化团队。具体用法：上传原始视频，选择目标语言，KrillinAI 自动完成字幕提取、翻译、AI 配音和字幕嵌入，输出适配各平台规格的成品视频。特别适合有优质中文内容想打入海外市场的创作者，以及需要将海外视频本地化为中文的媒体机构。一键部署特性让非技术用户也能快速上手，大幅降低多语言内容生产的时间和人力成本。"
+  },
+  {
+    "id": "9d3ec99f",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:04",
+    "title": "go-resty/resty",
+    "url": "https://github.com/go-resty/resty",
+    "raw_description": "Simple HTTP, REST, and SSE client library for Go",
+    "description": "Go 语言生态中最受欢迎的 HTTP 客户端库，11.6K Star 的高质量工具。resty 提供简洁优雅的链式 API，支持 REST 和 SSE（Server-Sent Events）客户端功能，内置重试机制、请求/响应中间件、自动 JSON/XML 序列化、证书管理、代理支持等企业级特性。相比 Go 标准库 `net/http` 的低层次 API，resty 大幅简化了 HTTP 客户端代码，是 Go 生态中对标 Python requests、JavaScript axios 的最佳选择，也是构建 Go 微服务 API 调用层的首选库。",
+    "metaphor": "它是 Go 语言的「axios」——Go 标准库的 HTTP 客户端就像用汇编语言写网络请求，功能够用但极其繁琐；resty 就是那层优雅的封装，让你用几行链式调用就能完成复杂的 HTTP 请求，还自带重试、中间件等企业级功能，让 Go 的 HTTP 调用也能像 Python requests 一样丝滑。",
+    "language": "Go",
+    "stars": 11619,
+    "stars_today": 3,
+    "forks": 781,
+    "trending_rank": 4,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（11619）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 Go 语言后端开发者和微服务工程师。在调用第三方 API 时，用 resty 的链式 API 替代标准库的冗长写法，自动处理 JSON 序列化/反序列化，通过内置重试机制提升服务可靠性。在微服务架构中，可统一配置 resty 客户端（设置基础 URL、鉴权 Header、超时时间），作为服务间调用的标准客户端层，提升代码一致性和可维护性。SSE 支持使其也适用于实时数据流场景。"
+  },
+  {
+    "id": "2ba61b9c",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:04",
+    "title": "labstack/echo",
+    "url": "https://github.com/labstack/echo",
+    "raw_description": "High performance, minimalist Go web framework",
+    "description": "Go 语言高性能极简 Web 框架，32K Star 的 Go 生态明星项目。Echo 以「高性能、极简主义」为核心设计理念，提供路由、中间件、数据绑定、验证、模板渲染等完整 Web 框架功能，同时保持极低的内存占用和极高的路由性能（基于 Radix 树的路由算法）。内置丰富的中间件（JWT、CORS、Logger、Rate Limiter）和 WebSocket 支持，是构建高并发 REST API 和微服务的最佳 Go 框架选择之一，与 Gin 并列为 Go Web 框架的双雄。",
+    "metaphor": "它是 Go Web 开发的「F1 赛车底盘」——Gin 和 Echo 就像两款顶级赛车，都追求极致性能和轻量化，Echo 的设计更加优雅简洁，中间件系统更灵活，就像一辆操控感更好的赛车，让你在高并发的赛道上既跑得快又转得灵。",
+    "language": "Go",
+    "stars": 32279,
+    "stars_today": 6,
+    "forks": 2315,
+    "trending_rank": 5,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（32279）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 Go 语言后端工程师和需要构建高性能 API 服务的团队。具体用法：用 Echo 快速搭建 REST API 服务，通过内置中间件添加 JWT 鉴权、请求日志、CORS 处理，利用 WebSocket 支持构建实时通信功能。特别适合对 API 响应延迟有严格要求的场景（如游戏后端、实时交易系统），以及需要在有限资源下处理高并发请求的云原生微服务架构。"
+  },
+  {
+    "id": "718b79c9",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:04",
+    "title": "kubernetes-sigs/kustomize",
+    "url": "https://github.com/kubernetes-sigs/kustomize",
+    "raw_description": "Customization of kubernetes YAML configurations",
+    "description": "Kubernetes 官方 SIG 出品的 YAML 配置定制化工具，12K Star 的 K8s 生态核心组件。kustomize 通过「基础配置 + 覆盖层」的模式解决 Kubernetes 多环境配置管理难题，无需模板引擎即可实现开发/测试/生产环境的配置差异化管理。作为 kubectl 内置工具（`kubectl apply -k`），是 Kubernetes 官方推荐的配置管理方案，与 Helm 并列为 K8s 配置管理双雄。特别适合 GitOps 工作流，是 ArgoCD、Flux 等 GitOps 工具的首选配置管理后端。",
+    "metaphor": "它是 Kubernetes 配置的「差量管理专家」——就像 Git 只存储文件的变化而非全量副本，kustomize 让你只写出不同环境之间的「差异」，而非为每个环境复制一套完整配置。告别「复制粘贴改参数」的原始方式，用优雅的覆盖层管理成百上千个 K8s 资源文件。",
+    "language": "Go",
+    "stars": 12006,
+    "stars_today": 3,
+    "forks": 2376,
+    "trending_rank": 6,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（12006）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 Kubernetes 运维工程师、DevOps 团队和 GitOps 实践者。具体用法：建立 base 基础配置目录，再为 dev/staging/prod 各建一个 overlays 目录，只写差异部分（如镜像 tag、副本数、资源限制），kustomize 自动合并生成完整配置。配合 ArgoCD 实现 GitOps 流水线，每次合并 PR 自动触发对应环境的配置更新，是现代云原生应用多环境管理的最佳实践。"
+  },
+  {
+    "id": "bf41ece2",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:04",
+    "title": "open-telemetry/opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector",
+    "raw_description": "OpenTelemetry Collector",
+    "description": "OpenTelemetry 官方出品的可观测性数据采集器核心版本，6.8K Star 的云原生基础设施重要组件。OpenTelemetry Collector 是供应商无关的可观测性数据管道，负责接收、处理和导出 Traces（链路追踪）、Metrics（指标）、Logs（日志）三类可观测性数据。支持多种数据源接入（Jaeger、Prometheus、Zipkin 等）和多种后端导出（Datadog、New Relic、Grafana、Elasticsearch 等），是构建统一可观测性平台的核心基础设施，也是云原生可观测性标准化的最重要推动力量之一。",
+    "metaphor": "它是可观测性数据的「万能路由器」——不管你的服务用什么框架、数据发到哪个监控平台，OpenTelemetry Collector 都能在中间做标准化转换和智能路由，就像一个通晓所有语言的外交翻译官，让不同厂商的监控工具都能无障碍沟通。",
+    "language": "Go",
+    "stars": 6803,
+    "stars_today": 9,
+    "forks": 1974,
+    "trending_rank": 7,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（6803）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 DevOps 工程师、SRE 团队和云原生架构师。在微服务架构中部署 Collector 作为可观测性数据中间层，统一收集所有服务的 Traces/Metrics/Logs，通过配置 Pipeline 实现数据过滤、采样、富化后路由到 Grafana、Datadog 等后端。避免了直接集成各厂商 SDK 导致的厂商锁定问题，当需要切换监控平台时只需修改 Collector 配置而无需改动应用代码。"
+  },
+  {
+    "id": "2edf5e1e",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:04",
+    "title": "golang-migrate/migrate",
+    "url": "https://github.com/golang-migrate/migrate",
+    "raw_description": "Database migrations. CLI and Golang library.",
+    "description": "Go 语言数据库迁移工具，18K Star 的数据库工程化必备组件。migrate 提供 CLI 工具和 Go 库两种使用方式，支持 PostgreSQL、MySQL、SQLite、MongoDB、CockroachDB 等几乎所有主流数据库的版本化 Schema 迁移管理。通过顺序编号的迁移文件（up/down 双向）实现数据库结构变更的版本控制，与 Git 工作流完美结合，是 Go 生态中对标 Flyway、Liquibase 的最佳开源迁移工具，也是 Go 后端工程化实践的标准配置之一。",
+    "metaphor": "它是数据库结构的「Git 版本控制」——代码有 Git 管理变更历史，数据库 Schema 有 migrate 管理。每次表结构变更都记录为一个迁移文件，支持向前升级（up）和向后回滚（down），让数据库结构变更像代码提交一样可追溯、可回滚，彻底告别「手动执行 SQL 脚本」的原始运维方式。",
+    "language": "Go",
+    "stars": 18313,
+    "stars_today": 10,
+    "forks": 1561,
+    "trending_rank": 8,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（18313）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 Go 语言后端开发者和 DBA 团队。在 CI/CD 流水线中集成 migrate CLI，每次部署前自动执行待执行的迁移文件，确保数据库结构与代码版本同步。本地开发时用 `migrate up` 快速同步最新 Schema，用 `migrate down` 回滚到指定版本进行调试。特别适合多人协作的团队项目，通过迁移文件的 Git 管理避免数据库结构变更的冲突和遗漏，是 Go 后端项目数据库管理的最佳实践。"
+  },
+  {
+    "id": "e538fbae",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:04",
+    "title": "open-telemetry/opentelemetry-collector-contrib",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib",
+    "raw_description": "Contrib repository for the OpenTelemetry Collector",
+    "description": "OpenTelemetry Collector 的扩展贡献仓库，4.5K Star 的云原生可观测性生态核心。相比核心版本，contrib 仓库包含了数百个社区贡献的 Receivers（接收器）、Processors（处理器）、Exporters（导出器）扩展，支持 AWS、Azure、GCP 等主流云平台，以及 Kafka、Redis、MySQL 等数百种数据源的原生集成。是 OpenTelemetry 生态中覆盖最广、集成最丰富的组件库，也是企业级可观测性平台建设的「扩展军火库」，几乎所有复杂的可观测性需求都能在这里找到现成的组件。",
+    "metaphor": "它是 OpenTelemetry Collector 的「应用商店」——核心版本是手机系统，contrib 仓库就是应用商店，里面有数百个专门为各种数据源和平台定制的「插件」，需要接入 AWS CloudWatch？装个插件；需要导出到 Kafka？装个插件。让 Collector 从通用工具变成为你量身定制的可观测性数据中枢。",
+    "language": "Go",
+    "stars": 4556,
+    "stars_today": 5,
+    "forks": 3461,
+    "trending_rank": 9,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（4556）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合企业级 DevOps 团队和多云架构的 SRE 工程师。当核心 Collector 无法满足特定数据源接入需求时，从 contrib 仓库选择对应的 Receiver 组件（如 AWS X-Ray Receiver、Kafka Receiver），配置后即可无缝接入现有 Collector Pipeline。特别适合混合云环境下需要统一收集来自不同云平台监控数据的场景，以及需要将可观测性数据写入 Kafka 做二次处理的大型数据平台建设项目。"
+  },
+  {
+    "id": "050590e7",
+    "date": "2026-04-03",
+    "fetched_at": "2026-04-03 07:04",
+    "title": "kubernetes-sigs/cluster-api",
+    "url": "https://github.com/kubernetes-sigs/cluster-api",
+    "raw_description": "Home for Cluster API, a subproject of sig-cluster-lifecycle",
+    "description": "Kubernetes 官方 SIG 出品的集群生命周期管理框架，4.1K Star 的云原生基础设施核心项目。Cluster API 将 Kubernetes 集群本身的创建、扩缩容、升级、删除等生命周期操作「Kubernetes 化」——用 Kubernetes 自定义资源（CRD）来声明式管理 Kubernetes 集群，实现「用 K8s 管理 K8s」的元编程范式。支持 AWS、Azure、GCP、vSphere、OpenStack 等主流基础设施提供商，是大规模多集群 Kubernetes 管理的标准解决方案，也是企业级 Kubernetes 平台团队的核心工具。",
+    "metaphor": "它是 Kubernetes 的「自我管理系统」——就像机器人能自我维修和自我复制，Cluster API 让 Kubernetes 集群本身也能被 Kubernetes 声明式管理。你只需要写一个 YAML 说「我要一个 3 主节点 10 工作节点的集群」，Cluster API 就会自动在云上把这个集群建出来，还能自动扩缩容和升级，彻底告别手动 kubeadm 的时代。",
+    "language": "Go",
+    "stars": 4158,
+    "stars_today": 5,
+    "forks": 1481,
+    "trending_rank": 10,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（4158）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合平台工程师、Kubernetes 基础设施团队和多集群管理的云原生架构师。具体用法：定义 Cluster、MachineDeployment 等 CRD 资源描述目标集群规格，Cluster API 自动调用云厂商 API 完成集群创建；通过修改 MachineDeployment 的副本数实现工作节点自动扩缩容；升级时只需更新 Kubernetes 版本字段，Cluster API 自动滚动升级。特别适合需要管理数十上百个 Kubernetes 集群的大型企业平台团队。"
   }
 ]
