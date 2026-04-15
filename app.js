@@ -1,6 +1,7 @@
 /* ===== app.js — GitHub AI 雷达前端逻辑 ===== */
 
 const DATA_URL = './radar_history.json';
+const REDDIT_DATA_URL = './reddit_history.json';
 
 // ===== 全局状态 =====
 let allProjects = [];
@@ -10,6 +11,11 @@ let trackFilter = 'all';
 let currentPage = 1;
 const PAGE_SIZE = 15;
 let currentTab = 'radar'; // 默认展示 radar tab
+
+// ===== Reddit 全局状态 =====
+let allRedditPosts = [];
+let currentRedditSub = 'SomebodyMakeThis';
+let currentRedditDate = '';
 
 // Stars 缓存
 const starsCache = {};
@@ -52,9 +58,17 @@ function formatStars(n) {
 // ===== 初始化 =====
 async function init() {
   try {
-    const res = await fetch(DATA_URL + '?t=' + Date.now());
+    const [res, redditRes] = await Promise.all([
+      fetch(DATA_URL + '?t=' + Date.now()),
+      fetch(REDDIT_DATA_URL + '?t=' + Date.now()).catch(() => null),
+    ]);
+
     if (!res.ok) throw new Error('数据加载失败');
     allProjects = await res.json();
+
+    if (redditRes && redditRes.ok) {
+      allRedditPosts = await redditRes.json();
+    }
 
     updateLastUpdate();
     updateStats();
@@ -62,6 +76,8 @@ async function init() {
     renderTrending();
     renderTop3();
     renderHistory();
+    buildRedditDateOptions();
+    renderRedditList();
     bindEvents();
   } catch (e) {
     console.error(e);
@@ -667,6 +683,22 @@ function bindEvents() {
     renderTop3(e.target.value);
   });
 
+  // Reddit 日期切换
+  document.getElementById('reddit-date').addEventListener('change', e => {
+    currentRedditDate = e.target.value;
+    renderRedditList();
+  });
+
+  // Reddit 子版块切换
+  document.getElementById('reddit-section').addEventListener('click', e => {
+    const btn = e.target.closest('.reddit-sub-btn');
+    if (!btn) return;
+    document.querySelectorAll('.reddit-sub-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentRedditSub = btn.dataset.sub;
+    renderRedditList();
+  });
+
   // 搜索
   document.getElementById('search-input').addEventListener('input', e => {
     searchQuery = e.target.value.trim();
@@ -734,6 +766,127 @@ function syncTableHeader() {
       th.classList.add('active', currentSort.dir);
     }
   });
+}
+
+// ===== Reddit：构建日期选项 =====
+function buildRedditDateOptions() {
+  if (!allRedditPosts.length) return;
+  const dates = [...new Set(allRedditPosts.map(p => p.date))].sort().reverse();
+  currentRedditDate = dates[0] || '';
+
+  const sel = document.getElementById('reddit-date');
+  sel.innerHTML = '';
+  dates.forEach((d, i) => {
+    const opt = document.createElement('option');
+    opt.value = d;
+    opt.textContent = d + (i === 0 ? ' (最新)' : '');
+    sel.appendChild(opt);
+  });
+}
+
+// ===== Reddit：渲染帖子列表 =====
+function renderRedditList() {
+  const container = document.getElementById('reddit-list');
+  if (!container) return;
+
+  if (!allRedditPosts.length) {
+    container.innerHTML = `<div class="empty-state"><div class="icon">📭</div><p>暂无数据，等待明日自动更新</p></div>`;
+    return;
+  }
+
+  const targetDate = currentRedditDate || [...new Set(allRedditPosts.map(p => p.date))].sort().reverse()[0];
+  const posts = allRedditPosts.filter(p => p.date === targetDate && p.subreddit === currentRedditSub);
+
+  if (!posts.length) {
+    container.innerHTML = `<div class="empty-state"><div class="icon">📭</div><p>该日期 / 子版块暂无数据</p></div>`;
+    return;
+  }
+
+  container.innerHTML = posts.map((p, i) => {
+    const heatStars = '🔥'.repeat(p.heat_score || 1) + '　'.repeat(Math.max(0, 5 - (p.heat_score || 1)));
+    const tags = (p.tags || []).map(t => `<span class="reddit-tag">${t}</span>`).join('');
+    const publishedDate = p.published ? p.published.slice(0, 10) : p.date;
+
+    return `
+    <div class="reddit-card" onclick="openRedditModal('${p.id}')">
+      <div class="reddit-card-header">
+        <span class="reddit-rank">${i + 1}</span>
+        <div class="reddit-card-title">
+          <a href="${p.permalink}" target="_blank" onclick="event.stopPropagation()">${p.title}</a>
+        </div>
+        <div class="reddit-heat">
+          <span class="heat-label">热度</span>
+          <span class="heat-score heat-${p.heat_score || 1}">${p.heat_score || 1}/5</span>
+        </div>
+      </div>
+      <div class="reddit-card-meta">
+        <span class="reddit-author">👤 u/${p.author || '匿名'}</span>
+        <span class="reddit-date">📅 ${publishedDate}</span>
+        <span class="reddit-sub-label">r/${p.subreddit}</span>
+      </div>
+      <div class="reddit-card-summary">${p.summary || p.content_snippet || '（无摘要）'}</div>
+      <div class="reddit-card-footer">
+        <div class="reddit-tags">${tags}</div>
+        <span class="reddit-read-more">查看分析 →</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ===== Reddit：打开帖子详情 Modal =====
+function openRedditModal(id) {
+  const p = allRedditPosts.find(x => x.id === id);
+  if (!p) return;
+
+  const heatBar = Array.from({length: 5}, (_, i) =>
+    `<span class="heat-dot ${i < (p.heat_score || 1) ? 'active' : ''}"></span>`
+  ).join('');
+
+  const tags = (p.tags || []).map(t => `<span class="reddit-tag">${t}</span>`).join('');
+  const publishedDate = p.published ? p.published.slice(0, 10) : p.date;
+
+  document.getElementById('modal-content').innerHTML = `
+    <div class="modal-header">
+      <div class="modal-rank-label">👾 Reddit · r/${p.subreddit} · ${publishedDate}</div>
+      <div class="modal-title">
+        <a href="${p.permalink}" target="_blank">${p.title}</a>
+      </div>
+      <div class="modal-meta-row">
+        <span>👤 u/${p.author || '匿名'}</span>
+        <span style="margin-left:12px">热度：${heatBar}</span>
+      </div>
+    </div>
+
+    <div class="modal-reddit-grid">
+      <div class="modal-section">
+        <div class="modal-section-label">💬 原帖摘要</div>
+        <div class="modal-desc">${p.content_snippet || '（无正文）'}</div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-label">🧠 AI 需求分析</div>
+        <div class="modal-desc">${p.summary || '—'}</div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-label">💡 产品机会</div>
+        <div class="modal-metaphor">${p.opportunity || '—'}</div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-label">🏷️ 标签</div>
+        <div class="reddit-tags" style="margin-top:6px">${tags || '—'}</div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-label">🔥 热度评分</div>
+        <div class="reddit-heat-detail">
+          <div class="heat-dots-row">${heatBar}</div>
+          <span class="heat-score-big heat-${p.heat_score || 1}">${p.heat_score || 1} / 5</span>
+          <div class="modal-score-reason">${p.heat_reason || ''}</div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('modal-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
 }
 
 // ===== 启动 =====

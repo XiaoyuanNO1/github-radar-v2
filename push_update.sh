@@ -10,8 +10,12 @@ cd "$REPO_DIR"
 echo "📡 [$(date '+%Y-%m-%d %H:%M:%S')] 开始推送雷达数据..."
 
 # 检查是否有变更
-if git diff --quiet radar_history.json 2>/dev/null; then
-  echo "ℹ️  radar_history.json 无变更，跳过推送"
+CHANGED=0
+git diff --quiet radar_history.json 2>/dev/null || CHANGED=1
+git diff --quiet reddit_history.json 2>/dev/null || CHANGED=1
+
+if [ "$CHANGED" -eq 0 ]; then
+  echo "ℹ️  数据文件无变更，跳过推送"
   exit 0
 fi
 
@@ -25,10 +29,21 @@ today = [p for p in data if p['date'] == '${TODAY}']
 print(len(today))
 " 2>/dev/null || echo "?")
 
+REDDIT_COUNT=$(python3 -c "
+import json, os
+if os.path.exists('reddit_history.json'):
+    with open('reddit_history.json') as f:
+        data = json.load(f)
+    today = [p for p in data if p['date'] == '${TODAY}']
+    print(len(today))
+else:
+    print(0)
+" 2>/dev/null || echo "0")
+
 # 提交并推送
-git add radar_history.json
-git commit -m "🤖 每日雷达更新 ${TODAY}：新增 ${NEW_COUNT} 个项目"
+git add radar_history.json reddit_history.json
+git commit -m "🤖 每日雷达更新 ${TODAY}：GitHub ${NEW_COUNT} 个 + Reddit ${REDDIT_COUNT} 条"
 git push origin main
 
-echo "✅ [$(date '+%Y-%m-%d %H:%M:%S')] 推送成功！新增 ${NEW_COUNT} 个项目已上线"
+echo "✅ [$(date '+%Y-%m-%d %H:%M:%S')] 推送成功！GitHub ${NEW_COUNT} 个 + Reddit ${REDDIT_COUNT} 条已上线"
 echo "🌐 预览地址：https://xiaoyuanno1.github.io/github-radar-v2/"
