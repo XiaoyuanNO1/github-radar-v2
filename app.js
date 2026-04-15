@@ -803,16 +803,24 @@ function renderRedditList() {
   }
 
   container.innerHTML = posts.map((p, i) => {
-    const heatStars = '🔥'.repeat(p.heat_score || 1) + '　'.repeat(Math.max(0, 5 - (p.heat_score || 1)));
     const tags = (p.tags || []).map(t => `<span class="reddit-tag">${t}</span>`).join('');
     const publishedDate = p.published ? p.published.slice(0, 10) : p.date;
+    const scores = p.scores || {};
+    const total = scores.total || (scores.vibecoding + scores.moat + scores.track_fit + scores.growth) || 0;
+    const titleDisplay = p.title_zh && !p.title_zh.startsWith('（待翻译）') ? p.title_zh : p.title;
+    const titleSub = p.title_zh && !p.title_zh.startsWith('（待翻译）') ? `<div class="reddit-card-title-en">${p.title}</div>` : '';
+    const verdictClass = p.verdict && p.verdict.startsWith('✅') ? 'verdict-yes'
+      : p.verdict && p.verdict.startsWith('❌') ? 'verdict-no' : 'verdict-watch';
 
     return `
     <div class="reddit-card" onclick="openRedditModal('${p.id}')">
       <div class="reddit-card-header">
         <span class="reddit-rank">${i + 1}</span>
-        <div class="reddit-card-title">
-          <a href="${p.permalink}" target="_blank" onclick="event.stopPropagation()">${p.title}</a>
+        <div class="reddit-card-title-wrap">
+          <div class="reddit-card-title">
+            <a href="${p.permalink}" target="_blank" onclick="event.stopPropagation()">${titleDisplay}</a>
+          </div>
+          ${titleSub}
         </div>
         <div class="reddit-heat">
           <span class="heat-label">热度</span>
@@ -823,11 +831,13 @@ function renderRedditList() {
         <span class="reddit-author">👤 u/${p.author || '匿名'}</span>
         <span class="reddit-date">📅 ${publishedDate}</span>
         <span class="reddit-sub-label">r/${p.subreddit}</span>
+        ${total ? `<span class="reddit-total-score">综合 ${total}/10</span>` : ''}
       </div>
+      ${p.verdict ? `<div class="reddit-verdict ${verdictClass}">${p.verdict}</div>` : ''}
       <div class="reddit-card-summary">${p.summary || p.content_snippet || '（无摘要）'}</div>
       <div class="reddit-card-footer">
         <div class="reddit-tags">${tags}</div>
-        <span class="reddit-read-more">查看分析 →</span>
+        <span class="reddit-read-more">查看详情 →</span>
       </div>
     </div>`;
   }).join('');
@@ -844,42 +854,136 @@ function openRedditModal(id) {
 
   const tags = (p.tags || []).map(t => `<span class="reddit-tag">${t}</span>`).join('');
   const publishedDate = p.published ? p.published.slice(0, 10) : p.date;
+  const scores = p.scores || {};
+  const total = scores.total || 0;
+
+  const titleZh = p.title_zh && !p.title_zh.startsWith('（待翻译）') ? p.title_zh : p.title;
+  const verdictClass = p.verdict && p.verdict.startsWith('✅') ? 'verdict-yes'
+    : p.verdict && p.verdict.startsWith('❌') ? 'verdict-no' : 'verdict-watch';
 
   document.getElementById('modal-content').innerHTML = `
     <div class="modal-header">
       <div class="modal-rank-label">👾 Reddit · r/${p.subreddit} · ${publishedDate}</div>
       <div class="modal-title">
-        <a href="${p.permalink}" target="_blank">${p.title}</a>
+        <a href="${p.permalink}" target="_blank">${titleZh}</a>
       </div>
+      <div class="modal-title-en">${p.title}</div>
       <div class="modal-meta-row">
         <span>👤 u/${p.author || '匿名'}</span>
         <span style="margin-left:12px">热度：${heatBar}</span>
+        ${total ? `<span style="margin-left:12px" class="reddit-total-score">综合 ${total}/10</span>` : ''}
       </div>
     </div>
 
-    <div class="modal-reddit-grid">
-      <div class="modal-section">
-        <div class="modal-section-label">💬 原帖摘要</div>
-        <div class="modal-desc">${p.content_snippet || '（无正文）'}</div>
+    <div class="modal-body-grid">
+      <!-- 左栏：翻译 + 分析 -->
+      <div class="modal-body-left">
+        ${p.verdict ? `
+        <div class="modal-section">
+          <div class="modal-section-label">🎯 观点结论</div>
+          <div class="modal-verdict ${verdictClass}">${p.verdict}</div>
+        </div>` : ''}
+
+        <div class="modal-section">
+          <div class="modal-section-label">📝 原帖正文（中文翻译）</div>
+          <div class="modal-desc">${p.content_zh || p.content_snippet || '（无正文）'}</div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-label">💬 评论区观点</div>
+          <div class="modal-desc">${p.comments_summary || '（暂无评论数据）'}</div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-label">🧠 需求分析</div>
+          <div class="modal-desc">${p.summary || '—'}</div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-label">💡 产品机会</div>
+          <div class="modal-metaphor">${p.opportunity || '—'}</div>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-label">🏷️ 标签</div>
+          <div class="reddit-tags" style="margin-top:6px">${tags || '—'}</div>
+        </div>
       </div>
-      <div class="modal-section">
-        <div class="modal-section-label">🧠 AI 需求分析</div>
-        <div class="modal-desc">${p.summary || '—'}</div>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-label">💡 产品机会</div>
-        <div class="modal-metaphor">${p.opportunity || '—'}</div>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-label">🏷️ 标签</div>
-        <div class="reddit-tags" style="margin-top:6px">${tags || '—'}</div>
-      </div>
-      <div class="modal-section">
-        <div class="modal-section-label">🔥 热度评分</div>
-        <div class="reddit-heat-detail">
-          <div class="heat-dots-row">${heatBar}</div>
-          <span class="heat-score-big heat-${p.heat_score || 1}">${p.heat_score || 1} / 5</span>
-          <div class="modal-score-reason">${p.heat_reason || ''}</div>
+
+      <!-- 右栏：四维评分 -->
+      <div class="modal-body-right">
+        <div class="modal-section">
+          <div class="modal-section-label">评分详情</div>
+          <div class="modal-scores-grid">
+            <div class="modal-score-item">
+              <div class="modal-score-header">
+                <div class="modal-score-name">⚡ Vibecoding 实现难度</div>
+                <div class="modal-score-badge">
+                  <span class="modal-score-value vibe">${scores.vibecoding || '—'}</span>
+                  <span class="modal-score-max">/ 3</span>
+                </div>
+              </div>
+              <div class="modal-score-bar-wrap">
+                <div class="modal-score-bar"><div class="modal-score-bar-fill vibe" style="width:${((scores.vibecoding||0)/3)*100}%"></div></div>
+              </div>
+              <div class="modal-score-reason">用 AI 工具快速实现原型的难易程度</div>
+            </div>
+            <div class="modal-score-item">
+              <div class="modal-score-header">
+                <div class="modal-score-name">🏰 逻辑护城河</div>
+                <div class="modal-score-badge">
+                  <span class="modal-score-value moat">${scores.moat || '—'}</span>
+                  <span class="modal-score-max">/ 3</span>
+                </div>
+              </div>
+              <div class="modal-score-bar-wrap">
+                <div class="modal-score-bar"><div class="modal-score-bar-fill moat" style="width:${((scores.moat||0)/3)*100}%"></div></div>
+              </div>
+              <div class="modal-score-reason">产品壁垒：数据/网络效应/算法复杂度</div>
+            </div>
+            <div class="modal-score-item">
+              <div class="modal-score-header">
+                <div class="modal-score-name">🎯 赛道契合度</div>
+                <div class="modal-score-badge">
+                  <span class="modal-score-value track">${scores.track_fit || '—'}</span>
+                  <span class="modal-score-max">/ 2</span>
+                </div>
+              </div>
+              <div class="modal-score-bar-wrap">
+                <div class="modal-score-bar"><div class="modal-score-bar-fill track" style="width:${((scores.track_fit||0)/2)*100}%"></div></div>
+              </div>
+              <div class="modal-score-reason">AI/SaaS/消费互联网等热门赛道契合度</div>
+            </div>
+            <div class="modal-score-item">
+              <div class="modal-score-header">
+                <div class="modal-score-name">📈 增长潜力</div>
+                <div class="modal-score-badge">
+                  <span class="modal-score-value growth">${scores.growth || '—'}</span>
+                  <span class="modal-score-max">/ 2</span>
+                </div>
+              </div>
+              <div class="modal-score-bar-wrap">
+                <div class="modal-score-bar"><div class="modal-score-bar-fill growth" style="width:${((scores.growth||0)/2)*100}%"></div></div>
+              </div>
+              <div class="modal-score-reason">潜在用户规模与市场增长空间</div>
+            </div>
+          </div>
+          <div class="modal-total">
+            <span class="modal-total-label">综合总分</span>
+            <div>
+              <span class="modal-total-value">${total}</span>
+              <span class="modal-total-denom"> / 10</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section" style="margin-top:16px">
+          <div class="modal-section-label">🔥 热度评分</div>
+          <div class="reddit-heat-detail">
+            <div class="heat-dots-row">${heatBar}</div>
+            <span class="heat-score-big heat-${p.heat_score || 1}">${p.heat_score || 1} / 5</span>
+            <div class="modal-score-reason">${p.heat_reason || ''}</div>
+          </div>
         </div>
       </div>
     </div>
