@@ -16,6 +16,7 @@ let currentTab = 'radar'; // 默认展示 radar tab
 let allRedditPosts = [];
 let currentRedditSub = 'SomebodyMakeThis';
 let currentRedditDate = '';
+let currentRedditVerdict = 'all'; // 观点筛选：all / yes / watch / no
 
 // Stars 缓存
 const starsCache = {};
@@ -699,6 +700,16 @@ function bindEvents() {
     renderRedditList();
   });
 
+  // Reddit 观点筛选
+  document.getElementById('reddit-verdict-filter').addEventListener('click', e => {
+    const btn = e.target.closest('.reddit-filter-btn');
+    if (!btn) return;
+    document.querySelectorAll('.reddit-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentRedditVerdict = btn.dataset.verdict;
+    renderRedditList();
+  });
+
   // 搜索
   document.getElementById('search-input').addEventListener('input', e => {
     searchQuery = e.target.value.trim();
@@ -795,10 +806,22 @@ function renderRedditList() {
   }
 
   const targetDate = currentRedditDate || [...new Set(allRedditPosts.map(p => p.date))].sort().reverse()[0];
-  const posts = allRedditPosts.filter(p => p.date === targetDate && p.subreddit === currentRedditSub);
+  let posts = allRedditPosts.filter(p => p.date === targetDate && p.subreddit === currentRedditSub);
+
+  // 观点筛选
+  if (currentRedditVerdict === 'yes') {
+    posts = posts.filter(p => p.verdict && p.verdict.startsWith('✅'));
+  } else if (currentRedditVerdict === 'watch') {
+    posts = posts.filter(p => p.verdict && p.verdict.startsWith('⚠️'));
+  } else if (currentRedditVerdict === 'no') {
+    posts = posts.filter(p => p.verdict && p.verdict.startsWith('❌'));
+  }
+
+  // 更新筛选计数
+  updateVerdictCounts(targetDate);
 
   if (!posts.length) {
-    container.innerHTML = `<div class="empty-state"><div class="icon">📭</div><p>该日期 / 子版块暂无数据</p></div>`;
+    container.innerHTML = `<div class="empty-state"><div class="icon">📭</div><p>${currentRedditVerdict === 'all' ? '该日期 / 子版块暂无数据' : '没有符合筛选条件的帖子'}</p></div>`;
     return;
   }
 
@@ -841,6 +864,23 @@ function renderRedditList() {
       </div>
     </div>`;
   }).join('');
+}
+
+// ===== Reddit：更新筛选按钮计数 =====
+function updateVerdictCounts(targetDate) {
+  const allPosts = allRedditPosts.filter(p => p.date === targetDate && p.subreddit === currentRedditSub);
+  const yesCount = allPosts.filter(p => p.verdict && p.verdict.startsWith('✅')).length;
+  const watchCount = allPosts.filter(p => p.verdict && p.verdict.startsWith('⚠️')).length;
+  const noCount = allPosts.filter(p => p.verdict && p.verdict.startsWith('❌')).length;
+
+  const btns = document.querySelectorAll('.reddit-filter-btn');
+  btns.forEach(btn => {
+    const v = btn.dataset.verdict;
+    if (v === 'all') btn.textContent = `全部 (${allPosts.length})`;
+    else if (v === 'yes') btn.textContent = `✅ 值得关注 (${yesCount})`;
+    else if (v === 'watch') btn.textContent = `⚠️ 谨慎观望 (${watchCount})`;
+    else if (v === 'no') btn.textContent = `❌ 不建议 (${noCount})`;
+  });
 }
 
 // ===== Reddit：打开帖子详情 Modal =====
