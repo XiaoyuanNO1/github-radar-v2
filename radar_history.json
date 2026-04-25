@@ -48117,5 +48117,1205 @@
     },
     "is_top": false,
     "usage_scene": "适合面向全球用户的互联网服务运维团队。自托管部署后，配置多个分布式检查节点，可以从不同地理位置实时监控服务可用性。当某地区出现网络或 DNS 问题时能精准定位。也适合 SaaS 服务商向客户提供透明的服务状态页面，提升客户信任度。"
+  },
+  {
+    "id": "2ef2ae17",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:02",
+    "title": "Alishahryar1/free-claude-code",
+    "url": "https://github.com/Alishahryar1/free-claude-code",
+    "raw_description": "Use claude-code for free in the terminal, VSCode extension or via discord like openclaw",
+    "description": "开源社区打造的 Claude Code 免费使用方案，11K Star 的热门工具。支持在终端、VSCode 扩展和 Discord 三种环境中免费调用 Claude Code 的代码能力，底层通过 openclaw 协议实现免费接入。降低了 Claude Code 的使用门槛，让没有 Pro 订阅的开发者也能享受顶级 AI 编程助手的能力，是 Claude Code 平民化运动的标志性项目。",
+    "metaphor": "它是 Claude Code 的「共享单车」——原本需要高价月卡才能骑的顶级座驾，现在扫码就能免费骑走。通过社区协作和开源协议打通了付费墙，让每个开发者都能零成本体验 AI 编程的快感。",
+    "language": "Python",
+    "stars": 11406,
+    "stars_today": 3975,
+    "forks": 1694,
+    "trending_rank": 1,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（11406）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合没有 Claude Pro 订阅但想体验 Claude Code 编程能力的独立开发者和学生。可在终端直接调用做代码生成、Debug、重构，也可通过 VSCode 扩展无缝集成到日常开发工作流，甚至在 Discord 社群中协作编程。对预算有限的初创团队来说，是快速验证 AI 编程效率提升的零成本入口。"
+  },
+  {
+    "id": "d26f7497",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:02",
+    "title": "Z4nzu/hackingtool",
+    "url": "https://github.com/Z4nzu/hackingtool",
+    "raw_description": "ALL IN ONE Hacking Tool For Hackers",
+    "description": "GitHub 上 63K Star 的老牌综合安全测试工具箱，将数十种渗透测试、信息收集、漏洞扫描、密码破解、网络攻击模拟等安全工具集成到一个统一的命令行菜单中。覆盖 AnonSurf 匿名上网、SQL 注入、XSS 检测、WiFi 攻击、社工钓鱼等全链路安全测试场景，一键安装即可获得完整的红队工具集，是安全研究者的瑞士军刀。",
+    "metaphor": "它是黑客世界的「工具超市」——把散落在各个角落的安全武器统一摆上了货架，从侦察望远镜到破门锤应有尽有，省去了安全研究者四处搜刮工具的麻烦，进门就能一站式配齐全套装备。",
+    "language": "Python",
+    "stars": 63770,
+    "stars_today": 1200,
+    "forks": 7146,
+    "trending_rank": 2,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（63770）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合安全研究人员、渗透测试工程师和 CTF 竞赛选手。新手可以通过菜单式界面快速上手各类安全工具，无需逐个安装配置；红队人员可在渗透测试中快速切换不同攻击手法；安全培训机构也可将其作为教学平台，让学员在受控环境中系统学习各类攻防技术。"
+  },
+  {
+    "id": "a9df5ab7",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:02",
+    "title": "PostHog/posthog",
+    "url": "https://github.com/PostHog/posthog",
+    "raw_description": "🦔 PostHog is an all-in-one developer platform for building successful products. We offer product analytics, web analytics, session replay, error tracking, feature flags, experimentation, surveys, data warehouse, a CDP, and an AI product assistant to help debug your code, ship features faster, and keep all your usage and customer data in one stack.",
+    "description": "PostHog 团队出品的一站式开发者产品分析平台，33K Star 的明星项目。集成了产品分析、Web 分析、会话回放、错误追踪、功能标志、A/B 实验、用户调查、数据仓库、CDP 和 AI 产品助手等十大模块于一体，支持完全自托管。核心理念是让开发团队在一个平台内完成从数据采集到产品决策的全链路，无需在 Mixpanel、Amplitude、LaunchDarkly 等多个工具间切换。",
+    "metaphor": "它是产品团队的「瑞士军刀手术台」——把分析、实验、监控、调查等十几把手术刀集成在一张台面上，产品医生不用换台就能完成从诊断到手术的全流程，省去了在不同工具间搬运数据的痛苦。",
+    "language": "Python",
+    "stars": 33465,
+    "stars_today": 469,
+    "forks": 2600,
+    "trending_rank": 3,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（33465）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合中小型创业团队和追求数据自主权的企业开发团队。产品经理可用会话回放定位用户卡点，工程师可用功能标志做灰度发布和 A/B 测试，数据分析师可直接在内置数据仓库中写 SQL 分析。特别适合不想把用户数据交给第三方 SaaS、需要自托管全套分析栈的隐私敏感型企业。"
+  },
+  {
+    "id": "cb2200aa",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:02",
+    "title": "davila7/claude-code-templates",
+    "url": "https://github.com/davila7/claude-code-templates",
+    "raw_description": "CLI tool for configuring and monitoring Claude Code",
+    "description": "25K Star 的 Claude Code 配置与监控 CLI 工具，提供一套开箱即用的模板系统，帮助开发者快速配置和管理 Claude Code 的工作环境。内含多种项目模板（Web 应用、API 服务、数据管道等）、预设的 .claude 配置文件、自定义指令集和性能监控面板。让 Claude Code 的初始化从「从零摸索」变成「选模板即用」，大幅降低上手成本。",
+    "metaphor": "它是 Claude Code 的「精装样板间」——不用自己从毛坯房开始装修，选好户型模板就能拎包入住，连家具摆放位置和水电线路都替你设计好了，直接开始高效编程。",
+    "language": "Python",
+    "stars": 25328,
+    "stars_today": 78,
+    "forks": 2526,
+    "trending_rank": 4,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（25328）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合频繁使用 Claude Code 进行项目开发的全栈工程师和团队 Leader。新项目启动时可直接选择匹配的模板，省去反复调试提示词和配置文件的时间；团队可统一模板标准化 Claude Code 使用规范；个人开发者可参考监控面板优化自己的 Claude Code 使用效率和 token 消耗。"
+  },
+  {
+    "id": "d73973c7",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:02",
+    "title": "huggingface/ml-intern",
+    "url": "https://github.com/huggingface/ml-intern",
+    "raw_description": "🤗 ml-intern: an open-source ML engineer that reads papers, trains models, and ships ML models",
+    "description": "Hugging Face 官方出品的开源 ML 工程自动化 Agent，6K Star。它是一个能自主阅读论文、训练模型并发布成品的 AI 机器学习工程师。基于 LLM 驱动的 Agent 架构，可以自动理解论文中的算法细节，编写训练代码，执行实验，调参优化，最终将训练好的模型发布到 Hugging Face Hub。是「AI 自动做 AI 研究」的前沿实践。",
+    "metaphor": "它是 AI 实验室的「自动化博士生」——给它一篇论文，它就能像研究生一样读懂算法、写代码跑实验、调参出结果，最后把模型包装好发到 Hub 上。导师终于可以不用半夜盯训练了。",
+    "language": "Python",
+    "stars": 6189,
+    "stars_today": 1236,
+    "forks": 556,
+    "trending_rank": 5,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（6189）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 ML 研究者、AI 创业团队和高校实验室。研究人员可用它快速复现论文结果，验证想法可行性；创业团队可让它自动化探索模型训练方案，节省宝贵的工程师时间；教授可以用它辅助学生加速研究迭代，将重复性的训练调参工作交给 Agent 完成。"
+  },
+  {
+    "id": "7124c982",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:02",
+    "title": "Universal-Commerce-Protocol/ucp",
+    "url": "https://github.com/Universal-Commerce-Protocol/ucp",
+    "raw_description": "Specification and documentation for the Universal Commerce Protocol (UCP)",
+    "description": "通用商业协议（UCP）的官方规范与文档仓库，2.7K Star。定义了一套标准化的电商交易协议，旨在打通不同电商平台、支付系统和物流服务之间的数据壁垒。覆盖商品描述、订单流转、支付结算、物流追踪等全链路标准化接口定义，类似于电商领域的 HTTP 协议，让任何系统都能用统一语言对话。",
+    "metaphor": "它是电商世界的「世界语」——当 Shopify、亚马逊、独立站各说各话时，UCP 提供了一套通用语法，让不同平台的订单、支付、物流信息能无障碍互通，终结了跨平台对接时的翻译噩梦。",
+    "language": "Python",
+    "stars": 2776,
+    "stars_today": 16,
+    "forks": 347,
+    "trending_rank": 6,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（2776）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合跨境电商开发者、支付中间件团队和多渠道零售商。电商 SaaS 开发者可基于 UCP 构建跨平台适配层，避免为每个平台写独立对接代码；支付聚合服务可基于协议标准化多渠道结算；多渠道零售商可用统一协议管理不同平台的库存和订单。"
+  },
+  {
+    "id": "d719bead",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:02",
+    "title": "ComposioHQ/awesome-codex-skills",
+    "url": "https://github.com/ComposioHQ/awesome-codex-skills",
+    "raw_description": "A curated list of practical Codex skills for automating workflows across the Codex CLI and API.",
+    "description": "Composio 团队整理的 OpenAI Codex 技能精选列表，1.4K Star。汇集了大量实用的 Codex Skills 配置，覆盖自动化工作流编排、代码生成、文档处理、数据分析等场景。每个 Skill 都附有详细的使用说明和 API 调用示例，是 Codex CLI 和 Codex API 的最佳实践百科全书，紧跟 OpenAI Codex 技能生态的最新进展。",
+    "metaphor": "它是 Codex 生态的「技能图鉴」——像宝可梦图鉴收录每只精灵的能力一样，它把 Codex 能学会的各种自动化技能分门别类整理好，开发者翻开就能找到现成的「招式」直接教给自己的 Codex。",
+    "language": "Python",
+    "stars": 1446,
+    "stars_today": 174,
+    "forks": 130,
+    "trending_rank": 7,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（1446）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合正在探索 OpenAI Codex 能力边界的开发者和自动化工程师。可以快速浏览已有的 Skill 模板找到灵感，直接复用成熟的工作流配置省去从零编写的时间；团队技术负责人也可参考列表规划 Codex 在企业内部的自动化落地方案。"
+  },
+  {
+    "id": "2d27070b",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:02",
+    "title": "HunxByts/GhostTrack",
+    "url": "https://github.com/HunxByts/GhostTrack",
+    "raw_description": "Useful tool to track location or mobile number",
+    "description": "8.7K Star 的开源位置追踪与手机号码查询工具，支持通过手机号码定位运营商归属地、IP 地址地理位置查询和社工信息收集。基于 Python 构建，集成了多个公开数据源 API，提供简洁的命令行界面。主要用于安全研究和信息收集场景，需在合法授权范围内使用。",
+    "metaphor": "它是信息安全领域的「GPS 探测仪」——输入一个手机号或 IP 地址，就能像侦探一样追踪出它背后的运营商、归属地等蛛丝马迹，帮助安全研究者快速构建目标画像。",
+    "language": "Python",
+    "stars": 8782,
+    "stars_today": 213,
+    "forks": 1204,
+    "trending_rank": 8,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（8782）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合安全研究人员、OSINT（开源情报）分析师和网络安全培训场景。渗透测试前期的信息收集阶段可用它快速获取目标手机号的基本信息；网络安全课程可将其作为 OSINT 入门的教学工具；企业安全团队可用于评估自身信息暴露面。需注意在法律允许范围内使用。"
+  },
+  {
+    "id": "ed1cdf90",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:02",
+    "title": "tile-ai/tilelang",
+    "url": "https://github.com/tile-ai/tilelang",
+    "raw_description": "Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels",
+    "description": "tile-ai 团队出品的 GPU/CPU/加速器高性能核函数开发领域专用语言（DSL），5.7K Star。专为简化高性能计算核函数的编写而设计，让开发者用更简洁的语法编写出接近手工优化水平的 GPU kernel。支持多种硬件后端（NVIDIA GPU、CPU、自定义加速器），自动处理 Tiling、内存层级管理等复杂优化，大幅降低了 CUDA 级别编程的难度。",
+    "metaphor": "它是 GPU 编程的「自动挡变速箱」——以前写高性能 kernel 像开手动挡赛车，需要精确控制每一次换挡（Tiling、内存管理）；现在 tilelang 把这些操作自动化了，开发者只需描述想做什么，引擎就能自动跑出接近手动优化的速度。",
+    "language": "Python",
+    "stars": 5748,
+    "stars_today": 62,
+    "forks": 523,
+    "trending_rank": 9,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（5748）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 AI 基础设施工程师、CUDA 开发者和高性能计算研究者。训练大模型的团队可用它快速编写自定义 kernel 优化计算瓶颈；芯片公司可用 tilelang 为自家加速器开发计算库；科研人员可以用更少的代码实现复杂的并行算法，专注算法设计而非底层优化。"
+  },
+  {
+    "id": "a49dcffc",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:02",
+    "title": "donnemartin/system-design-primer",
+    "url": "https://github.com/donnemartin/system-design-primer",
+    "raw_description": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.",
+    "description": "GitHub 上 344K Star 的传奇项目，系统设计面试准备的终极指南。涵盖分布式系统设计的核心概念：负载均衡、缓存策略、数据库分片、消息队列、CDN、一致性哈希等。每个概念都配有清晰的架构图、优缺点分析和真实案例（Twitter、Instagram 等）。附带 Anki 闪卡支持间隔重复记忆，是技术面试和系统架构学习的工业标准教材。",
+    "metaphor": "它是程序员的「系统设计驾校教材」——从基础交规（CAP 定理）到复杂路况（高并发、分布式事务），一本书覆盖所有考点，配上真实案例分析就像路考模拟，帮你稳稳拿到系统设计的驾照。",
+    "language": "Python",
+    "stars": 344285,
+    "stars_today": 288,
+    "forks": 55610,
+    "trending_rank": 10,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（344285）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合准备大厂技术面试的软件工程师和想系统学习分布式架构的开发者。面试前可按专题刷题，配合 Anki 闪卡记忆核心概念；架构师可作为方案设计的参考手册，遇到具体问题时查阅对应的设计模式和权衡分析；技术团队也可将其作为内部培训材料。"
+  },
+  {
+    "id": "9db18037",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "Anil-matcha/Open-Generative-AI",
+    "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+    "raw_description": "Uncensored, open-source alternative to Higgsfield AI, Freepik AI, Krea AI, Openart AI — Free, unrestricted AI image & video generation studio with 200+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.",
+    "description": "8.2K Star 的开源无审查 AI 图像和视频生成平台，定位为 Higgsfield AI、Freepik AI、Krea AI 等商业产品的免费开源替代。内置 200+ 模型（Flux、Midjourney、Kling、Sora、Veo 等），无内容过滤限制，支持完全自托管。MIT 协议开源，让用户在自己的服务器上搭建一个功能完整的 AI 创作工作室。",
+    "metaphor": "它是 AI 生成领域的「自由市集」——不像商业平台那样设置各种内容红线和付费墙，这里 200+ 个 AI 模型任你挑选，想生成什么就生成什么，自托管更意味着数据完全掌握在自己手中。",
+    "language": "JavaScript",
+    "stars": 8269,
+    "stars_today": 677,
+    "forks": 1510,
+    "trending_rank": 1,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（8269）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 AI 艺术创作者、独立游戏工作室和需要大量视觉素材的内容团队。创作者可自托管后无限制探索各种艺术风格；游戏工作室可批量生成概念图和素材；内容营销团队可快速产出社交媒体图片和短视频素材，不受商业平台的配额和内容审核限制。"
+  },
+  {
+    "id": "12152d00",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "affaan-m/everything-claude-code",
+    "url": "https://github.com/affaan-m/everything-claude-code",
+    "raw_description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "description": "166K Star 的 Claude Code 性能优化系统，Claude Code 生态中 Star 数最高的项目。提供完整的 Agent 性能调优方案，覆盖 Skills（技能配置）、Instincts（直觉触发）、Memory（记忆管理）、Security（安全防护）和 Research-first Development（研究驱动开发）五大维度。不仅适用于 Claude Code，还兼容 Codex、Opencode、Cursor 等主流编程 Agent。",
+    "metaphor": "它是编程 Agent 的「外挂装备包」——给 Claude Code 穿上量身定制的增强装甲，从技能树到记忆芯片全面升级，让原本 80 分的 Agent 直接跳到 95 分。而且这套装备兼容多种 Agent 型号，一套通吃。",
+    "language": "JavaScript",
+    "stars": 166935,
+    "stars_today": 800,
+    "forks": 25887,
+    "trending_rank": 2,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 2,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（166935）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合重度依赖 Claude Code 或其他编程 Agent 的专业开发者。可直接应用预设的 Skills 配置提升代码生成质量；通过 Memory 系统让 Agent 记住项目上下文，减少重复解释；Security 模块防止 Agent 误操作生产环境。是每个 Claude Code 用户必装的「第一个扩展」。"
+  },
+  {
+    "id": "c3158f74",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "gsd-build/get-shit-done",
+    "url": "https://github.com/gsd-build/get-shit-done",
+    "raw_description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
+    "description": "TÂCHES 团队出品的 Claude Code 元提示与上下文工程系统，57K Star。提供轻量级但强大的 meta-prompting 框架，通过结构化的 spec-driven development（规格驱动开发）方法论，系统性地提升 Claude Code 的输出质量。核心理念是用精确的上下文工程替代模糊的提示词，让 Claude Code 真正「把事情搞定」。",
+    "metaphor": "它是 Claude Code 的「项目经理手册」——与其对着 AI 瞎指挥，不如给它一份清晰的 PRD 和验收标准。这套方法论教你如何像专业 PM 一样给 Claude Code 下达精确指令，从此告别「AI 生成的代码不能用」的困境。",
+    "language": "JavaScript",
+    "stars": 57345,
+    "stars_today": 301,
+    "forks": 4861,
+    "trending_rank": 3,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（57345）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合使用 Claude Code 进行正式项目开发的工程师和技术 Leader。可学习 spec-driven development 方法论，用结构化方式描述需求，大幅提升 AI 生成代码的可用率；团队可将其作为 Claude Code 使用规范，统一提示词工程标准；个人开发者可用它的 meta-prompting 技巧优化与 AI 的协作效率。"
+  },
+  {
+    "id": "c32d870f",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "npm/cli",
+    "url": "https://github.com/npm/cli",
+    "raw_description": "the package manager for JavaScript",
+    "description": "npm 官方命令行工具，9.7K Star，JavaScript 生态最核心的包管理器。每天服务数百万开发者的依赖安装、版本管理、脚本执行和包发布需求。支持 workspaces 多包管理、自动安全审计、依赖锁定等企业级特性，是 Node.js 开发工作流的基石组件。",
+    "metaphor": "它是 JavaScript 世界的「中央物流仓」——全球数百万个 JS 包裹（package）都在这里进出库，开发者只需一个命令就能把需要的零件精准送到自己的项目工地上，没有它整个 JS 生态的物流就瘫痪了。",
+    "language": "JavaScript",
+    "stars": 9707,
+    "stars_today": 5,
+    "forks": 4294,
+    "trending_rank": 4,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（9707）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合所有 JavaScript/Node.js 开发者。日常开发中用 npm install 管理依赖，npm run 执行构建脚本；开源作者用 npm publish 发布包到 registry；企业团队可配置私有 registry + workspaces 管理 monorepo。作为 Node.js 内置工具，它是每个 JS 开发者每天第一个也是最频繁使用的命令。"
+  },
+  {
+    "id": "7c717247",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "louislam/uptime-kuma",
+    "url": "https://github.com/louislam/uptime-kuma",
+    "raw_description": "A fancy self-hosted monitoring tool",
+    "description": "85K Star 的高颜值自托管监控工具，由独立开发者 Louis Lam 打造。支持 HTTP(s)、TCP、DNS、Docker、Steam 等多种监控类型，配备精美的实时状态仪表盘和多渠道告警（Telegram、Discord、Slack、邮件等 90+ 通知渠道）。一键 Docker 部署，界面美观易用，是自托管监控领域的绝对王者。",
+    "metaphor": "它是服务器的「私人家庭医生」——7×24 小时贴身监测各项「生命体征」（HTTP 响应、端口存活、SSL 过期），一旦发现异常立刻通过 90+ 种方式呼叫你来抢救，而且这位医生免费上门、长得还好看。",
+    "language": "JavaScript",
+    "stars": 85904,
+    "stars_today": 46,
+    "forks": 7727,
+    "trending_rank": 5,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（85904）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合独立开发者、小型团队和自托管爱好者。个人站长可用它监控网站和 API 的可用性，搭配 Telegram 告警第一时间发现故障；DevOps 工程师可用它构建内部状态页面，向团队展示服务健康状况；自托管玩家可将其作为 Home Lab 的监控中枢，统一管理所有服务的健康状态。"
+  },
+  {
+    "id": "f6ea3efc",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "coreyhaines31/marketingskills",
+    "url": "https://github.com/coreyhaines31/marketingskills",
+    "raw_description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+    "description": "24K Star 的 Claude Code 营销技能包，为 AI Agent 注入专业营销能力。覆盖 CRO（转化率优化）、文案撰写、SEO 优化、数据分析和增长工程五大营销核心领域。让 Claude Code 不仅能写代码，还能像资深营销专家一样做着陆页优化、写销售文案、分析流量数据和制定增长策略。",
+    "metaphor": "它是 Claude Code 的「营销学 MBA 学位」——给程序员 AI 补上了商业营销的全部课程，从此你的 AI 助手不仅会写代码，还会写转化率翻倍的着陆页文案、做 SEO 诊断、分析用户漏斗，一个人顶一个增长团队。",
+    "language": "JavaScript",
+    "stars": 24747,
+    "stars_today": 323,
+    "forks": 3918,
+    "trending_rank": 6,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（24747）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合独立开发者、创业者和缺乏营销团队的技术型公司。独立开发者可让 Claude Code 生成产品着陆页和 SEO 优化方案；创业团队可用它做 A/B 测试文案和增长实验设计；技术型 CEO 可用它快速产出营销策略和内容计划，在没有专职营销人员的情况下也能驱动增长。"
+  },
+  {
+    "id": "ea757d59",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "datawhalechina/easy-vibe",
+    "url": "https://github.com/datawhalechina/easy-vibe",
+    "raw_description": "💻 vibe coding 2026 | Your first modern programming course for beginners to master step by step.",
+    "description": "Datawhale 中国社区出品的 Vibe Coding 入门教程，6.7K Star。面向零基础编程初学者，以「跟着感觉写代码」的理念设计，是 2026 年 Vibe Coding 潮流的中文第一教材。内容涵盖从环境搭建到完成第一个现代 Web 应用的全流程，配合 AI 辅助编程工具使用，让编程小白也能快速上手。",
+    "metaphor": "它是编程世界的「成人游泳速成班」——不讲深奥的水力学原理（底层算法），而是直接把你扔进温水池（AI 辅助环境），手把手教你扑腾几下就能游起来，让零基础的人也能在一周内「浮出水面」。",
+    "language": "JavaScript",
+    "stars": 6762,
+    "stars_today": 354,
+    "forks": 684,
+    "trending_rank": 7,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（6762）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合零编程基础但对 AI 编程感兴趣的初学者、想转行技术的职场人和高校非 CS 专业学生。可跟随教程一步步搭建环境，在 AI 辅助下完成第一个 Web 项目；编程培训机构也可将其作为 Vibe Coding 课程的配套教材使用。"
+  },
+  {
+    "id": "5b8e4d58",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "SillyTavern/SillyTavern",
+    "url": "https://github.com/SillyTavern/SillyTavern",
+    "raw_description": "LLM Frontend for Power Users.",
+    "description": "26K Star 的 LLM 高级前端界面，面向深度 AI 对话用户的「重型武器」。支持接入几乎所有主流 LLM（OpenAI、Claude、本地模型等），提供角色卡管理、世界观设定、多轮对话记忆、群组聊天、插件系统等高级功能。是 AI 角色扮演和创意写作领域最强大的开源客户端，自定义程度远超任何商业产品。",
+    "metaphor": "它是 AI 对话的「专业调音台」——普通用户用手机默认播放器就够了，但对音质（对话质量）有极致追求的「发烧友」需要这样一台多旋钮、多通道的调音台，每个参数都能精确调节到完美状态。",
+    "language": "JavaScript",
+    "stars": 26242,
+    "stars_today": 70,
+    "forks": 5167,
+    "trending_rank": 8,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（26242）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 AI 对话深度用户、创意写作者和 AI 角色扮演爱好者。可创建带有详细人设的角色卡，构建完整的虚拟世界观；作家可用它做小说角色对话模拟和情节推演；开发者可通过插件系统扩展功能，打造专属的 AI 对话体验。"
+  },
+  {
+    "id": "5e22a91c",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "atlassian/atlassian-mcp-server",
+    "url": "https://github.com/atlassian/atlassian-mcp-server",
+    "raw_description": "Remote MCP Server that securely connects Jira and Confluence with your LLM, IDE, or agent platform of choice.",
+    "description": "Atlassian 官方出品的 MCP 服务器，616 Star 的新兴项目。提供远程 MCP 协议接入，让任何支持 MCP 的 LLM、IDE 或 Agent 平台安全连接 Jira 和 Confluence。支持读取和操作 Jira Issue、搜索 Confluence 文档、管理项目等核心功能，是企业级 AI 工具链接入 Atlassian 生态的官方标准通道。",
+    "metaphor": "它是 Atlassian 生态的「AI 大使馆」——以前 AI Agent 想访问 Jira 和 Confluence 的数据需要自己办签证（写 API 对接），现在 Atlassian 在 MCP 协议上直接开了大使馆，凭标准护照（MCP）就能自由通行。",
+    "language": "JavaScript",
+    "stars": 616,
+    "stars_today": 4,
+    "forks": 74,
+    "trending_rank": 9,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（616）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合使用 Atlassian 产品的企业开发团队和 AI 工具集成商。工程师可通过 Claude Code 等 AI 工具直接查询和更新 Jira 工单，无需切换窗口；产品经理可让 AI 自动从 Confluence 提取文档信息辅助决策；企业可基于 MCP 协议构建自动化的项目管理工作流。"
+  },
+  {
+    "id": "8e1fa6a6",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "jesse-ai/jesse",
+    "url": "https://github.com/jesse-ai/jesse",
+    "raw_description": "An advanced crypto trading bot written in Python",
+    "description": "7.7K Star 的高级加密货币交易机器人框架，用 Python 编写。提供完整的量化交易工具链：策略编写、回测引擎、实盘交易、风险管理和性能分析。支持多种交易所（Binance、Bybit 等），内置技术指标库和仓位管理系统。策略代码简洁优雅，回测速度快，是加密量化交易领域最专业的开源框架之一。",
+    "metaphor": "它是加密货币交易的「F1 赛车底盘」——提供了专业级的引擎（回测）、变速箱（风险管理）和遥测系统（性能分析），你只需要当赛车手（写策略），其他一切精密零件都已为你组装好。",
+    "language": "JavaScript",
+    "stars": 7784,
+    "stars_today": 14,
+    "forks": 1097,
+    "trending_rank": 10,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（7784）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合加密货币量化交易者、算法交易开发者和金融工程学生。量化交易者可用 Python 快速编写和回测策略，验证交易想法；专业 trader 可用实盘模块对接交易所自动执行策略；金融工程学生可将其作为学习量化交易系统设计的参考框架。"
+  },
+  {
+    "id": "8360faa2",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "RooCodeInc/Roo-Code",
+    "url": "https://github.com/RooCodeInc/Roo-Code",
+    "raw_description": "Roo Code gives you a whole dev team of AI agents in your code editor.",
+    "description": "Roo Code 团队出品的 AI 编程 Agent 平台，23K Star。在代码编辑器中提供完整的 AI 开发团队体验，内置多个专业化 Agent 角色（架构师、前端、后端、测试等），可协同完成复杂开发任务。支持多模型切换、上下文感知编码和端到端项目开发，定位为比 Copilot 更强大的下一代 AI 编程伙伴。",
+    "metaphor": "它是你代码编辑器里的「AI 开发部门」——不是一个助手，而是一整个团队。架构师负责设计、前端写界面、后端搞逻辑、测试保质量，你只需当 CTO 拍板决策，一个人就能驱动一个虚拟开发团队。",
+    "language": "TypeScript",
+    "stars": 23499,
+    "stars_today": 55,
+    "forks": 3121,
+    "trending_rank": 1,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（23499）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合独立开发者和小型创业团队。独立开发者可利用多 Agent 协作完成原本需要整个团队的项目；技术 Leader 可用它快速原型开发，验证产品想法；企业团队可用它加速日常开发任务，将 AI Agent 作为团队成员分担编码工作量。"
+  },
+  {
+    "id": "bdceec5e",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "lobehub/lobehub",
+    "url": "https://github.com/lobehub/lobehub",
+    "raw_description": "The ultimate space for work and life — to find, build, and collaborate with agent teammates that grow with you. We are taking agent harness to the next level — enabling multi-agent collaboration, effortless agent team design, and introducing agents as the unit of work interaction.",
+    "description": "LobeHub 团队出品的终极 Agent 协作平台，75K Star 的超级明星项目。定位为工作与生活的一站式 Agent 空间，支持发现、构建和协作多 Agent 团队。核心创新在于将 Agent 作为工作交互的基本单元，支持多 Agent 协同、无代码 Agent 团队设计和 Agent 成长进化。是 Agent 平台赛道的领跑者。",
+    "metaphor": "它是 AI 时代的「写字楼大堂」——你可以在这里招聘（发现）各种专业的 AI 员工（Agent），组建不同部门（Agent 团队），安排他们协同办公，而且这些员工还会随着工作经验自动成长。",
+    "language": "TypeScript",
+    "stars": 75645,
+    "stars_today": 41,
+    "forks": 14990,
+    "trending_rank": 2,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（75645）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合个人效率爱好者、企业运营团队和 AI 应用开发者。个人可组建自己的 Agent 助手团队（写作、翻译、数据分析等）；企业运营可设计专属的 Agent 工作流处理日常任务；AI 开发者可在平台上发布 Agent 供他人使用，参与 Agent 生态建设。"
+  },
+  {
+    "id": "bb44a35b",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "clash-verge-rev/clash-verge-rev",
+    "url": "https://github.com/clash-verge-rev/clash-verge-rev",
+    "raw_description": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience",
+    "description": "113K Star 的现代跨平台代理客户端，基于 Tauri 框架构建。支持 Windows、macOS 和 Linux 三平台，提供精美的 GUI 界面管理代理规则和节点。支持 Clash 核心的全部特性：规则分流、节点延迟测试、流量统计、TUN 模式等。以轻量化（Tauri 取代 Electron）和极致用户体验著称。",
+    "metaphor": "它是互联网冲浪的「智能导航仪」——根据目的地（域名规则）自动选择最快的航线（代理节点），还能实时显示航速和油耗（延迟和流量），让你在不同网络之间自由穿梭，一路畅通无阻。",
+    "language": "TypeScript",
+    "stars": 113433,
+    "stars_today": 277,
+    "forks": 8291,
+    "trending_rank": 3,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（113433）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合需要网络代理服务的开发者、跨国企业员工和互联网深度用户。开发者可用它访问 GitHub、Stack Overflow 等开发资源；跨国团队可用它优化办公网络连接；普通用户可享受精美 GUI 带来的一键切换节点体验，告别命令行配置的繁琐。"
+  },
+  {
+    "id": "740e6fbf",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "zilliztech/claude-context",
+    "url": "https://github.com/zilliztech/claude-context",
+    "raw_description": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent.",
+    "description": "Zilliz 技术团队（Milvus 向量数据库背后的公司）出品的代码搜索 MCP 工具，9.3K Star。专为 Claude Code 打造，将整个代码库变成 AI 的上下文。通过向量化索引实现语义级代码搜索，让 Claude Code 能真正「理解」项目全貌而不仅仅是当前文件，大幅提升大项目中 AI 编码的准确性。",
+    "metaphor": "它是 Claude Code 的「全知之眼」——不再是盲人摸象只看眼前的文件，而是让 AI 获得了鸟瞰整个代码库的能力，任何角落的代码都逃不过它的语义搜索，编码建议从此有了全局视野。",
+    "language": "TypeScript",
+    "stars": 9364,
+    "stars_today": 471,
+    "forks": 716,
+    "trending_rank": 4,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（9364）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合在大型代码库中使用 Claude Code 的企业开发团队。后端工程师可让 Claude Code 理解整个微服务架构后再生成代码，避免与其他服务冲突；代码评审时可让 AI 搜索相关实现确保一致性；新人入职时可用它快速了解代码库全貌。"
+  },
+  {
+    "id": "f653a05f",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "ruvnet/ruflo",
+    "url": "https://github.com/ruvnet/ruflo",
+    "raw_description": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features enterprise-grade architecture, distributed swarm intelligence, RAG integration, and native Claude Code / Codex Integration",
+    "description": "33K Star 的领先 Agent 编排平台，专为 Claude 生态设计。支持部署智能多 Agent 集群（Swarm）、协调自主工作流和构建对话式 AI 系统。具备企业级架构、分布式集群智能、RAG 集成能力，并原生支持 Claude Code 和 Codex 集成。是构建复杂多 Agent 应用的全能型基础设施。",
+    "metaphor": "它是 AI Agent 的「蜂巢调度中心」——一只蜜蜂能力有限，但 ruflo 能让成百上千只 AI 蜜蜂（Agent）像蜂群一样协调行动，各司其职又相互配合，完成单个 Agent 不可能完成的复杂任务。",
+    "language": "TypeScript",
+    "stars": 33339,
+    "stars_today": 160,
+    "forks": 3768,
+    "trending_rank": 5,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（33339）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合构建企业级 AI 应用的技术团队和 Agent 工具链开发者。可快速搭建多 Agent 协作系统处理复杂业务流程（如客服+分析+决策 Agent 组合）；与 Claude Code 原生集成让开发体验流畅；企业可利用 RAG 集成将内部知识库接入 Agent 系统。"
+  },
+  {
+    "id": "d427a0ca",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "kamranahmedse/developer-roadmap",
+    "url": "https://github.com/kamranahmedse/developer-roadmap",
+    "raw_description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+    "description": "353K Star 的超级明星项目，GitHub 上 Star 数排名前十的仓库之一。提供交互式的开发者学习路线图，覆盖前端、后端、DevOps、AI/ML、区块链等几乎所有技术方向。每条路径都包含详细的知识点、推荐学习资源和进阶指南，并持续更新跟进技术趋势。是全球开发者职业成长的「北极星导航」。",
+    "metaphor": "它是程序员职业发展的「Google Maps」——不管你要去前端还是后端、AI 还是 DevOps，输入目的地就能看到一条清晰的路线，沿途每个路口（知识点）都标注了该往哪转，让你不会在技术海洋中迷路。",
+    "language": "TypeScript",
+    "stars": 353631,
+    "stars_today": 98,
+    "forks": 43969,
+    "trending_rank": 6,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 8
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（353631）估算"
+    },
+    "is_top": true,
+    "usage_scene": "适合在校 CS 学生、转行程序员和规划职业方向的开发者。新手可根据路线图制定学习计划，避免在零散教程中迷失；转行者可快速了解目标技术栈的全貌和学习优先级；技术管理者可参考路线图为团队成员制定成长计划和培训路径。"
+  },
+  {
+    "id": "922546a6",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "open-telemetry/opentelemetry-demo",
+    "url": "https://github.com/open-telemetry/opentelemetry-demo",
+    "raw_description": "This repository contains the OpenTelemetry Astronomy Shop, a microservice-based distributed system intended to illustrate the implementation of OpenTelemetry in a near real-world environment.",
+    "description": "OpenTelemetry 官方出品的微服务演示应用——Astronomy Shop（天文商店），3K Star。通过一个完整的电商系统（14+ 微服务，涵盖多种语言实现）展示 OpenTelemetry 在真实场景中的集成方式。覆盖分布式追踪、指标收集、日志聚合的全栈可观测性实现，是学习和实践 OpenTelemetry 的官方标准参考。",
+    "metaphor": "它是可观测性领域的「教学医院」——不是纸上谈兵的教科书，而是一个真实运转的「医院」（微服务系统），你可以亲手在每个「科室」（服务）装上监测设备（OpenTelemetry），观察数据如何在整个系统中流动。",
+    "language": "TypeScript",
+    "stars": 3039,
+    "stars_today": 9,
+    "forks": 6323,
+    "trending_rank": 7,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（3039）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 DevOps 工程师、SRE 和想学习可观测性的后端开发者。可直接部署运行，在真实微服务架构中学习 OpenTelemetry 的配置和使用；企业团队可参考其实现方式为自己的服务接入可观测性；培训机构可将其作为云原生可观测性课程的实操环境。"
+  },
+  {
+    "id": "30402c31",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "badlogic/pi-mono",
+    "url": "https://github.com/badlogic/pi-mono",
+    "raw_description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
+    "description": "40K Star 的 AI Agent 全功能工具包，由知名开发者 badlogic 打造。集成了 CLI 编码 Agent、统一 LLM API、TUI（终端 UI）和 Web UI 库、Slack 机器人和 vLLM Pod 等组件于一体。是一个从底层 LLM 调用到上层交互界面全覆盖的 Agent 开发工具箱，适合快速搭建各种形态的 AI Agent 应用。",
+    "metaphor": "它是 AI Agent 开发的「乐高积木桶」——CLI Agent、Web 界面、Slack 机器人、LLM 调度器，每个组件都是标准化的积木块，你可以自由拼搭出从命令行工具到企业聊天机器人的任何形态。",
+    "language": "TypeScript",
+    "stars": 40087,
+    "stars_today": 541,
+    "forks": 4686,
+    "trending_rank": 8,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（40087）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合 AI 工具链开发者和需要快速构建 Agent 原型的团队。可用统一 LLM API 层无缝切换不同模型，降低供应商锁定风险；用 TUI 库快速搭建终端交互界面做内部工具；用 Slack 机器人模块将 Agent 能力部署到团队沟通渠道中。"
+  },
+  {
+    "id": "80c22c71",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "open-metadata/OpenMetadata",
+    "url": "https://github.com/open-metadata/OpenMetadata",
+    "raw_description": "OpenMetadata is a unified metadata platform for data discovery, data observability, and data governance powered by a central metadata repository, in-depth column level lineage, and seamless team collaboration.",
+    "description": "13K Star 的统一元数据管理平台，为数据发现、数据可观测性和数据治理提供一站式解决方案。以中央元数据仓库为核心，支持深度列级血缘分析、团队协作和自动化数据质量检测。可连接 Snowflake、BigQuery、Redshift、Kafka 等 60+ 数据源，是现代数据团队管理「数据的数据」的标准工具。",
+    "metaphor": "它是数据团队的「图书馆管理系统」——当企业的数据资产像图书馆藏书一样海量增长，你需要一个系统知道每本书在哪（数据发现）、谁借过它（血缘分析）、书况如何（质量检测），OpenMetadata 就是这个智能图书管理员。",
+    "language": "TypeScript",
+    "stars": 13533,
+    "stars_today": 350,
+    "forks": 2045,
+    "trending_rank": 9,
+    "scores": {
+      "vibecoding_ease": 1,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 4
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（13533）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合中大型企业的数据工程团队和数据治理部门。数据分析师可快速发现和理解企业内部的数据表含义和上下游关系；数据工程师可追踪列级数据血缘排查数据质量问题；管理层可通过数据治理功能确保合规性和数据标准统一。"
+  },
+  {
+    "id": "68539593",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "Kilo-Org/kilocode",
+    "url": "https://github.com/Kilo-Org/kilocode",
+    "raw_description": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
+    "description": "Kilo 团队出品的全能型 Agent 编程平台，18K Star。定位为最受欢迎的开源编码 Agent，支持在代码编辑器中完成从构建到发布的全流程。具备上下文感知编码、多模型支持和端到端项目开发能力，强调快速迭代和工程实践导向。是 Roo Code、Cline 等编码 Agent 的有力竞争者。",
+    "metaphor": "它是代码世界的「全自动工厂流水线」——从设计图纸（需求）到成品出厂（发布），AI Agent 操控每一台机器（编码、测试、部署），你只需站在控制室里按下启动键，看着产品自动流水线走完全程。",
+    "language": "TypeScript",
+    "stars": 18572,
+    "stars_today": 48,
+    "forks": 2442,
+    "trending_rank": 10,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 6
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（18572）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合追求编码效率的全栈开发者和敏捷开发团队。可在编辑器中直接让 AI 完成功能开发、Bug 修复、代码重构等任务；支持多模型切换找到性价比最优的方案；快速迭代的创业团队可用它显著缩短开发周期。"
+  },
+  {
+    "id": "50558789",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "CJackHwang/ds2api",
+    "url": "https://github.com/CJackHwang/ds2api",
+    "raw_description": "Deepseek to API: A lightweight, high-performance full-stack middleware converting client protocols to universal APIs. Supports multi-account rotation, compiled binaries, Vercel Serverless, and Docker. Compatible with Google, Claude, and OpenAI API formats.",
+    "description": "1.3K Star 的轻量级全栈中间件，将 DeepSeek 客户端协议转换为通用 API 格式。支持多账号轮转、编译二进制部署、Vercel Serverless 和 Docker 部署。兼容 Google、Claude 和 OpenAI API 格式，是将 DeepSeek 接入现有 AI 工具链的桥梁组件，让各种 AI 应用无缝调用 DeepSeek 的能力。",
+    "metaphor": "它是 AI API 世界的「万能转接头」——DeepSeek 说中文，OpenAI 说英文，Claude 说法文，而 ds2api 是那个精通多国语言的翻译官，让你的应用只需说一种语言就能和所有 AI 对话。",
+    "language": "Go",
+    "stars": 1397,
+    "stars_today": 37,
+    "forks": 446,
+    "trending_rank": 1,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（1397）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合想低成本使用 DeepSeek 模型的开发者和 AI 应用运营者。可将 DeepSeek 伪装成 OpenAI 兼容接口，直接接入现有工具链（如 Cursor、ChatBox 等）；多账号轮转功能适合高并发场景；Vercel 一键部署让个人开发者也能零运维搭建 API 中转服务。"
+  },
+  {
+    "id": "c0b5e295",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "google/osv-scanner",
+    "url": "https://github.com/google/osv-scanner",
+    "raw_description": "Vulnerability scanner written in Go which uses the data provided byhttps://osv.dev",
+    "description": "Google 出品的开源漏洞扫描器，9.7K Star。基于 OSV（Open Source Vulnerabilities）数据库，对项目依赖进行全面的安全漏洞检测。支持扫描所有主流包管理器的依赖文件（package.json、go.mod、requirements.txt 等），提供精准的漏洞匹配和修复建议。是 Google 推动开源供应链安全的核心工具。",
+    "metaphor": "它是代码依赖的「安检 X 光机」——每个 npm 包、Go module、Python 库经过它的扫描，就像行李过安检一样，任何隐藏的已知漏洞都会被高亮标出并附上修复建议，帮你把安全隐患挡在门外。",
+    "language": "Go",
+    "stars": 9736,
+    "stars_today": 467,
+    "forks": 641,
+    "trending_rank": 2,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（9736）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合企业安全团队、DevSecOps 工程师和开源项目维护者。可集成到 CI/CD 流水线中自动扫描每次提交的依赖安全性；安全团队可定期扫描全公司项目生成漏洞报告；开源项目可用它在 GitHub Actions 中自动检测并提示依赖漏洞。"
+  },
+  {
+    "id": "8ef39599",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "hatchet-dev/hatchet",
+    "url": "https://github.com/hatchet-dev/hatchet",
+    "raw_description": "🪓 Run Background Tasks at Scale",
+    "description": "Hatchet 团队出品的大规模后台任务执行引擎，6.9K Star。专为运行后台任务、队列和工作流而设计，支持任务重试、速率限制、优先级队列、Cron 调度和流式处理等企业级特性。提供可视化的任务执行面板和 SDK（Python、TypeScript、Go），是 Celery/BullMQ 的现代化替代方案。",
+    "metaphor": "它是后台任务的「智能快递分拣中心」——成千上万的任务包裹涌入，它能按优先级分拣、按速率限制派送、失败自动重发，还有监控大屏实时显示每个包裹的状态，比传统的 Celery 更聪明更可靠。",
+    "language": "Go",
+    "stars": 6981,
+    "stars_today": 17,
+    "forks": 353,
+    "trending_rank": 3,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（6981）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合需要可靠后台任务处理的工程团队。SaaS 产品可用它处理用户触发的异步任务（邮件发送、报告生成、数据同步）；AI 应用可用它编排复杂的 LLM 调用工作流；平台型产品可利用多租户特性为不同客户隔离任务执行环境。"
+  },
+  {
+    "id": "5a89bc3e",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "etcd-io/etcd",
+    "url": "https://github.com/etcd-io/etcd",
+    "raw_description": "Distributed reliable key-value store for the most critical data of a distributed system",
+    "description": "CNCF 毕业项目，51K Star 的分布式可靠键值存储系统。Kubernetes 的核心数据存储组件，负责保存集群的所有配置和状态数据。基于 Raft 一致性算法实现强一致性和高可用，支持 watch 机制实现实时变更通知。是分布式系统基础设施的基石组件，几乎所有云原生架构的底层都离不开它。",
+    "metaphor": "它是分布式系统的「中央公证处」——当多台服务器对某个配置项各执一词时，etcd 就是那个所有人都信任的公证处，它说的数据就是权威版本，任何变更都经过严格的 Raft 共识签章。",
+    "language": "Go",
+    "stars": 51638,
+    "stars_today": 9,
+    "forks": 10325,
+    "trending_rank": 4,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（51638）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合云原生基础设施工程师和分布式系统开发者。运维 Kubernetes 集群的 SRE 需要深入理解 etcd 的运维和调优；微服务架构可用 etcd 做服务发现和配置管理；分布式系统开发者可将其作为构建一致性应用的基础存储层。"
+  },
+  {
+    "id": "7ecd7fff",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "kubernetes-sigs/agent-sandbox",
+    "url": "https://github.com/kubernetes-sigs/agent-sandbox",
+    "raw_description": "agent-sandbox enables easy management of isolated, stateful, singleton workloads, ideal for use cases like AI agent runtimes.",
+    "description": "Kubernetes SIG 官方出品的 Agent 沙箱管理工具，1.9K Star。专为 AI Agent 运行时设计，提供隔离的、有状态的单实例工作负载管理。让 AI Agent 在 Kubernetes 集群中安全运行，拥有独立的计算资源和持久化状态，同时保持与主系统的安全隔离。是 AI Agent 运行时基础设施的官方标准化方案。",
+    "metaphor": "它是 AI Agent 的「独立公寓管理系统」——每个 Agent 都住在自己的隔离公寓（沙箱）里，有独立的存储空间和计算资源，不会互相打扰，而物业（Kubernetes）统一管理水电和安全。",
+    "language": "Go",
+    "stars": 1934,
+    "stars_today": 18,
+    "forks": 215,
+    "trending_rank": 5,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（1934）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合在 Kubernetes 上部署 AI Agent 的平台工程师和企业 AI 团队。可为每个 AI Agent 创建隔离的运行环境，防止 Agent 越权操作影响其他服务；企业可用它构建多租户 Agent 托管平台；需要有状态 Agent（保留记忆和上下文）的场景特别适用。"
+  },
+  {
+    "id": "234a0008",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "moby/moby",
+    "url": "https://github.com/moby/moby",
+    "raw_description": "The Moby Project - a collaborative project for the container ecosystem to assemble container-based systems",
+    "description": "Docker 背后的 Moby 项目，71K Star 的容器生态核心组件。作为容器生态系统的协作项目，提供了构建容器化系统所需的所有核心组件：容器运行时、镜像构建、网络和存储管理等。是 Docker Engine 的上游开源项目，几乎所有容器技术都直接或间接基于 Moby 的组件构建。",
+    "metaphor": "它是容器世界的「发动机工厂」——Docker、Podman 等品牌汽车（容器运行时）的核心发动机零件都在这里制造，虽然终端用户开的是 Docker 牌汽车，但引擎盖下转动的是 Moby 的零件。",
+    "language": "Go",
+    "stars": 71490,
+    "stars_today": 3,
+    "forks": 18920,
+    "trending_rank": 6,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（71490）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合容器技术深度用户、容器平台开发者和云原生基础设施工程师。想深入理解 Docker 工作原理的开发者可阅读 Moby 源码；容器平台公司可基于 Moby 组件构建定制化的容器运行时；对容器安全和性能有特殊需求的企业可直接使用 Moby 组件定制解决方案。"
+  },
+  {
+    "id": "b409c9c8",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "microsoft/typescript-go",
+    "url": "https://github.com/microsoft/typescript-go",
+    "raw_description": "Staging repo for development of native port of TypeScript",
+    "description": "微软官方将 TypeScript 编译器用 Go 语言重写的划时代项目，25K Star。目标是将 TypeScript 的编译速度提升 10 倍以上，解决大型项目编译缓慢的痛点。这个原生移植保留了与原版 TypeScript 完全一致的类型检查语义，同时利用 Go 的高效并发模型大幅提升性能。是 TypeScript 生态未来最重要的基础设施升级。",
+    "metaphor": "它是 TypeScript 的「涡轮增压改装」——原来的 JS 引擎（自举编译器）虽然能跑，但大项目时常喘不上气；换上 Go 语言打造的涡轮引擎后，编译速度飙升 10 倍，大型 monorepo 终于不用等编译等到喝完一杯咖啡了。",
+    "language": "Go",
+    "stars": 25091,
+    "stars_today": 164,
+    "forks": 912,
+    "trending_rank": 7,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 7
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（25091）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合维护大型 TypeScript 项目的企业开发团队和 TypeScript 工具链开发者。大型 monorepo 项目可显著缩短 CI/CD 编译时间；IDE 插件开发者可基于更快的编译器提供更流畅的开发体验；TypeScript 生态的工具作者需要提前适配这个即将成为标准的新编译器。"
+  },
+  {
+    "id": "3d5a3760",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "Wei-Shaw/sub2api",
+    "url": "https://github.com/Wei-Shaw/sub2api",
+    "raw_description": "Sub2API-CRS2 一站式开源中转服务，让 Claude、Openai 、Gemini、Antigravity订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
+    "description": "15K Star 的一站式开源 AI API 中转服务（Sub2API-CRS2）。将 Claude、OpenAI、Gemini、Antigravity 等多家 AI 服务的订阅统一接入，支持拼车共享模式高效分摊成本，原生工具无缝使用。是 AI API 聚合领域的高 Star 项目，解决了多模型订阅成本高昂和接口碎片化的痛点。",
+    "metaphor": "它是 AI API 的「拼车平台」——每家 AI 服务的订阅就像一辆专车，单人乘坐太贵，sub2api 把多个用户拼到同一辆车上，大家分摊车费，目的地（API 调用）照样到达，费用直接打骨折。",
+    "language": "Go",
+    "stars": 15413,
+    "stars_today": 228,
+    "forks": 2701,
+    "trending_rank": 8,
+    "scores": {
+      "vibecoding_ease": 2,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 2,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（15413）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合个人开发者、AI 工具运营者和预算有限的创业团队。个人开发者可通过拼车模式低成本使用多家 AI API；运营 AI 应用的团队可统一管理多个 API 订阅，降低运营成本；需要同时调用 Claude + GPT + Gemini 的多模型应用可通过一个入口统一接入。"
+  },
+  {
+    "id": "91116d87",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "gastownhall/gascity",
+    "url": "https://github.com/gastownhall/gascity",
+    "raw_description": "Orchestration-builder SDK for multi-agent coding workflows",
+    "description": "410 Star 的新兴多 Agent 编码工作流编排 SDK。提供构建器模式的 API 设计，让开发者以声明式方式编排多个 AI Agent 协作完成编码任务。支持定义 Agent 角色、任务依赖关系和工作流分支，适合构建复杂的多步骤 AI 编程流水线。虽然 Star 数不多，但代表了多 Agent 编排的前沿探索方向。",
+    "metaphor": "它是多 Agent 编程的「交响乐指挥台」——每个 Agent 是乐团里的一个声部（前端、后端、测试），SDK 就是乐谱和指挥棒，让多个 Agent 按照精确的节拍和顺序合奏出完整的「软件交响曲」。",
+    "language": "Go",
+    "stars": 410,
+    "stars_today": 65,
+    "forks": 108,
+    "trending_rank": 9,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 0,
+      "growth_potential": 1,
+      "total": 5
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（410）估算"
+    },
+    "is_top": false,
+    "usage_scene": "适合探索多 Agent 协作编程的技术先驱和 AI 工具链开发者。可用 SDK 快速搭建多 Agent 编码工作流原型，验证复杂任务的自动分解和分配方案；Agent 平台开发者可参考其编排模式设计自己的协作框架；适合对 AI 编程未来形态有兴趣的研究者。"
+  },
+  {
+    "id": "4c56bdb5",
+    "date": "2026-04-26",
+    "fetched_at": "2026-04-26 07:03",
+    "title": "gin-gonic/gin",
+    "url": "https://github.com/gin-gonic/gin",
+    "raw_description": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices.",
+    "description": "88K Star 的 Go 语言高性能 HTTP Web 框架，Go 生态中最流行的 Web 框架。基于 httprouter 提供比 Martini 快 40 倍的性能，同时保持优雅简洁的 API 设计。支持中间件、路由分组、JSON 验证、错误处理等企业级特性，是构建 REST API、Web 应用和微服务的首选框架。",
+    "metaphor": "它是 Go Web 开发的「高铁」——API 设计像高铁乘坐体验一样简洁舒适（类 Martini），但底层速度却是绿皮火车的 40 倍（基于 httprouter），是兼顾开发体验和极致性能的最优选择。",
+    "language": "Go",
+    "stars": 88377,
+    "stars_today": 9,
+    "forks": 8583,
+    "trending_rank": 10,
+    "scores": {
+      "vibecoding_ease": 3,
+      "logic_moat": 1,
+      "track_fit": 2,
+      "growth_potential": 2,
+      "total": 8
+    },
+    "score_reasons": {
+      "vibecoding_ease": "基于项目名称和描述关键词判断",
+      "logic_moat": "基于描述复杂度估算",
+      "track_fit": "基于关键词匹配五大赛道",
+      "growth_potential": "基于 Stars 数量（88377）估算"
+    },
+    "is_top": true,
+    "usage_scene": "适合 Go 语言后端开发者和需要高性能 API 的技术团队。创业团队可用 Gin 快速搭建 REST API 后端，开发效率不输 Express/Flask 而性能碾压它们；企业级微服务可利用中间件和路由分组组织复杂的 API 架构；Go 入门者可将 Gin 作为第一个 Web 框架学习。"
   }
 ]
